@@ -1,0 +1,636 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:41:24 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="位移向量;displacement vector;向量;平移;translation;內積;inner product;面積的勾股定理;四元數;quaternions;圓冪定理;向量代數;外積;叉積;cross product">
+<META name="keyword_out" content="平移;Eudoxus;相似變換;勾股定理;內積;Hamilton;四元數;複數;協變;Menelous定理;Ceva定理;Ceva;圓冪定理">
+<TITLE>五、向量幾何和向量代數</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>五、向量幾何和向量代數</FONT><BR><FONT size="4">——空間結構的系統代數化</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">位移向量的基本性質</a>
+<LI><a href="page2.html#02_SECTION0002">位移向量的運算律</a>
+<LI><a href="page3.html#06_SECTION0003">結語</a>
+<LI><a href="page4.html#07_SECTION0004">例題、習題和思考題</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{五、向量幾何和向量代數}
+%\sub_title{——空間結構的系統代數化}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{位移向量::displacement vector::向量::平移::translation::內積::inner product::面積的勾股定理::四元數::quaternions::圓冪定理::向量代數::外積::叉積::cross product}
+%\key_out{平移::Eudoxus::相似變換::勾股定理::內積::Hamilton::四元數::複數::協變::Menelous定理::Ceva定理::Ceva::圓冪定理}
+-- episte: basic_info end -->
+
+<P>
+在空間中由 <SPAN CLASS="MATH"><I>A</I></SPAN> 到 <SPAN CLASS="MATH"><I>B</I></SPAN> 的有向直線段 <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN>
+其本身就是 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 兩點所標記的兩個位置之間的差別
+(difference between the locations of <SPAN CLASS="MATH"><I>A</I></SPAN> and <SPAN CLASS="MATH"><I>B</I></SPAN>)
+的具體化描述；而 位移向量 (displacement vector) 則是將這種「位置差別」
+加以定量化所定義的基本幾何量。它的本質內涵是 <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN>
+的方向和長度。換句話說，當兩個有向直線段
+<!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 和 <!-- MATH
+ $\overrightarrow{A'B'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overrightarrow{A'B'}$"></SPAN>
+為同向平行而且等長時，兩者所表達的位移向量定義為相等。另一方面，空間中的平移變換把空間中每一個點作同向等距的移動，由此可見位移向量本質上就是平移的另一種表達。總之，位移向量和平移是同一事物的兩種觀點，前者著眼于其所表達的位置移動，而後者則著眼于它是空間一種特殊的保長變換。
+
+<P>
+
+<!-- section head *** text_length=1380 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">位移向量的基本性質</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+【定義】：若空間中的一個變換 τ 滿足條件
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="275" HEIGHT="28" BORDER="0"
+ SRC="img3.gif"
+ ALT="\begin{displaymath}\overrightarrow{P\,\tau(P)} \; \mbox{{\fontfamily{cwM0}\fonts...
+...nt \cH16}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH197}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+則稱 τ 為空間的一個平移 (translation) 。
+
+<P>
+【定理 5.1】： 設 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 為空間中任給兩點，則存在一個唯一的平移 τ
+使得 <SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\tau(A)=B$"></SPAN>（我們將以 <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\tau(A,B)$"></SPAN> 記之）。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：先証存在性：
+
+<P>
+若 <SPAN CLASS="MATH"><I>A</I>=<I>B</I></SPAN>，則恆等變換即為所求者。
+
+<P>
+若 <SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$A\neq B$"></SPAN>，令 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\Pi_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$\Pi_2$"></SPAN> 分別是和直線段 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{AB}$"></SPAN> 正交于
+<SPAN CLASS="MATH"><I>A</I></SPAN> 和 <SPAN CLASS="MATH"><I>M</I></SPAN>（<SPAN CLASS="MATH"><I>M</I></SPAN> 是 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{AB}$"></SPAN> 的中點）的平面，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="${\mathfrak R}_{\Pi_2}\circ{\mathfrak R}_{\Pi_1}$"></SPAN>
+這個反射對稱的組合即為所求者。
+
+<P>
+<SPAN  CLASS="textit">再証唯一性</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH"><I>P</I></SPAN> 是空間中任給一點，τ 是上述所作的平移，而 <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\tau'$"></SPAN> 則是一個將
+<SPAN CLASS="MATH"><I>A</I></SPAN> 映射到 <SPAN CLASS="MATH"><I>B</I></SPAN> 的平移，我們所要証明者是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\tau'(P)=\tau(P)$"></SPAN> 。由所設
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\overrightarrow{P\tau'(P)}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\overrightarrow{P\tau(P)}$"></SPAN>
+都和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 同向平行而且等長。因為過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 平行的直線是唯一存在的，所以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\tau'(P)=\tau(P)$"></SPAN>
+。由于 <SPAN CLASS="MATH"><I>P</I></SPAN> 是任給的，所以 <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\tau'$"></SPAN> 和 τ 是同一個變換。
+□
+
+<P>
+【定理 5.2】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\tau_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\tau_2$"></SPAN> 是空間的兩個平移，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\tau_2\circ\tau_1$"></SPAN> 也是一個平移，而且 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="112" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\tau_2\circ\tau_1=\tau_1\circ\tau_2$"></SPAN> 。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：在此我們將採用簡約符號 <SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.gif"
+ ALT="$A'=\tau_1(A)$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="177" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.gif"
+ ALT="$A''=\tau_2(A')=\tau_2\circ\tau_1(A)$"></SPAN> 。由所設，對于空間任給兩點 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 恆有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="223" HEIGHT="27" BORDER="0"
+ SRC="img21.gif"
+ ALT="\begin{displaymath}\overrightarrow{AA'} \; \mbox{ {\fontfamily{cwM0}\fontseries{...
+...0}\fontseries{m}\selectfont \cH184} } \; \overrightarrow{B'B''}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+各別同向平行而且等長，而我們所要証明者則是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\overrightarrow{AA''}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\overrightarrow{BB''}$"></SPAN> 也必然同向平行而且等長。其証明如下：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="263" HEIGHT="172" BORDER="0"
+ SRC="img24.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0501.eps}}*\fr...
+...{A'}
+,(4.7,5.4)*+{B''}
+,(3.7,-0.3)*+{B}
+,(5.2,3.4)*+{B'}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3840" ALIGN="CENTER">
+[ 圖 5-1 ]</DIV>
+
+
+<P>
+如 [圖 5-1] 所示，連結 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overrightarrow{A'B'}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\overrightarrow{A''B''}$"></SPAN> 。由平面幾何中熟知的平行四邊形特徵性質可見，
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="224" HEIGHT="26" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm ...
+...=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptA'B'B''A''\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+兩者都是平行四邊形，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\overrightarrow{AB} \; \mbox{ {\fontfamily{cwM0}\fontseries{m}\selectfont \cH184} } \; \overrightarrow{A'B'},\quad \overrightarrow{A'B'} \; \mbox{ {\fontfamily{cwM0}\fontseries{m}\selectfont \cH184} } \; \overrightarrow{A''B''}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="223" HEIGHT="27" BORDER="0"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB} \; \mbox{ {\fontfamily{cwM0}\fontseries{m...
+...}\fontseries{m}\selectfont \cH184} } \; \overrightarrow{A''B''}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+都是同向平行而且等長，即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\overrightarrow{A''B''}$"></SPAN> 也是同向平行而且等長的，因此
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="91" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.gif"
+ ALT="$\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptABB''A''$"></SPAN> 乃是一個平行四邊形。所以就証明了
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\overrightarrow{AA''}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\overrightarrow{BB''}$"></SPAN> 也是同向平行而且等長的，亦即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\tau_2\circ\tau_1$"></SPAN> 也是一個平移。
+
+<P>
+<SPAN  CLASS="textit">再証</SPAN>：
+<SPAN CLASS="MATH"><IMG
+ WIDTH="112" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\tau_1\circ\tau_2 = \tau_2\circ\tau_1$"></SPAN>
+
+<P>
+令 <SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$A^*=\tau_2(A)$"></SPAN>，則有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\overrightarrow{AA^*}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\overrightarrow{A'A''}$"></SPAN>
+同向平行而且等長。同理， 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="93" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptAA'A''A^*$"></SPAN> 也是一個平行四邊形，即有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\overrightarrow{A^*A''}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\overrightarrow{AA'}$"></SPAN>
+同向平行而且等長，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="263" HEIGHT="28" BORDER="0"
+ SRC="img36.gif"
+ ALT="\begin{displaymath}\tau_1\circ\tau_2(A)=\tau_1(A^*)=A''=\tau_2\circ\tau_1(A)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而 <SPAN CLASS="MATH"><I>A</I></SPAN> 是空間任給一點，亦即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.gif"
+ ALT="$\tau_1\circ\tau_2$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\tau_2\circ\tau_1$"></SPAN> 是相同的變換。
+□
+
+<P>
+【定義與符號】：定義上述和次序無關的平移組合
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="112" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\tau_1\circ\tau_2 = \tau_2\circ\tau_1$"></SPAN>
+為 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\tau_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\tau_2$"></SPAN> 之和 (sum)，將改用符號 <SPAN CLASS="MATH"><IMG
+ WIDTH="52" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.gif"
+ ALT="$\tau_1+\tau_2$"></SPAN> 表示之。再者，往後我們將改用粗體小寫字母如 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.gif"
+ ALT="${\bf c}$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.gif"
+ ALT="${\bf x}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="${\bf y}$"></SPAN> 等表示位移向量。
+採取這種符號，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="343" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\tau(B,C)\circ\tau(A,B)=\tau(A,B)\circ\tau(B,C)=\tau(A,C)$"></SPAN>
+就可以寫成 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.gif"
+ ALT="${\bf a}+{\bf b}={\bf c}$"></SPAN>，或者
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="119" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.gif"
+ ALT="$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$"></SPAN> 。
+
+<P>
+[註]：在加法符號下，我們把恆等變換這個特殊的平移 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.gif"
+ ALT="$\tau_0$"></SPAN>
+改用 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.gif"
+ ALT="${\bf0}$"></SPAN> 來表示，因為對于任何平移
+τ，恆有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="131" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.gif"
+ ALT="$\tau_0\circ\tau=\tau\circ\tau_0=\tau$"></SPAN>
+，而這個事實在加法符號下即為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="125" HEIGHT="25" BORDER="0"
+ SRC="img50.gif"
+ ALT="\begin{displaymath}{\bf0}+{\bf a}={\bf a}+{\bf0}={\bf a}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN>（亦即 <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\tau(A,B)$"></SPAN> ）的逆變換就是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\overrightarrow{BA}$"></SPAN>（亦即 <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.gif"
+ ALT="$\tau(B,A)$"></SPAN> ），而且有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="297" HEIGHT="28" BORDER="0"
+ SRC="img53.gif"
+ ALT="\begin{displaymath}\tau(A,B)\circ\tau(B,A)=\tau_0=\tau(B,A)\circ\tau(A,B)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="260" HEIGHT="28" BORDER="0"
+ SRC="img54.gif"
+ ALT="\begin{displaymath}(\overrightarrow{AB}+\overrightarrow{BA}=\overrightarrow{AA}= \overrightarrow{BB}=\overrightarrow{BA}+\overrightarrow{AB})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以記 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$-\overrightarrow{AB}=\overrightarrow{BA}$"></SPAN>（即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="144" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.gif"
+ ALT="$-\tau(A,B)=\tau(B,A)$"></SPAN>），亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="172" HEIGHT="28" BORDER="0"
+ SRC="img57.gif"
+ ALT="\begin{displaymath}(-{\bf a})+{\bf a}={\bf0}={\bf a}+(-{\bf a})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%B2%BE">平移</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Eudoxus">Eudoxus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%AC%DB%A6%FC%C5%DC%B4%AB">相似變換</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%C4%AA%D1%A9w%B2z">勾股定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%BA%BFn">內積</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Hamilton">Hamilton</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%7C%A4%B8%BC%C6">四元數</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%BD%C6%BC%C6">複數</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A8%F3%C5%DC">協變</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Menelous%A9w%B2z">Menelous定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Ceva%A9w%B2z">Ceva定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Ceva">Ceva</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B6%EA%BE%AD%A9w%B2z">圓冪定理</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_05" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=五、向量幾何和向量代數(ar_wy_geo_05)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:41:40 GMT -->
+</HTML>

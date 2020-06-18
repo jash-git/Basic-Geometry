@@ -1,0 +1,1061 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_04/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:45:09 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="平行;垂直;垂直平分線;反射對稱;平移;translation;旋轉;rotation;orthogonal projection;垂直投影;反射定律;空間幾何;立體幾何">
+<META name="keyword_out" content="平行;垂直;第五公設;反射對稱;平移;旋轉;反射定律">
+<TITLE>四、空間中的平行與垂直</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>四、空間中的平行與垂直</FONT><BR><FONT size="4">——平直性與對稱性的交互作用</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">平直性與平行</a>
+<LI><a href="page2.html#02_SECTION0002">對稱性與垂直</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{四、空間中的平行與垂直}
+%\sub_title{——平直性與對稱性的交互作用}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{平行::垂直::垂直平分線::反射對稱::平移::translation::旋轉::rotation::orthogonal projection::垂直投影::反射定律::空間幾何::立體幾何}
+%\key_out{平行::垂直::第五公設::反射對稱::平移::旋轉::反射定律}
+-- episte: basic_info end -->
+
+<P>
+本章將進而研討定量空間（亦即立體）幾何的基礎理論。在空間的種種性質之中，最為基本而且影響無比深遠者，首推<SPAN  CLASS="textit">對稱性</SPAN> (Symmetry)
+和<SPAN  CLASS="textit">平直性</SPAN> (Flatness 或 Rectilinearity)
+。兩者在三角形上的表述分別就是「S.A.S. 疊合條件」
+和「三內角和恆為一個平角」。我們將會分別對于平直性和對稱性在立體幾何中的表現作一番返璞歸真的分析，而其所展現者，乃是空間中的「平行」與「垂直」以及兩者之間的密切關聯。其實平行與垂直乃是整個定量立體幾何的基礎所在，當然也就是同學們學習立體幾何的起點與要點所在。
+
+<P>
+
+<!-- section head *** text_length=3012 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">平直性與平行</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在平面幾何中，同學們熟用如 [圖&nbsp;4-1] 所示的同位角相等來檢驗或構造平行線：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="334" HEIGHT="168" BORDER="0"
+ SRC="img1.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0401.e...
+...ngle 1=\angle 1' \; \Leftrightarrow \; \ell /\!/\ell'}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2600" ALIGN="CENTER">
+[ 圖&nbsp;4-1 ]</DIV>
+
+
+<P>
+在引言和第二章中已經和同學們討論過，上述驗証條件的可行性其實和「三角形內角和恆等于一個平角」是同一件事的兩種表現。而歐幾里德的著名「第五公設」也就是以公設形式宣稱上述條件就是 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\ell_{2}$"></SPAN> 不相交的<SPAN  CLASS="textit">唯一可能性</SPAN>，亦即以公設形式假設了三角形內角和恆等于一個平角。
+
+<P>
+開宗明義，在空間中點、直線、平面之間的連結與交截，具有下述三點基本性質（通常也稱之為公理）：
+
+<P>
+其一：相異兩點定一直線，不共線三點定一平面。
+
+<P>
+其二：平面 Π 上相異兩點所定的直線會完全包含于 Π 之內。
+
+<P>
+其三：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="91" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\Pi_1\cap \Pi_2\neq \phi$"></SPAN>（亦即非空），則 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\Pi_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\Pi_2$"></SPAN>
+相交于一條直線或相重（亦即兩面之交集不可能僅僅是一個點）。
+
+<P>
+<SPAN  CLASS="textit">空間中平行性的定義</SPAN>：
+
+<P>
+(i) <SPAN  CLASS="textit">面、面平行之定義</SPAN>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="263" HEIGHT="45" BORDER="0"
+ SRC="img7.gif"
+ ALT="\begin{displaymath}
+\Pi_1/\!/ \Pi_2 \quad \Leftrightarrow \quad \Pi_1\cap \Pi_2 ...
+...eries{m}\selectfont \cH67}} \\ \Pi_1=\Pi_2 \end{array} \right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+(ii) <SPAN  CLASS="textit">線、面平行之定義</SPAN>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="45" BORDER="0"
+ SRC="img8.gif"
+ ALT="\begin{displaymath}
+\ell/\!/ \Pi \quad \Leftrightarrow \quad \ell\cap \Pi = \lef...
+...}\fontseries{m}\selectfont \cH67}} \\ \ell \end{array} \right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+(iii) <SPAN  CLASS="textit">線、線平行之定義</SPAN>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="341" HEIGHT="45" BORDER="0"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}
+\ell_1/\!/ \ell_2 \quad \Leftrightarrow \quad
+\hbox{$\ell_1...
+...ies{m}\selectfont \cH67}} \\ \ell_1=\ell_2 \end{array} \right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<SPAN  CLASS="textit">注意</SPAN>：線、線平行關係要求兩者必須<SPAN  CLASS="textit">共面</SPAN>。兩條不共面的直線的關係則稱之為<SPAN  CLASS="textit">不交線</SPAN> (skew lines)。
+
+<P>
+【引理&nbsp;4.1】：設 <!-- MATH
+ $\Pi_1 /\!/ \Pi_2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\Pi_1 /\!/ \Pi_2$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\Pi\cap\Pi_1=\ell_1$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\Pi\cap\Pi_2=\ell_2$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\ell_1 /\!/ \ell_2$"></SPAN>。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：若 <SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\Pi_1=\Pi_2$"></SPAN> 則顯然有 <SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\ell_1=\ell_2$"></SPAN>。若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="91" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\Pi_1\cap\Pi_2=\phi$"></SPAN>，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN> 共在 Π 之中而且
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="209" HEIGHT="75" BORDER="0"
+ SRC="img19.gif"
+ ALT="\begin{eqnarray*}
+\ell_1\cap\ell_2 &amp;=&amp;\big(\Pi\cap\Pi_1\big)\cap\big(\Pi\cap\Pi_2\big) \\
+&amp;=&amp; \Pi\cap\Pi_1\cap\Pi_2 \\
+&amp;=&amp; \Pi\cap\phi=\phi
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+□
+
+<P>
+在平面幾何中關于平行線的一個基本結果是過平面上任何給定點 <SPAN CLASS="MATH"><I>P</I></SPAN>，存在唯一一條直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.gif"
+ ALT="$\ell(P)$"></SPAN>，它和給定直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\ell$"></SPAN> 互相平行。再者，如 [圖&nbsp;4-1'] 所示，同位角相等乃是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\ell /\!/ \ell(P)$"></SPAN> 的一個特徵性質。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="429" HEIGHT="193" BORDER="0"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0401.e...
+...ily{cwM0}\fontseries{m}\selectfont \cH199}~4--1$'$ ]}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+同樣的，在立體幾何中我們也有下述定理：
+
+<P>
+【定理&nbsp;4.1】：對于一個給定平面 Π 和一個給定點 <SPAN CLASS="MATH"><I>P</I></SPAN>，存在唯一的一個平面 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\Pi(P)$"></SPAN>，它過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點而且 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\Pi(P) /\!/ \Pi$"></SPAN>。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：我們將用解作圖題的手法和精神去証明上述 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\Pi(P)$"></SPAN> 的唯一存在性。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="269" HEIGHT="281" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =6cm \epsfbox{fig0402.e...
+...3.25,4.1)*+{\ell_2'}
+,(2.4,3)*+{\Pi'}
+,(2.55,3.8)*+{P}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2630" ALIGN="CENTER">
+[ 圖&nbsp;4-2 ]</DIV>
+
+
+<P>
+當 <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.gif"
+ ALT="$P\in \Pi$"></SPAN> 時，顯然有 <SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.gif"
+ ALT="$\Pi(P)=\Pi$"></SPAN>，所以只需討論 <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$P\notin \Pi$"></SPAN> 的情形。我們所要論証者乃是一個包含 <SPAN CLASS="MATH"><I>P</I></SPAN> 而且和 Π 不相交的平面是唯一存在的。先証其唯一性：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\Pi'$"></SPAN> 是一個這樣的平面，如 [圖&nbsp;4-2]  所示，在 Π 上任取兩條相交的直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN>。令
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="246" HEIGHT="52" BORDER="0"
+ SRC="img31.gif"
+ ALT="\begin{eqnarray*}
+\Pi_1=&lt;\!\!\{P\}\cup \ell_1\!\!&gt;, &amp; &amp; \Pi_2=&lt;\!\!\{P\}\cup \ell_2\!\!&gt; ;\\
+\ell'_1=\Pi_1\cap\Pi', &amp; &amp; \ell'_2=\Pi_2\cap\Pi'
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+由[引理&nbsp;4.1]得知
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="277" HEIGHT="28" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}
+\ell'_1 /\!/ \ell_1 \hbox{({\fontfamily{cwM0}\fontseries{m}\...
+...t \cH53}\z{\fontfamily{cwM0}\fontseries{m}\selectfont \cH50})}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，由平面幾何中平行線的唯一性可知 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$\ell'_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\ell'_2$"></SPAN>
+分別在 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\Pi_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\Pi_2$"></SPAN> 之中是唯一存在的。因此唯一地確定了
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="105" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\Pi'=&lt;\!\!\ell'_1 \cup \ell'_2\!\!&gt;$"></SPAN>。
+
+<P>
+其實上述論証業已明確地指出這樣一個 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\Pi'$"></SPAN> 的構造作圖法。現在直截了當地用構造來証明其存在性：
+
+<P>
+<SPAN  CLASS="textit">第一步</SPAN>：在 Π 上任取相交的兩條直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN>。令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$\Pi_1=&lt;\!\!\{P\}\cup \ell_1\!\!&gt;$"></SPAN>,
+  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.gif"
+ ALT="$\Pi_2=&lt;\!\!\{P\}\cup \ell_2\!\!&gt;$"></SPAN>。
+
+<P>
+<SPAN  CLASS="textit">第二步</SPAN>：用平面幾何所熟知的作圖法分別在 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\Pi_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\Pi_2$"></SPAN> 中作過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點而且分別平行于 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN> 的直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$\ell'_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\ell'_2$"></SPAN>。令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="126" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.gif"
+ ALT="$\Pi(P)=&lt;\!\!\ell'_1 \cup \ell'_2\!\!&gt;$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="101" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\Pi(P)\cap\Pi=\phi$"></SPAN>。不然，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\Pi(P)$"></SPAN> 和 Π 的交線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\ell$"></SPAN> 至少和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN> 中之一交于一點 <SPAN CLASS="MATH"><I>Q</I></SPAN>。則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="219" HEIGHT="77" BORDER="0"
+ SRC="img40.gif"
+ ALT="\begin{eqnarray*}
+\ell_i\cap\ell &amp;=&amp; \big(\Pi_i\cap\Pi\big)\cap\big(\Pi(P)\cap\P...
+...i\cap\Pi\big)\cap(\Pi_i\cap\Pi(P)\big) \\
+&amp;=&amp; \ell_i\cap\ell'_i
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+其中至少有一是非空的，和所作 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\ell_1 /\!/ \ell'_1$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\ell_2 /\!/ \ell'_2$"></SPAN> 相矛盾。
+□
+
+<P>
+【推論】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\Pi /\!/ \Pi'$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="54" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\Pi' /\!/ \Pi''$"></SPAN>，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="49" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.gif"
+ ALT="$\Pi /\!/ \Pi''$"></SPAN>。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.gif"
+ ALT="$\Pi\cap\Pi''\neq \phi$"></SPAN>。令 <SPAN CLASS="MATH"><I>P</I></SPAN> 為 <SPAN CLASS="MATH"><IMG
+ WIDTH="54" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img47.gif"
+ ALT="$\Pi\cap\Pi''$"></SPAN> 中一點，則 Π 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.gif"
+ ALT="$\Pi''$"></SPAN> 都是過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點而且和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\Pi'$"></SPAN> 平行者。所以由 [定理&nbsp;4.1] 的唯一性得知 <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.gif"
+ ALT="$\Pi=\Pi''$"></SPAN>，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="255" HEIGHT="45" BORDER="0"
+ SRC="img50.gif"
+ ALT="\begin{displaymath}
+\Pi\cap\Pi''=\left\{ \begin{array}{l}\; \phi \\ \Pi=\Pi'' \end{array} \right.
+\quad \Leftrightarrow \quad \Pi /\!/ \Pi''
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+【引理&nbsp;4.2】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\Pi_i$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.gif"
+ ALT="$ 1\leq i \leq 3$"></SPAN>, 是三個兩兩相交于一直線的平面。令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="93" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.gif"
+ ALT="$\Pi_i\cap\Pi_j=\ell_k$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$(i,j,k)\sim (1,2,3)$"></SPAN>，則其交截有下列三種可能性，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="398" HEIGHT="64" BORDER="0"
+ SRC="img55.gif"
+ ALT="\begin{displaymath}
+\dim \Pi_1\cap\Pi_2\cap\Pi_3 =\left\{
+\begin{array}{c} -1 \\...
+...2\cap\ell_3=\{P\} \\
+\ell_1=\ell_2=\ell_3
+\end{array} \right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="496" HEIGHT="189" BORDER="0"
+ SRC="img56.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =3cm \epsfbox{fig0403a....
+... \epsfbox{fig0403c.eps}}*\frm{}
+,(1.5,-0.5)*+{\dim =1}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2684" ALIGN="CENTER">
+[ 圖&nbsp;4-3 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="338" HEIGHT="30" BORDER="0"
+ SRC="img57.gif"
+ ALT="\begin{displaymath}
+\ell_1\cap\ell_2=\big(\Pi_2\cap\Pi_3\big)\cap\big(\Pi_1\cap\Pi_3\big)
+=\Pi_1\cap\Pi_2\cap\Pi_3
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+同理亦有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="224" HEIGHT="27" BORDER="0"
+ SRC="img58.gif"
+ ALT="\begin{displaymath}
+\ell_2\cap\ell_3=\ell_1\cap\ell_3=\Pi_1\cap\Pi_2\cap\Pi_3
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見，在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.gif"
+ ALT="$\Pi_1\cap\Pi_2\cap\Pi_3$"></SPAN> 是 1-維時三線相重，而當其為 0-維時則三線共交于一點，即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="146" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.gif"
+ ALT="$\{P\}=\Pi_1\cap\Pi_2\cap\Pi_3$"></SPAN>。再者，當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="127" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.gif"
+ ALT="$\Pi_1\cap\Pi_2\cap\Pi_3=\phi$"></SPAN> 時，則有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.gif"
+ ALT="$\{\ell_1,\ell_2,\ell_3\}$"></SPAN> 兩兩共面而且不相交，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="361" HEIGHT="28" BORDER="0"
+ SRC="img63.gif"
+ ALT="\begin{displaymath}
+\ell_1 /\!/ \ell_2,\quad \ell_2 /\!/ \ell_3,\quad
+\ell_3 /\!/ \ell_1 \eqno \Box
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+【定理&nbsp;4.2】： 設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\ell_1 /\!/ \ell_2$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.gif"
+ ALT="$\ell_2 /\!/ \ell_3$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$\ell_1 /\!/ \ell_3$"></SPAN>。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：若三線中有兩線相重，則上述命題顯然成立。所以只需討論三線相異的情形如下：令
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="229" HEIGHT="27" BORDER="0"
+ SRC="img66.gif"
+ ALT="\begin{displaymath}
+&lt;\!\!\ell_1\cup \ell_2\!\!&gt;=\Pi_3,\quad &lt;\!\!\ell_2\cup \ell_3\!\!&gt;=\Pi_1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+在 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.gif"
+ ALT="$\ell_3$"></SPAN> 上任取一點 <SPAN CLASS="MATH"><I>P</I></SPAN>，令
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="230" HEIGHT="28" BORDER="0"
+ SRC="img68.gif"
+ ALT="\begin{displaymath}
+&lt;\!\!\{P\}\cup \ell_1\!\!&gt;=\Pi_2,\quad \ell'_3=\Pi_1\cap\Pi_2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由[引理&nbsp;4.2]即有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.gif"
+ ALT="$\{\ell_1,\ell_2,\ell'_3\}$"></SPAN> 兩兩互相平行。所以 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.gif"
+ ALT="$\ell_3$"></SPAN> 和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\ell'_3$"></SPAN> 都是 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\Pi_1$"></SPAN> 中過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點而且和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_2$"></SPAN> 平行者。由平面幾何中平行線的唯一性得知 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.gif"
+ ALT="$\ell_3=\ell'_3$"></SPAN>。這也就証明了 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$\ell_1 /\!/ \ell_3$"></SPAN>。
+□
+
+<P>
+【推論】：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\bigtriangleup A'B'C'$"></SPAN>
+是空間中兩個三角形。若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="86" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$\{\overline{AB},\overline{A'B'}\}$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$\{\overline{BC},\overline{B'C'}\}$"></SPAN> 分別同向平行而且等長，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.gif"
+ ALT="$\{\overline{AC},\overline{A'C'}\}$"></SPAN> 也同向平行而且等長。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：連結 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img77.gif"
+ ALT="$\overline{AA'}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img78.gif"
+ ALT="$\overline{BB'}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\overline{CC'}$"></SPAN>。由所設和平面幾何中平行四邊形的特徵性質定理，可見
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptABB'A'$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img81.gif"
+ ALT="$\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptBCC'B'$"></SPAN> 都是平行四邊形。因此 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.gif"
+ ALT="$\overline{AA'} /\!/ \overline{BB'}$"></SPAN>，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.gif"
+ ALT="$\overline{BB'} /\!/ \overline{CC'}$"></SPAN> 而且等長。由[定理&nbsp;4.2]，
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.gif"
+ ALT="$\overline{AA'} /\!/ \overline{CC'}$"></SPAN> 而且等長。所以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.gif"
+ ALT="$\hskip-3pt\raise-1pt\hbox{\xy\xyimport(1,1){\epsfxsize=0.6cm \epsfbox{pgram.eps}}*\frm{} \endxy }\hskip-1ptACC'A'$"></SPAN> 也是平行四邊形。就這証明了 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img86.gif"
+ ALT="$\overline{AC}$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img87.gif"
+ ALT="$\overline{A'C'}$"></SPAN> 也是同向平行而且等長（參看 [圖&nbsp;4-4]）。
+□
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="213" HEIGHT="180" BORDER="0"
+ SRC="img88.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4cm \epsfbox{fig0404.e...
+...A}
+,(-0.15,-0.3)*+{A'}
+,(5.2,0.55)*+{C'}
+,(2,5.3)*+{B}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2724" ALIGN="CENTER">
+[ 圖&nbsp;4-4 ]</DIV>
+
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>若 <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\Pi /\!/ \Pi'$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$\ell\subset\Pi$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="40" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.gif"
+ ALT="$\ell /\!/ \Pi'$"></SPAN>。試証之。
+
+<P>
+</DD>
+<DT>(2)</DT>
+<DD>設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="99" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$\ell_1\cap\ell_2=\{P\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="101" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.gif"
+ ALT="$&lt;\!\!\ell_1\cup\ell_2\!\!&gt;=\Pi$"></SPAN>
+。若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="103" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$\ell_1 /\!/ \Pi',\; \ell_2 /\!/ \Pi'$"></SPAN>，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\Pi /\!/ \Pi'$"></SPAN>。試証之。
+
+<P>
+</DD>
+<DT>(3)</DT>
+<DD>設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.gif"
+ ALT="$\ell\cap\Pi=\phi$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$\Pi_1\cap\Pi_2=\ell$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.gif"
+ ALT="$\Pi_1\cap\Pi=\ell_1$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img97.gif"
+ ALT="$\Pi_2\cap\Pi=\ell_2$"></SPAN>。試証 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\ell_1 /\!/ \ell_2$"></SPAN>。
+
+<P>
+</DD>
+<DT>(4)</DT>
+<DD>設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="92" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.gif"
+ ALT="$\Pi_1\cap\Pi_2=\ell'$"></SPAN> 而且 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.gif"
+ ALT="$\ell /\!/ \Pi_1$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.gif"
+ ALT="$\ell /\!/ \Pi_2$"></SPAN>。試証 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.gif"
+ ALT="$\ell /\!/ \ell'$"></SPAN>。
+
+<P>
+</DD>
+<DT>(5)</DT>
+<DD>設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.gif"
+ ALT="$\Pi\cap\Pi'=\phi$"></SPAN>，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\bigtriangleup A'B'C'$"></SPAN> 分別位于 Π 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\Pi'$"></SPAN> 之中。若
+<SPAN CLASS="MATH"><I>AA</I>',<I>BB</I>',<I>CC</I>'</SPAN> 三線共交于一點 <SPAN CLASS="MATH"><I>O</I></SPAN> （如 [圖&nbsp;4-5] 所示）則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="142" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.gif"
+ ALT="$\bigtriangleup ABC \sim \bigtriangleup A'B'C'$"></SPAN>（為相似三角形）。試証之。
+
+<P>
+</DD>
+<DT>(6)</DT>
+<DD>如 [圖&nbsp;4-5] 所示，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="272" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.gif"
+ ALT="$\Pi=&lt;\!\!\{A,B,C\}\!\!&gt;,\; %%
+\Pi'=&lt;\!\!\{A',B',C'\}\!\!&gt;$"></SPAN>
+而且 <SPAN CLASS="MATH"><I>AA</I>',<I>BB</I>'</SPAN> 和 <SPAN CLASS="MATH"><I>CC</I>'</SPAN> 三線共交于 <SPAN CLASS="MATH"><I>O</I></SPAN> 點。若
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="137" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$\bigtriangleup OAB \sim \bigtriangleup OA'B'$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="138" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.gif"
+ ALT="$\bigtriangleup OBC \sim \bigtriangleup OB'C'$"></SPAN>，則
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\Pi /\!/ \Pi'$"></SPAN>。試証之。
+
+<P>
+</DD>
+<DT>(7)</DT>
+<DD>如 [圖&nbsp;4-5] 所示和上題所設，若 <SPAN CLASS="MATH"><I>AB</I></SPAN> 和 <SPAN CLASS="MATH"><I>A</I>'<I>B</I>'</SPAN>，<SPAN CLASS="MATH"><I>AC</I></SPAN> 和
+<SPAN CLASS="MATH"><I>A</I>'<I>C</I>'</SPAN>，<SPAN CLASS="MATH"><I>BC</I></SPAN> 和 <SPAN CLASS="MATH"><I>B</I>'<I>C</I>'</SPAN> 各自交于一點，則上述三個交點共線。試証之。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="226" HEIGHT="273" BORDER="0"
+ SRC="img107.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0405.e...
+...(2.9,5.2)*+{O}
+,(0.35,0.25)*+{\Pi}
+,(1.35,2.9)*+{\Pi'}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2769" ALIGN="CENTER">
+[ 圖&nbsp;4-5 ]</DIV>
+
+</DD>
+</DL>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%A6%E6">平行</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%AB%AB%AA%BD">垂直</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B2%C4%A4%AD%A4%BD%B3%5D">第五公設</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%CF%AEg%B9%EF%BA%D9">反射對稱</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%B2%BE">平移</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B1%DB%C2%E0">旋轉</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%CF%AEg%A9w%AB%DF">反射定律</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_04" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=四、空間中的平行與垂直(ar_wy_geo_04)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_04/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:45:09 GMT -->
+</HTML>

@@ -1,0 +1,507 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_01/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:30 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="">
+<META name="keyword_out" content="">
+<TITLE>一、連結、分隔與對稱</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>一、連結、分隔與對稱</FONT><BR><FONT size="4">——定性平面幾何</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">等腰三角形的特徵性質</a>
+<LI><a href="page2.html#02_SECTION0002">定性平面幾何中的常用基本事實</a>
+<LI><a href="page3.html#03_SECTION0003">例題和習題</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{一、連結、分隔與對稱}
+%\sub_title{——定性平面幾何}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_in{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{}
+%\key_out{}
+-- episte: basic_info end -->
+
+<P>
+定性平面幾何所要研討的主題是「全等形」和「平行性」。在本質上，前者乃是平面對于任給直線的反射對稱性的具體反映，而後者則是三角形的內角和恆等于一個平角 (π) 所表達的「平直性」。在本章中，我們將以一個平面上連結與分隔的基本結構和三個疊合公理為基礎，把定性平面幾何中常用的基本事實，作一次簡明扼要的邏輯推導和系統化整理。而關于平行性的討論，則會留待下一章再作系統整理；亦即在本章的論証中，我們將會完全避免用平行性，所以所証得的結果，在非歐面也同樣成立！
+為了簡化敘述起見，往後將會用 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overline{AB}$"></SPAN> 同時表示該直線段子集及其長度，<SPAN CLASS="MATH"><IMG
+ WIDTH="52" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\angle ABC$"></SPAN> 同時表示該角區及其角度（亦即 <!-- MATH
+ $\overrightarrow{BA}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\overrightarrow{BA}$"></SPAN> 和
+<!-- MATH
+ $\overrightarrow{BC}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\overrightarrow{BC}$"></SPAN> 的方向差）等等。而一些集合的表述方式如
+<!-- MATH
+ ${\cal S}=<\!\ell_1\cup\ell_2\cup\{A\}\!>$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="151" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="${\cal S}=&lt;\!\ell_1\cup\ell_2\cup\{A\}\!&gt;$"></SPAN> 和 <!-- MATH
+ $\{P\}=AB\cap CD$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="122" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\{P\}=AB\cap CD$"></SPAN> 將會簡化為
+<!-- MATH
+ ${\cal S}=<\!\ell_1,\ell_2,A\!>$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="114" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="${\cal S}=&lt;\!\ell_1,\ell_2,A\!&gt;$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$P=AB\cap CD$"></SPAN> 等等。
+
+<P>
+
+<!-- section head *** text_length=1238 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">等腰三角形的特徵性質</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在各種各樣的平面圖形之中，三角形乃是最為簡單者；而在各種各樣的三角形之中，最為基本者則首推等腰三角形。究其原因，就是等腰三角形所具有的軸對稱能夠具體而微地反映著平面的反射對稱性，所以它們乃是研討平面幾何之中對稱性的種種表現與推論的基本工具。所以定性平面幾何的首要之務，就是推導等腰三角形的各種各樣的特徵性質，亦即：
+
+<P>
+<SPAN  CLASS="textit">等腰三角形的特徵性質</SPAN>：（如 [圖1-1] 所示）
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{CA}=\overline{CB}$"></SPAN>（定義）；
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\angle A=\angle B$"></SPAN>；
+</DD>
+<DT>(iii)</DT>
+<DD><SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\angle C$"></SPAN> 的分角線 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{CM}$"></SPAN> 垂直底邊 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overline{AB}$"></SPAN>；
+</DD>
+<DT>(iv)</DT>
+<DD>中線 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{CM}$"></SPAN> 垂直底邊；
+</DD>
+<DT>(v)</DT>
+<DD>垂線 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{CM}$"></SPAN> 平分頂角。
+</DD>
+</DL>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="173" HEIGHT="180" BORDER="0"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=3.5cm \epsfbox{fig0101.eps}}*\...
+...{A}
+,(5.0,-0.25)*+{B}
+,(2.55,5.4)*+{C}
+,(2.5,-0.25)*+{M}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2312" ALIGN="CENTER">
+[ 圖&nbsp;1-1 ]</DIV>
+
+
+<P>
+上述特徵性質的系統推導如下：
+
+<P>
+【定理&nbsp;1.1】：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 的兩邊為等腰，即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{CA}=\overline{CB}$"></SPAN>，則其頂角 <SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\angle C$"></SPAN> 的分角線垂直平分底邊，而且其兩底角相等，即有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\angle A=\angle B$"></SPAN> 。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{CM}$"></SPAN> 平分頂角，由所設
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\bigtriangleup MCA$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\bigtriangleup MCB$"></SPAN> 滿足
+S.A.S. 全等條件。所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="440" HEIGHT="35" BORDER="0"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}
+\angle A=\angle B,\; \overline{AM}=\overline{MB},\;%%
+\angle CMA=\angle CMB =\frac{\pi}{2} \eqno \Box
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="173" HEIGHT="178" BORDER="0"
+ SRC="img18.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=3.5cm \epsfbox{fig0102.eps}}*\...
+...*+{A}
+,(5.0,-0.3)*+{B}
+,(2.55,5.4)*+{C}
+,(2.5,-0.3)*+{M}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2322" ALIGN="CENTER">
+[ 圖&nbsp;1-2 ]</DIV>
+
+
+<P>
+[註]：如上所証，<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{CM}$"></SPAN> 乃是等腰三角形 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+的對稱軸。等腰三角形乃是平面圖形中具有軸對稱的最簡單者，因此它也是最便于用來分析平面對稱性在各種各樣幾何問題中的作用的「工具」。上述定理已証明由 (i) 可推得餘下各個性質；反之，由 (iii), (iv) 或 (v)
+即有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="138" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\bigtriangleup MCA\cong \bigtriangleup MCB$"></SPAN> [証明留作習題]，即得回 (i)
+。所以現在還需驗証餘下的 (ii)<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.gif"
+ ALT="$\Rightarrow$"></SPAN>(i)，其証明可以由下述一個熟知的疊合條件 A.S.A. 來推導而得：
+
+<P>
+【定理&nbsp;1.2】：(A.S.A.) 若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\bigtriangleup A'B'C'$"></SPAN>
+滿足 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\angle A=\angle A'$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\angle B=\angle B'$"></SPAN> 而且
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\overline{AB}=\overline{A'B'}$"></SPAN>，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="142" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\bigtriangleup ABC \cong \bigtriangleup A'B'C'$"></SPAN> 。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.gif"
+ ALT="$\overline{AC}=\overline{A'C'}$"></SPAN>
+，則兩者已經滿足 S.A.S. 全等條件。不然，不妨設
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.gif"
+ ALT="$\overline{A'C'} &gt; \overline{AC}$"></SPAN>。在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.gif"
+ ALT="$\overline{A'C'}$"></SPAN> 上取
+<SPAN CLASS="MATH"><I>C</I><SUP>*</SUP></SPAN> 點使得 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="86" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\overline{A'C^{*}}=\overline{AC}$"></SPAN>，則有
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="145" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\bigtriangleup ABC \cong \bigtriangleup A'B'C^{*}$"></SPAN> (S.A.S.)，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="213" HEIGHT="25" BORDER="0"
+ SRC="img31.gif"
+ ALT="\begin{displaymath}\angle ABC = \angle A'B'C^{*} &lt; \angle A'B'C'\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+顯然和所設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="134" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\angle ABC = \angle A'B'C'$"></SPAN> 矛盾。□
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="380" HEIGHT="178" BORDER="0"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(10,5){\epsfxsize=8cm \epsfbox{fig0103.eps}}*\f...
+...}
+,(10,-0.35)*+{B'}
+,(8.4,5.5)*+{C'}
+,(7.65,4.35)*+{C^*}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2342" ALIGN="CENTER">
+[ 圖&nbsp;1-3 ]</DIV>
+
+
+<P>
+【定理1.3】：若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 的兩底角相等，即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\angle A=\angle B$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 必為等腰，亦即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{CA}=\overline{CB}$"></SPAN> 。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：由所設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\bigtriangleup ACB$"></SPAN>
+滿足 A.S.A. 條件，用[定理&nbsp;1.2]即得
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="128" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\bigtriangleup ABC \cong \bigtriangleup ACB$"></SPAN>，所以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{CA}=\overline{CB}$"></SPAN> 。□
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_01" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=一、連結、分隔與對稱(ar_wy_geo_01)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_01/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:39 GMT -->
+</HTML>

@@ -1,0 +1,674 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:41:41 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="解析幾何;正交坐標系;分量;components;共軸圓系;co-axial family of circles;座標;坐標">
+<META name="keyword_out" content="Euclid;Apollonius;Diophantus;Copernicus;Brahe;Kepler;Galileo;Vieta;Descartes;Fermat;Newton;Leibniz;解析幾何;微積分;向量代數;平移">
+<TITLE>六、座標解析幾何簡介</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>六、座標解析幾何簡介</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">正交坐標系和平面（或空間）的坐標化</a>
+<LI><a href="page2.html#02_SECTION0002">直線和圓，平面和球</a>
+<LI><a href="page3.html#03_SECTION0003">圓的反射對稱；共軸圓系和共軛等軸圓系</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{六、座標解析幾何簡介}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{解析幾何::正交坐標系::分量::components::共軸圓系::co-axial family of circles::座標::坐標}
+%\key_out{Euclid::Apollonius::Diophantus::Copernicus::Brahe::Kepler::Galileo::Vieta::Descartes::Fermat::Newton::Leibniz::解析幾何::微積分::向量代數::平移}
+-- episte: basic_info end -->
+
+<P>
+幾何學在古希臘文明蓬勃進展，獲得輝煌的成就，
+奠定了定性和定量幾何的基礎理論。在西方，
+由古希臘文明一直到十五、六世紀的文藝復興，
+理性文明歷經了上千年的暗淡時期。其間戰亂不斷，
+希臘文明的成果，僅賴東羅馬(Byzantine Empire)
+和阿刺伯文明得以保存其大部。長話短說，1453 年東羅馬帝國的滅亡
+迫使大批希臘學者和書稿流入意大利，和當時經由阿刺伯傳入的中國
+印刷術，促成了希臘數理名著如 Euclid 的 ``Elements'', Apollonius
+的 ``Conic Sections'', Diophantus 的 ``Arithmetica''等等的
+拉丁文版在意大利相繼問世。希臘文明的碩果終于熬過了上千年的暗淡歲月，
+浴火重生；在歐洲大陸重新札根、萌芽、茁壯，發展成影響全世界的近代科
+技文明。數學和天文學的進展，又再一次扮演著先行者、奠基者的角色，
+此點在近代科學的創始者如 Copernicus, Brahe, Kepler, Galileo,Vieta,
+Descartes, Fermat, Newton, Leibniz 等等的貢獻中可見其梗概。
+而其中影響無比深遠者則首推<SPAN  CLASS="textit">坐標解析幾何</SPAN>和<SPAN  CLASS="textit">微積分</SPAN>，
+它們奠定了對于各種各樣自然現象作深刻的數理分析的基本工具。
+
+<P>
+Descartes 和 Fermat 在坐標解析幾何學上的創建，把當代新興的代數學，
+系統地用來研究幾何。他們的工作都直接得益于 Vieta 在代數學上的著作。
+總之，幾何學和代數學從此得以密切結合、相輔相成、相得益彰。
+它不但促進了兩者的大幅度進展，而且也使得微積分學的展現變得水到渠成。
+所以坐標解析幾何學的創見，乃是整個人類理性文明發展史上的一件大事。
+從幾何學的發展史來看，向量代數的產生乃是十九世紀中葉的事，
+足足比坐標解析幾何的產生晚了兩個世紀。如今回顧、反思，
+可見向量代數其實乃是坐標幾何的返璞歸真和精益求精，
+它使得幾何和代數結合得更加真切自然、直截了當。在此，
+我們將改用向量代數為工具回頭來對于坐標解析幾何作一簡明扼要的介紹。
+這種講法雖然是歷史發展的逆序，
+但是這種返璞歸真的向量講法可以把解析幾何的精要體現得更加簡明樸實。
+
+<P>
+
+<!-- section head *** text_length=2031 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">正交坐標系和平面（或空間）的坐標化</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在平面（或空間）中取定一點 <SPAN CLASS="MATH"><I>O</I></SPAN> 為基點（稱之為原點），則其中任給一點 <SPAN CLASS="MATH"><I>P</I></SPAN>
+的位置就可以用位移向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{OP}$"></SPAN>（亦即平移 <SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\tau(O,P)$"></SPAN>）加以唯一
+確定。改用集合的術語來說，即平面（或空間）中所有點所成的集合和平面（或空間）的
+所有位移向量（亦即平移）所構成的代數體系之間具有上述自然的一、一對應，即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$P\leftrightarrow \overrightarrow{OP}$"></SPAN>（亦即
+<SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\tau(O,P)$"></SPAN>）。這個一、一對應顯然和原點的選取有關。例如
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="335" HEIGHT="113" BORDER="0"
+ SRC="img4.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=1.5cm \epsfbox{fig0600.eps}}*\...
+...tarrow{OP}=\overrightarrow{OO'}
++\overrightarrow{O'P}$}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，在平面上我們可以取用兩個互相垂直的射線 <!-- MATH
+ $\overrightarrow{Ox}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\overrightarrow{Ox}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overrightarrow{Oy}$"></SPAN>，而在空間之中則可以取用三個互相垂直的
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\overrightarrow{Ox}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overrightarrow{Oy}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\overrightarrow{Oz}$"></SPAN>
+。令 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="${\bf e}_x$"></SPAN> ,<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="${\bf e}_y$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="${\bf e}_z$"></SPAN> 分別是以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\overrightarrow{Ox}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overrightarrow{Oy}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\overrightarrow{Oz}$"></SPAN>
+為其方向的單位長向量，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="399" HEIGHT="81" BORDER="0"
+ SRC="img11.gif"
+ ALT="\begin{eqnarray*}
+\overrightarrow{OP} &amp;=&amp; x\cdot {\bf e}_x+y\cdot {\bf e}_y,\qua...
+...cdot {\bf e}_y,\;
+z=\overrightarrow{OP}\cdot {\bf e}_z \mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+由此可見 <SPAN CLASS="MATH"><I>P</I></SPAN> 點在平面（或空間）中的位置又可以用有序數組 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>)</SPAN>（或
+<SPAN CLASS="MATH">(<I>x</I>,<I>y</I>,<I>z</I>)</SPAN>）加以唯一確定，稱之為 <SPAN CLASS="MATH"><I>P</I></SPAN> 點在平面坐標系
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\{O;{\bf e}_x,{\bf e}_y\}$"></SPAN>（或空間坐標系
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="102" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\{O;{\bf e}_x,{\bf e}_y,{\bf e}_z\}$"></SPAN>）中的坐標。如 [圖 6-1] 所示，<SPAN CLASS="MATH"><I>x</I></SPAN>, <SPAN CLASS="MATH"><I>y</I></SPAN>,
+<SPAN CLASS="MATH"><I>z</I></SPAN> 的幾何意義乃是位移向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{OP}$"></SPAN>（亦即有向線段）在
+<SPAN CLASS="MATH"><I>x</I></SPAN>, <SPAN CLASS="MATH"><I>y</I></SPAN>, <SPAN CLASS="MATH"><I>z</I></SPAN>-軸上的垂直投影的有號長度是也。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="328" HEIGHT="275" BORDER="0"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=7cm \epsfbox{fig0601.eps}}*\fr...
+....7)*+{y\cdot {\bf e}_y}
+,(0.56,3.05)*+{z\cdot {\bf e}_z}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2217" ALIGN="CENTER">
+[ 圖 6-1 ]</DIV>
+
+
+<P>
+在平面上（或空間中）選取一個正交坐標系，不但可以有系統地用有序數偶
+<SPAN CLASS="MATH">(<I>x</I>,<I>y</I>)</SPAN>（或三數組 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>,<I>z</I>)</SPAN>）來標記平面上（或空間中）點的位置，而且也可以用下述有序數偶（或三數組）來表達平面上（或空間中）的向量，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="467" HEIGHT="100" BORDER="0"
+ SRC="img15.gif"
+ ALT="\begin{eqnarray*}
+{\bf a} &amp;\leftrightarrow&amp; (a_x,a_y):\; a_x={\bf a}\cdot {\bf e...
+...dot {\bf e}_x + a_y\cdot {\bf e}_y
++ a_z\cdot {\bf e}_z\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+通常把 <SPAN CLASS="MATH"><I>a</I><SUB><I>x</I></SUB></SPAN>, <SPAN CLASS="MATH"><I>a</I><SUB><I>y</I></SUB></SPAN>, <SPAN CLASS="MATH"><I>a</I><SUB><I>z</I></SUB></SPAN> 分別叫做向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="${\bf a}$"></SPAN> 在 <SPAN CLASS="MATH"><I>x</I></SPAN>, <SPAN CLASS="MATH"><I>y</I></SPAN>, <SPAN CLASS="MATH"><I>z</I></SPAN>
+方向的<SPAN  CLASS="textit">分量</SPAN> (components) 。
+
+<P>
+再者，用向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="82" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\{{\bf e}_x,{\bf e}_y,{\bf e}_z\}$"></SPAN> 的下述內積關係
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="200" HEIGHT="52" BORDER="0"
+ SRC="img18.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; {\bf e}_x\cdot {\bf e}_x = {\bf e}_y\cdot {\bf e}_y
+={\bf ...
+...\bf e}_y = {\bf e}_y\cdot {\bf e}_z
+={\bf e}_z\cdot {\bf e}_x=0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+和向量運算律即可推導改用分量來表達的向量運算公式，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="235" HEIGHT="29" BORDER="0"
+ SRC="img19.gif"
+ ALT="\begin{displaymath}{\bf a}\leftrightarrow (a_x,a_y,a_z),\quad {\bf b}\leftrightarrow
+(b_x,b_y,b_z)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="244" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.gif"
+ ALT="${\bf a}+{\bf b}\leftrightarrow (a_x+b_x,a_y+b_y,a_z+b_z)$"></SPAN>
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="159" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$k\cdot {\bf a}\leftrightarrow (ka_x,ka_y,ka_z)$"></SPAN>
+</DD>
+<DT>(iii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="187" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="${\bf a}\cdot {\bf b}=a_xb_x+a_yb_y+a_zb_z$"></SPAN>
+</DD>
+<DT>(iv)</DT>
+<DD>若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="82" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\{{\bf e}_x,{\bf e}_y,{\bf e}_z\}$"></SPAN> 是右手型則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="370" HEIGHT="45" BORDER="0"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}{\bf a}\times{\bf b} \leftrightarrow \left(
+\left\vert\begin...
+...{ccc} a_x &amp;&amp; b_x \\ a_y &amp;&amp; b_y \end{array}\right\vert
+\right) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+</DD>
+</DL>
+茲驗証 (iv)-式如下，其他三式的驗証留作習題：
+
+<P>
+由所設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="82" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\{{\bf e}_x,{\bf e}_y,{\bf e}_z\}$"></SPAN> 的正交性和右手型，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="172" HEIGHT="96" BORDER="0"
+ SRC="img24.gif"
+ ALT="\begin{eqnarray*}
+{\bf e}_x\times {\bf e}_y &amp;=&amp; -{\bf e}_y\times {\bf e}_x ={\bf...
+..._z\times {\bf e}_x &amp;=&amp; -{\bf e}_x\times {\bf e}_z ={\bf e}_y \\
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+再用分配律，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="530" HEIGHT="97" BORDER="0"
+ SRC="img25.gif"
+ ALT="\begin{eqnarray*}
+{\bf a}\times{\bf b}
+&amp;=&amp; (a_x{\bf e}_x+a_y{\bf e}_y+a_z{\bf e}...
+...{ccc} a_x &amp;&amp; b_x \\ a_y &amp;&amp; b_y \end{array}\right\vert
+{\bf e}_z
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+將 (iii)-式和 (iv)-式相結合，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="226" HEIGHT="64" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}({\bf a}\times{\bf b})\cdot {\bf c} = \left\vert\begin{array}...
+...b_x &amp;&amp; b_y &amp;&amp; b_z \\ c_x &amp;&amp; c_y &amp;&amp; c_z \end{array} \right\vert \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見，選取正交坐標系所達成者乃是把四種向量運算，有系統地歸于向量的分量加以計算，而這些運算公式都是正交性和分配律的直接推論。
+
+<P>
+<SPAN  CLASS="textit">距離公式</SPAN>：直線段的長度是空間的各種各樣幾何量之中的最、最基本者。所以坐標幾何的頭號基本公式理當是給定兩點 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 之間的距離的坐標表達式，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="438" HEIGHT="52" BORDER="0"
+ SRC="img27.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;d(P_1,P_2)^2=\overrightarrow{P_1P_2}\cdot \overrightarrow{P_...
+..._2-z_1 = 0$\ {\fontfamily{cwM0}\fontseries{m}\selectfont \cH1}]}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">夾角公式</SPAN>：設 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 是給定三點，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.gif"
+ ALT="$\overrightarrow{P_0P_1}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\overrightarrow{P_0P_2}$"></SPAN> 之間的夾角 θ
+的餘弦可以用它們的內積公式計算之，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="545" HEIGHT="97" BORDER="0"
+ SRC="img30.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;\cos\theta= \frac{\overrightarrow{P_0P_1}\cdot \overrightarr...
+...y_0)^2+(z_1-z_0)^2}
+\sqrt{(x_2-x_0)^2+(y_2-y_0)^2+(z_2-z_0)^2}}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">三角形面積公式</SPAN>：設 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 是平面上（或空間中）的給定三點，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup P_0P_1P_2$"></SPAN> 的定向面積（或不定向面積）可以分別計算如下：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="615" HEIGHT="175" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{eqnarray*}
+\bigtriangleup P_0P_1P_2 &amp;=&amp; \frac{1}{2} \left\vert \begin{arr...
+..._1 &amp;&amp; z_2 \\ x_0 &amp;&amp; x_1 &amp;&amp; x_2 \end{array}\right\vert^2
+\right\}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">四面體體積公式</SPAN>：設 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>3</SUB></SPAN> 是空間中給定四點，則其所張的四面體 
+<SPAN CLASS="MATH"><I>T</I>(<I>P</I><SUB>0</SUB>,<I>P</I><SUB>1</SUB>,<I>P</I><SUB>2</SUB>,<I>P</I><SUB>3</SUB>)</SPAN> 的定向體積可以用下述公式表達之，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="362" HEIGHT="83" BORDER="0"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}V\left(T(P_0,P_1,P_2,P_3)\right) = \frac{1}{6}\left\vert\begi...
+..._2 &amp;&amp; y_3 \\ z_0 &amp;&amp; z_1 &amp;&amp; z_2 &amp;&amp; z_3
+\end{array} \right\vert \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+[試用 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="323" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$V(T(P_0,P_1,P_2,P_3))=\frac{1}{6}(\overrightarrow{P_0P_1}\times
+\overrightarrow{P_0P_2})\cdot \overrightarrow{P_0P_3}$"></SPAN> 驗証上式。]
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>試求 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup P_0P_1P_2$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\bigtriangleup P_0P_1P_3$"></SPAN>
+之間的兩面角的餘弦用 <SPAN CLASS="MATH"><I>P</I><SUB><I>i</I></SUB></SPAN> 的坐標 <SPAN CLASS="MATH">(<I>x</I><SUB><I>i</I></SUB>,<I>y</I><SUB><I>i</I></SUB>,<I>z</I><SUB><I>i</I></SUB>)</SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$0\leq i\leq 3$"></SPAN>, 的表達式。
+</DD>
+<DT>(2)</DT>
+<DD>試求平面上三點 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="153" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.gif"
+ ALT="$\{P_i(x_i,y_i),0\leq i\leq 2\}$"></SPAN> 共線的條件式。
+</DD>
+<DT>(3)</DT>
+<DD>試求空間中四點 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="173" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.gif"
+ ALT="$\{P_i(x_i,y_i,z_i),0\leq i\leq 3\}$"></SPAN> 共面的條件式。
+</DD>
+<DT>(4)</DT>
+<DD>試求空間中三點 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="173" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\{P_i(x_i,y_i,z_i),0\leq i\leq 2\}$"></SPAN> 共線的條件式。
+</DD>
+<DT>(5)</DT>
+<DD>如 [圖 6-2] 所示，設 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\ell^*$"></SPAN>
+是空間中兩條不交線（亦即不共面者），
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\overline{P_1P_2}$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\overline{P_1^*P_2^*}$"></SPAN> 分別是 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\ell^*$"></SPAN> 上<SPAN  CLASS="textit">單位長</SPAN>線段。試証
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="184" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\{d(P,P^*),P\in \ell, P^*\in \ell^*\}$"></SPAN> 的極小值（稱之謂 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\ell^*$"></SPAN>
+之間的距離）等于下述比值：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="300" HEIGHT="83" BORDER="0"
+ SRC="img45.gif"
+ ALT="\begin{displaymath}\left\vert\begin{array}{ccccccc}
+1 &amp;&amp; 1 &amp;&amp; 1 &amp;&amp; 1 \\ x_1 &amp;&amp; x...
+...ightarrow{P_1P_2}\times \overrightarrow{P_1^*P_2^*}\right\vert \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+的絕對值。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="330" HEIGHT="203" BORDER="0"
+ SRC="img46.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=7cm \epsfbox{fig0602.eps}}*\fr...
+...
+,(2,0.55)*+{P_2}
+,(5.1,2.4)*+{\ell}
+,(5.15,0)*+{\ell^*}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2293" ALIGN="CENTER">
+[ 圖 6-2 ]</DIV>
+
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Euclid">Euclid</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Apollonius">Apollonius</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Diophantus">Diophantus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Copernicus">Copernicus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Brahe">Brahe</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Kepler">Kepler</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Galileo">Galileo</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Vieta">Vieta</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Descartes">Descartes</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Fermat">Fermat</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Newton">Newton</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Leibniz">Leibniz</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B8%D1%AAR%B4X%A6%F3">解析幾何</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B7L%BFn%A4%C0">微積分</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A6V%B6q%A5N%BC%C6">向量代數</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%B2%BE">平移</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_06" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=六、座標解析幾何簡介(ar_wy_geo_06)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:41:53 GMT -->
+</HTML>

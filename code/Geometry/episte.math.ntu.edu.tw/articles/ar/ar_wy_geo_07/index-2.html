@@ -1,0 +1,1053 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_07/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:47:13 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="球面三角學;spherical trigonometry;球面極坐標;spherical lune;正弦定律;餘弦定律;半角公式;球面三角形面積公式">
+<META name="keyword_out" content="阿基米德;Eudoxus;Menelous;Ptolemy;Almagest">
+<TITLE>七、球面幾何和球面三角學</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>七、球面幾何和球面三角學</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">單位球面的基本性質</a>
+<LI><a href="page2.html#02_SECTION0002">球面三角學</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{七、球面幾何和球面三角學}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_in{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{球面三角學::spherical trigonometry::球面極坐標::spherical lune::正弦定律::餘弦定律::半角公式::球面三角形面積公式}
+%\key_out{阿基米德::Eudoxus::Menelous::Ptolemy::Almagest}
+-- episte: basic_info end -->
+
+<P>
+球面乃是空間中最完美勻稱的曲面。兩個半徑相等的球面可以用一個平移把它們疊合起來，而兩個半徑不相等的球面所相差者就是放大或縮小這種相似變換，由此可見本質性的球面幾何可以歸納到單位半徑的球面來研討。再者，在古典天文學的研討中，觀察星星的方向可以用單位球面上的一個點來標記它，而兩個方向之間的角度（亦即方向差）則相應于單位球面上兩點之間的球面距離
+(spherical distance) 。這也就是為什麼古希臘天文學和幾何學總是合為一體的，而且古希臘的幾何學家對于球面三角學 (spherical trigonometry)
+的投入程度要遠遠超過他們對于平面測量學的興趣，因為「量天的學問」才是他們所致力去理解者；它的確比丈量土地、計量財產等更引人入勝，是不？
+
+<P>
+從現代的觀點來看，球面幾何乃是空間幾何中蘊含在正交子群的部分，而向量幾何則是空間幾何中蘊含在平移子群的部分，而且兩者又密切相關、相輔相成，例如向量運算都是正交協變的 (orthogonal covariant)，所以向量代數又是研討球面幾何的簡明有力的利器。
+
+<P>
+
+<!-- section head *** text_length=5338 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">單位球面的基本性質</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+設 <SPAN CLASS="MATH"><I>O</I></SPAN> 為球面的心，而單位球面 <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP>(1)</SPAN> 則是空間 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\mathfrak U$"></SPAN> 中所有和 <SPAN CLASS="MATH"><I>O</I></SPAN> 點的距離為 <SPAN CLASS="MATH">1</SPAN> 的點所成的點集，即：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="179" HEIGHT="28" BORDER="0"
+ SRC="img2.gif"
+ ALT="\begin{displaymath}S^2(1)=\{A\in \mathfrak U,\, \overline{OA}=1\}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+它是以 <SPAN CLASS="MATH"><I>O</I></SPAN> 為其定點的正交子群的一個軌道 (orbit) 。
+
+<P>
+<DL COMPACT>
+<DT>(i)</DT>
+<DD><SPAN  CLASS="textit">反射對稱性</SPAN>：設 Π 是一個過球心 <SPAN CLASS="MATH"><I>O</I></SPAN>
+點的平面，則顯然有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\mathfrak R_{\Pi}$"></SPAN> 保持 <SPAN CLASS="MATH"><I>O</I></SPAN>
+點不動。由 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\mathfrak R_{\Pi}$"></SPAN> 的保長性可見它把和 <SPAN CLASS="MATH"><I>O</I></SPAN> 點相距為 <SPAN CLASS="MATH">1</SPAN>
+的點變換成和 <SPAN CLASS="MATH"><I>O</I></SPAN> 點相距為 <SPAN CLASS="MATH">1</SPAN> 之點，所以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\mathfrak R_{\Pi} \big(S^2(1)\big)=S^2(1)$"></SPAN>
+。再者，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\mathfrak R_{\Pi}$"></SPAN> 在 <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP>(1)</SPAN> 上的定點子集就是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$S^2(1) \cap \Pi$"></SPAN> 這一個大圓 (great circle)，我們將把
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\mathfrak R_{\Pi}$"></SPAN> 限制在 <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP>(1)</SPAN> 上的變換叫做以大圓
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$S^2(1) \cap \Pi$"></SPAN> 為<SPAN  CLASS="textit">定點子集</SPAN>的<SPAN  CLASS="textit">球面反射對稱</SPAN>。
+</DD>
+<DT>(ii)</DT>
+<DD><SPAN  CLASS="textit">旋轉對稱性</SPAN>：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\ell$"></SPAN> 是一條過球心 <SPAN CLASS="MATH"><I>O</I></SPAN>
+點的直線，它和球面 <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP>(1)</SPAN> 的交點是球面上的兩個互為對頂的點 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN>
+（一如南、北兩極）；換言之，球面上兩點 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN> 互為對頂 (antipodal) 的條件是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\overline{AA'}$"></SPAN> 以球心為其中點。在空間以 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\ell$"></SPAN>
+為軸的旋轉之下，球心 <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$O\in \ell$"></SPAN> 是固定不動的；同理可見 <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP>(1)</SPAN>
+也是它的一個不變子集，而它限制在球面上的變換乃是一個以對頂點
+<SPAN CLASS="MATH">{A,<I>A</I>'}</SPAN> 為其定點子集的球面旋轉對稱（如日常地球所作者就是一個以南北極為其定點子集的旋轉）。
+</DD>
+</DL>
+
+<P>
+<SPAN  CLASS="textit">球面極坐標</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH">{N,<I>S</I>}</SPAN> 是單位球面上給定的兩個互相對頂之點，在以 <SPAN CLASS="MATH">{N,<I>S</I>}</SPAN> 為定點子集的球面旋轉之下，每點的「緯度」保持不變，而其「經度」則隨著轉角而增加，如 [圖 7-1] 所示。設 <SPAN CLASS="MATH"><I>P</I></SPAN> 是球面上相異于兩個極點者，令 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\lambda(P)$"></SPAN> 是過
+<SPAN CLASS="MATH"><I>P</I></SPAN> 點的那條經線 (longitude arc)，<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\lambda_0$"></SPAN> 是選定的基準經線。設 <SPAN CLASS="MATH"><I>r</I></SPAN> 為 <SPAN CLASS="MATH"><I>N</I></SPAN> 到 <SPAN CLASS="MATH"><I>P</I></SPAN> 的球面距離，亦即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="31" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{NP}$"></SPAN>
+這一段「經弧」的弧長，θ 是 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\lambda_0$"></SPAN>
+轉到 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\lambda(P)$"></SPAN> 的（有向）轉角，則稱 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$(r,\theta)$"></SPAN> 為 <SPAN CLASS="MATH"><I>P</I></SPAN> 點對于以 <SPAN CLASS="MATH"><I>N</I></SPAN> 為基點的球面極坐標
+(spherical polar coordinates) 。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="286" HEIGHT="248" BORDER="0"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0701.eps}}*\fr...
+...7}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH40}}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2886" ALIGN="CENTER">
+ [ 圖 7-1 ] </DIV>
+
+
+<P>
+若在空間選取正交坐標系，以球心為原點，以 <!-- MATH
+ $\overrightarrow{ON}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="31" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\overrightarrow{ON}$"></SPAN>
+為 <SPAN CLASS="MATH"><I>z</I></SPAN>-軸的方向，以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\overrightarrow{OE}$"></SPAN> 為 <SPAN CLASS="MATH"><I>x</I></SPAN>-軸的方向，其中 <SPAN CLASS="MATH"><I>E</I></SPAN> 點乃是基準經線 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\lambda_0$"></SPAN> 的中點，則有：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="269" HEIGHT="27" BORDER="0"
+ SRC="img16.gif"
+ ALT="\begin{displaymath}x=\sin r\cos \theta,\; y=\sin r \sin \theta ,\; z=\cos r\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+[註]：由直接的微分計算可得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="277" HEIGHT="27" BORDER="0"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}ds^2=dx^2+dy^2+dz^2=dr^2+\sin^2rd\theta^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+用上述弧長的微分式，不難証明經弧
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="31" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{NP}$"></SPAN>
+乃是球面上連結 <SPAN CLASS="MATH"><I>N</I></SPAN>, <SPAN CLASS="MATH"><I>P</I></SPAN> 兩點的最短曲線（亦稱測地線 (geodesics)）。
+
+<P>
+【阿基米德定理】：半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的球面面積等于
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="36" HEIGHT="24" BORDER="0"
+ SRC="img18.gif"
+ ALT="\begin{displaymath}4\pi R^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+[註]：阿基米德 (Archimedes, 287-212 B.C.) 是公認的古希臘時代偉大的科學家和幾何學家，他一生有很多卓越的貢獻；而他最引以自豪者，首推上述定理及其簡潔的証明，這也就是遵照他本人的遺囑刻在他的墓碑上者。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：其証明的要點在于論証一個半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的球面面積和一個高為
+<SPAN CLASS="MATH">2<I>R</I></SPAN>，半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的圓柱面面積相等。而在他的墓碑上所刻劃的，就是如 [圖 7-2] 所示把兩者放在相切同高的位置。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="235" HEIGHT="204" BORDER="0"
+ SRC="img19.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4.2cm \epsfbox{fig0702.eps}}*\...
+...ac{\bigtriangleup h}{\sin \theta}}
+,(2.6,3.05)*+{\theta}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2904" ALIGN="CENTER">
+[ 圖 7-2 ]</DIV>
+
+
+<P>
+設想用一系列和柱面正交的平行平面，把兩個面都細分成很窄很窄的一圈圈。設相鄰兩個平行面之間的距離是 <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.gif"
+ ALT="$\Delta h$"></SPAN>，則柱面上的窄條（或圈）的面積等于 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$2\pi R\Delta h$"></SPAN>，而在球面上的相應窄圈，雖然其寬度和長度會隨著
+θ 而改變，但在 <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.gif"
+ ALT="$\Delta h$"></SPAN> 非常、非常小的時候，它可以看成如 [圖 7-3] 所示的圓台之側面：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="269" HEIGHT="65" BORDER="0"
+ SRC="img22.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=6cm \epsfbox{fig0703.eps}}*\frm{}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2909" ALIGN="CENTER">
+[ 圖 7-3 ]</DIV>
+
+
+<P>
+其中環長度是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$2\pi R \sin \theta$"></SPAN>，亦即其環長的平均值是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$2\pi R \sin \theta$"></SPAN>，而側面的寬度則為 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$ \frac{\Delta h}{\sin \theta}$"></SPAN>
+，所以其面積的高度近似值也是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$2\pi R\Delta h$"></SPAN>
+（亦即可能的誤差肯定在 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.gif"
+ ALT="$\Delta h^2$"></SPAN> 這種量級）。由此他就用 Eudoxus 所創的逼近原理証明了兩者的面積必然相等，而後者的面積顯然等于高為 <SPAN CLASS="MATH">2<I>R</I></SPAN>，長為 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img26.gif"
+ ALT="$2\pi R$"></SPAN>
+的長方形面積，亦即 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.gif"
+ ALT="$4\pi R^2$"></SPAN> 。
+□
+
+<P>
+<SPAN  CLASS="textit">球面三角形面積公式</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN> 是球面上任取三點但不含對頂者，令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{AB}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{BC}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{CA}$"></SPAN>
+為連結于點與點之間的測地線，稱之為球面三角形 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 的三個邊。我們將採用和平面三角學中相同的符號體系，以 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN> 表示 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+在三個頂點的內角，及以 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>, <SPAN CLASS="MATH"><I>c</I></SPAN> 表示 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+的各角對邊邊長。在平面幾何中，一個三角形的三個內角和恆等于一個平角，這是邏輯等價于平行公理的基本事實，也是平面的平直性的一種基本表達；在球面三角形的情形下，三內角之和則恆大于一個平角，而下述[定理 7.1]証明在單位球面上的球面三角形，其內角和與 π 的差額（稱之為「角盈」）其實恰好等于其面積。
+
+<P>
+【定理 7.1】：在單位球面上，一個球面三角形 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 的面積就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="176" HEIGHT="27" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}\bigtriangleup ABC = A+B+C-\pi\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：如 [圖 7-1] 所示，由二個夾角為 θ
+的經線所圍成的球面部分，其面積顯然和 θ 成正比（這是球面對以
+<SPAN CLASS="MATH"><I>N</I></SPAN>, <SPAN CLASS="MATH"><I>S</I></SPAN> 為定點的旋轉對稱性的直接推論）。再者，當 <SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img33.gif"
+ ALT="$\theta =2\pi$"></SPAN> 時，其面積等于 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.gif"
+ ALT="$4\pi$"></SPAN> （阿基米德定理）！所以上述以 θ 為夾角者（稱之為
+spherical lune）的面積等于 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.gif"
+ ALT="$2\theta$"></SPAN> 。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="179" HEIGHT="203" BORDER="0"
+ SRC="img36.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0704.eps}}*\fr...
+...{C}
+,(3.9,0.1)*+{A'}
+,(1.1,0.1)*+{B'}
+,(2.45,0.75)*+{C'}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2941" ALIGN="CENTER">
+[ 圖 7-4 ]</DIV>
+
+
+<P>
+如 [圖 7-4] 所示，令 <SPAN CLASS="MATH"><I>A</I>'</SPAN>, <SPAN CLASS="MATH"><I>B</I>'</SPAN>, <SPAN CLASS="MATH"><I>C</I>'</SPAN> 分別是 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN> 的對頂者。用上述 spherical lune 的面積公式即得：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="410" HEIGHT="102" BORDER="0"
+ SRC="img37.gif"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\hspace*{3.5cm} \bigtriangleup ABC+\bigtr...
+...\fontfamily{cwM2}\fontseries{m}\selectfont \cH9})}}
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+2 {\bigtriangleup ABC} +2\pi =2A+2B+2C
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="216" HEIGHT="27" BORDER="0"
+ SRC="img38.gif"
+ ALT="\begin{displaymath}2 {\bigtriangleup ABC} +2\pi =2A+2B+2C\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\bigtriangleup ABC =A+B+C-\pi \eqno \Box
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="365" HEIGHT="27" BORDER="0"
+ SRC="img39.gif"
+ ALT="\begin{displaymath}\bigtriangleup ABC =A+B+C-\pi \eqno \Box \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+[註]：上述具有基本重要性的球面三角形面積公式其實就是阿基米德球面面積公式的局部化和精細化。
+
+<P>
+<SPAN  CLASS="textit">球面三角形的疊合條件及等腰三角形定理</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 是球面上任給兩點。在空間中和 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 等距的點集是直線段
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\overline{AB}$"></SPAN> 的垂直平分面 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\Pi_1$"></SPAN>，它當然包含球心 <SPAN CLASS="MATH"><I>O</I></SPAN>，所以和 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>
+等距的球面上之點乃是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="79" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\Pi_1\cap S^2(1)$"></SPAN>
+這個大圓，而球面對于這個大圓的反射對稱將 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>
+互換。用上述球面上的反射對稱即可推導出：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>S.A.S. 也是球面三角形的疊合條件；
+</DD>
+<DT>(ii)</DT>
+<DD>球面等腰三角形的兩底角相等；反之，兩底角相等的球面三角形亦必為等腰。
+</DD>
+</DL>
+再者，由上述兩點還可以同樣地推導出球面三角形也具有其他如 S.S.S. 和 A.S.A.
+等疊合條件。在此值得一提的是 A.A.A. 也是球面三角形的一個疊合條件，我們可以用球面三角形中所特有的<SPAN  CLASS="textit">對偶關係</SPAN>來推導它也是一個疊合條件。設
+<SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN> 互為對頂，則和 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN> 等距的球面上的點集就是和 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN> 的距離是
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\pi/2$"></SPAN> 的那個大圓，將以 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\Gamma_A$"></SPAN> 記之。設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+是一個任給球面三角形，在下述三對對頂點偶（即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.gif"
+ ALT="$\Gamma_B\cap\Gamma_C$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.gif"
+ ALT="$\Gamma_C\cap \Gamma_A$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.gif"
+ ALT="$\Gamma_A\cap\Gamma_B$"></SPAN>）之中，分別取其靠近 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN> 者，以 <SPAN CLASS="MATH"><I>A</I><SUP>*</SUP></SPAN>, <SPAN CLASS="MATH"><I>B</I><SUP>*</SUP></SPAN>, <SPAN CLASS="MATH"><I>C</I><SUP>*</SUP></SPAN> 記之，則稱 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="$\bigtriangleup A^*B^*C^*$"></SPAN> 為 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+的對偶球面三角形（ 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 也是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="$\bigtriangleup A^*B^*C^*$"></SPAN> 的對偶球面三角形）。
+
+<P>
+【引理 7.1】：令 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>, <SPAN CLASS="MATH"><I>c</I></SPAN> 和 <SPAN CLASS="MATH"><I>a</I><SUP>*</SUP></SPAN>, <SPAN CLASS="MATH"><I>b</I><SUP>*</SUP></SPAN>, <SPAN CLASS="MATH"><I>c</I><SUP>*</SUP></SPAN> 分別是
+ 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="$\bigtriangleup A^*B^*C^*$"></SPAN> 的各角對邊邊長，則有：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="289" HEIGHT="45" BORDER="0"
+ SRC="img49.gif"
+ ALT="\begin{displaymath}
+\begin{array}{lll}
+a^*=\pi -A,\;&amp;\; b^*=\pi - B, \;&amp;\; c^*=\...
+...\\
+a=\pi - A^*,\;&amp;\; b=\pi - B^*, \;&amp;\; c=\pi- C^*
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="170" HEIGHT="171" BORDER="0"
+ SRC="img50.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=3cm \epsfbox{fig0705.eps}}*\fr...
+...C^*}
+,(5.3,0.3)*+{B^*}
+,(0.6,-0.1)*+{P}
+,(4.4,-0.1)*+{Q}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2999" ALIGN="CENTER">
+[ 圖 7-5 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：我們只需要証明其中之一，其餘各式皆可同理類推。由
+[圖 7-5] 所示，在大圓 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\Gamma_A$"></SPAN> 上 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="124" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{B^*P}=\stackrel{\raisebox{-1ex}{\large$\frown$}}{C^*Q}=\pi/2$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="58" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{PQ}=A$"></SPAN>，故有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="387" HEIGHT="32" BORDER="0"
+ SRC="img53.gif"
+ ALT="\begin{displaymath}
+a^*=\stackrel{\raisebox{-1ex}{\hskip1pt\large $\frown$}}{B^*...
+...el{\raisebox{-1ex}{\large $\frown$}}{PQ}
+= \pi - A \eqno \Box
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+【推論】： A.A.A. 也是一種球面三角形的疊合條件。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$\bigtriangleup A_1B_1C_1$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$\bigtriangleup A_2B_2C_2$"></SPAN>
+的三角內角對應相等，由[引理 7.1]得知它們的對偶球面三角形
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.gif"
+ ALT="$\bigtriangleup A^*_1B^*_1C^*_1$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="77" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img57.gif"
+ ALT="$\bigtriangleup A^*_2B^*_2C^*_2$"></SPAN>
+的三個邊長對應等長，所以是全等的，因此當然有三個對應內角相等。再用[引理 7.1]，即得 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$\bigtriangleup A_1B_1C_1$"></SPAN> 和
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$\bigtriangleup A_2B_2C_2$"></SPAN> 滿足 S.S.S. 全等條件。
+□
+
+<P>
+【引理 7.2】：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.gif"
+ ALT="$\bigtriangleup A'BC$"></SPAN>
+的頂點共圓而且 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>A</I>'</SPAN> 同在
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="24" ALIGN="BOTTOM" BORDER="0"
+ SRC="img29.gif"
+ ALT="$\stackrel{\raisebox{-1ex}{\large$\frown$}}{BC}$"></SPAN>
+的一側，則
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="353" HEIGHT="25" BORDER="0"
+ SRC="img59.gif"
+ ALT="\begin{displaymath}\angle ABC+\angle ACB-\angle A=\angle A'BC+\angle A'CB-\angle A'\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，上述之逆命題也成立。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="417" HEIGHT="227" BORDER="0"
+ SRC="img60.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(10,5){\epsfxsize=9cm \epsfbox{fig0706.eps}}*\f...
+...heta_3}
+,(2,-0.7)*+{\mbox{(i)}}
+,(8,-0.7)*+{\mbox{(ii)}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3017" ALIGN="CENTER">
+[ 圖 7-6 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：如 [圖 7-6(i)] 所示，<!-- MATH
+ $\bigtriangleup OAB$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.gif"
+ ALT="$\bigtriangleup OAB$"></SPAN>,
+<!-- MATH
+ $\bigtriangleup OBC$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.gif"
+ ALT="$\bigtriangleup OBC$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.gif"
+ ALT="$\bigtriangleup OCA$"></SPAN>
+皆為等腰，所以其底角相等，設其分別是 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.gif"
+ ALT="$\theta_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$\theta_2$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.gif"
+ ALT="$\theta_3$"></SPAN> 。則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="202" HEIGHT="27" BORDER="0"
+ SRC="img67.gif"
+ ALT="\begin{displaymath}\angle ABC+\angle ACB-\angle A=2\theta_1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+同理亦有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="215" HEIGHT="27" BORDER="0"
+ SRC="img68.gif"
+ ALT="\begin{displaymath}\angle A'BC+\angle A'CB-\angle A'=2\theta_1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+[圖 7-6(ii)] 的情況和逆命題的証明留作習題。
+□
+
+<P>
+【定理 7.2】(Lexell)：設球面三角形 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.gif"
+ ALT="$\bigtriangleup A_1BC$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\bigtriangleup A_2BC$"></SPAN> 具有相等的定向面積，而 <SPAN CLASS="MATH"><I>B</I>'</SPAN>, <SPAN CLASS="MATH"><I>C</I>'</SPAN> 分別是 <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>C</I></SPAN>
+的對頂點，則 <SPAN CLASS="MATH"><I>B</I>'</SPAN>, <SPAN CLASS="MATH"><I>C</I>'</SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB></SPAN> 四點共圓。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="225" HEIGHT="237" BORDER="0"
+ SRC="img71.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0707.eps}}*\fr...
+...2}
+,(2.45,4.45)*+{3}
+,(1.05,1.83)*+{B}
+,(3.95,1.83)*+{C}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3037" ALIGN="CENTER">
+[ 圖 7-7 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：如 [圖 7-7] 所示：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="239" HEIGHT="27" BORDER="0"
+ SRC="img72.gif"
+ ALT="\begin{displaymath}\angle 1=\pi - B,\; \angle 2=\pi - C, \; \angle 3= A\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="198" HEIGHT="27" BORDER="0"
+ SRC="img73.gif"
+ ALT="\begin{displaymath}\angle 1+\angle 2-\angle 3=\pi-\bigtriangleup ABC\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+分別取 <SPAN CLASS="MATH"><I>A</I>=<I>A</I><SUB>1</SUB></SPAN> 和 <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB></SPAN>，再對 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$\bigtriangleup A_1B'C'$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$\bigtriangleup A_2B'C'$"></SPAN> 運用[引理 7.2]的逆命題，即得 <SPAN CLASS="MATH"><I>B</I>'</SPAN>, <SPAN CLASS="MATH"><I>C</I>'</SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>1</SUB></SPAN>,
+<SPAN CLASS="MATH"><I>A</I><SUB>2</SUB></SPAN> 共圓。
+□
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>設 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 的球面極坐標分別是 <SPAN CLASS="MATH">(<I>r</I><SUB>1</SUB>,0)</SPAN> 和
+<SPAN CLASS="MATH">(<I>r</I><SUB>2</SUB>,0)</SPAN>，而 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="128" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.gif"
+ ALT="$\gamma(t)=\big(f(t),g(t)\big)$"></SPAN>
+是一條一階可微曲線，<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.gif"
+ ALT="$a\leq t\leq b$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.gif"
+ ALT="$\gamma(a)=(r_1,0)$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\gamma(b)=(r_2,0)$"></SPAN> 。試証其長度至少等于 <SPAN CLASS="MATH">|r<SUB>1</SUB>-<I>r</I><SUB>2</SUB>|</SPAN> 。
+</DD>
+<DT>(2)</DT>
+<DD>若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 是一個半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的球面三角形，試問
+<SPAN CLASS="MATH"><IMG
+ WIDTH="109" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.gif"
+ ALT="$A+B+C-\pi$"></SPAN> 和其面積之間的關係是什麼？並試証你的主張。
+</DD>
+<DT>(3)</DT>
+<DD>設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$\bigtriangleup A_1B_1C_1$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$\bigtriangleup A_2B_2C_2$"></SPAN>
+是滿足 S.A.S. 條件的兩個球面三角形，例如 <SPAN CLASS="MATH"><I>A</I><SUB>1</SUB>=<I>A</I><SUB>2</SUB></SPAN>,
+<SPAN CLASS="MATH"><I>b</I><SUB>1</SUB>=<I>b</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>c</I><SUB>1</SUB>=<I>c</I><SUB>2</SUB></SPAN> 。試構造一系列球面上的反射對稱，它們的組合恰好把
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.gif"
+ ALT="$\bigtriangleup A_1B_1C_1$"></SPAN> 變換到 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.gif"
+ ALT="$\bigtriangleup A_2B_2C_2$"></SPAN> 。
+</DD>
+<DT>(4)</DT>
+<DD>試用球面的反射對稱性証明等腰三角形的底角相等，<SPAN CLASS="MATH"></SPAN>而頂角平分線垂直平分底邊。
+</DD>
+<DT>(5)</DT>
+<DD>試用上述 (3), (4) 所証得者，証明 S.S.S.
+也是球面三角形的一種全等條件。
+</DD>
+<DT>(6)</DT>
+<DD>設 <SPAN CLASS="MATH"><I>O</I></SPAN> 為一個球面的心，<SPAN CLASS="MATH"><I>A</I></SPAN> 為球面上任給一點，Π 為過
+<SPAN CLASS="MATH"><I>A</I></SPAN> 點而且和 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img81.gif"
+ ALT="$\overline{OA}$"></SPAN> 垂直的平面。試証 Π 和球面僅僅交于 <SPAN CLASS="MATH">{A}</SPAN> 點。
+</DD>
+<DT>(7)</DT>
+<DD>設 Γ 是極坐標下「<SPAN CLASS="MATH"><I>r</I></SPAN> = 常數」所構成的緯圓。試求
+Γ 上任一點 <SPAN CLASS="MATH"><I>P</I></SPAN> 的切平面和直線 <SPAN CLASS="MATH"><I>ON</I></SPAN> 的交點 <SPAN CLASS="MATH"><I>V</I></SPAN>
+（亦即確定 <SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img82.gif"
+ ALT="$\overline{OV}$"></SPAN> 的長度）。
+</DD>
+</DL>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%AA%FC%B0%F2%A6%CC%BCw">阿基米德</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Eudoxus">Eudoxus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Menelous">Menelous</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Ptolemy">Ptolemy</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Almagest">Almagest</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_07" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=七、球面幾何和球面三角學(ar_wy_geo_07)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_07/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:47:13 GMT -->
+</HTML>

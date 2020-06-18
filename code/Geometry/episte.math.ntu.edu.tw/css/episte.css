@@ -1,0 +1,56 @@
+<STYLE TYPE="text/css">
+BODY		{ line-height:18pt; }
+
+/* Century Schoolbook font is very similar to Computer Modern Math: cmmi */
+.MATH    { font-family:Times New Roman,Times,Serif; }
+.MATH I  { font-family:Times New Roman,Times,Serif; font-shape: italic }
+.BOLDMATH { font-family:Times New Roman,Times,Serif; font-weight: bold }
+
+/* implement both fixed-size and relative sizes */
+SMALL.XTINY		{ font-size : xx-small }
+SMALL.TINY		{ font-size : x-small  }
+SMALL.SCRIPTSIZE	{ font-size : smaller  }
+SMALL.FOOTNOTESIZE	{ font-size : small    }
+SMALL.SMALL		{  }
+BIG.LARGE		{  }
+BIG.XLARGE		{ font-size : large    }
+BIG.XXLARGE		{ font-size : x-large  }
+BIG.HUGE		{ font-size : larger   }
+BIG.XHUGE		{ font-size : xx-large }
+
+/* heading styles */
+H1		{  }
+H2		{  }
+H3		{  }
+H4		{  }
+H5		{  }
+P		{ line-height:18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+BLOCKQUOTE  { line-height:18pt; font-family:Times New Roman,Times,標楷體; }
+I		{ font-family: Times New Roman,Times,Serif; }
+.emph       { font-family:Times New Roman,Times,標楷體; font-weight:normal; font-shape:normal; }
+.side		{ line-height:12pt; font-size:9pt; }
+.basic		{ line-height:12pt; font-size:9pt; }
+.title		{ font-family: Times New Roman,Times,標楷體; }
+.seclev2	{ font-family: Times New Roman,Times,標楷體; }
+.arabic		{ font-size: 9pt; }
+.keyword    { font-family:Arial,Helvetica,serif; }
+.mathdesc   { font-family: Times New Roman,Times,標楷體; background-color:#FFFFEF }
+.textit     { font-family: Times New Roman,Times,標楷體; }
+.reflist	{ padding: 5pt; border: solid 1 gray; margin: 15pt 15pt; }
+.search		{ background: #FFFFE0 }
+
+A:active 	{ text-decoration:none; color:#008000 }
+A:link 		{ text-decoration:none; color:#008000 }
+A:visited 	{ text-decoration:none; color:#008000 }
+A:hover 	{ text-decoration:underline; color:maroon }
+
+/* mathematics styles */
+DIV.displaymath		{ }	/* math displays */
+TD.eqno			{ }	/* equation-number cells */
+
+/* document-specific styles come next */
+DIV.navigation		{   }
+
+</STYLE>

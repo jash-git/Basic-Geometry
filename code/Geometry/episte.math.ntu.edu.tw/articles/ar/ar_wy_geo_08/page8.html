@@ -1,0 +1,787 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page8.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:47:46 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="圓錐截線;橢圓;雙曲線;拋物線;焦點;Pascal定理;Menelous定理;圓錐曲線;Pappus定理">
+<META name="keyword_out" content="Euclid;Archimedes;Apollonius;Pappus;Kepler;Kepler三定律;笛卡兒;費瑪;正交坐標系;Pascal;Menelous;Menelous定理;射影幾何;Brahe;牛頓">
+<TITLE>八、圓錐截線的故事 (第 8 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="page7.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<b>8</b>│<a href="page9.html">9</a>　<a href="page9.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>八、圓錐截線的故事</FONT></FONT>
+    <FONT face="標楷體">（第 8 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    <BR>‧<a target="wNote" href="notes.html">註釋</a><BR>
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=4117 *** -->
+<!-- section head lev 1 -->
+<A name="08_SECTION0008"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">由 Kepler 定律到牛頓萬有引力定律</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+Kepler 三定律清楚地描述了行星運行的簡單模式。一個自然的問題就是：「為什麼行星會以太陽為其一焦點的橢圓軌道運行？」牛頓對這個問題給了一個直接的答案，即行星與太陽之間存在滿足平方反比定律
+<A NAME="tex2html33"
+ target="wNote" href="notes.html#foot791"><SUP><SPAN CLASS="arabic">註2</SPAN></SUP></A>
+(inverse square law) 的引力。而且這種引力同樣地存在于任何兩個物體之間，不論是火星與太陽或是蘋果與地球，都是同一種引力；這就是牛頓著名的萬有引力定律。現在讓我們以現今的符號體系來重新看看牛頓這個對後世科學發展有著深遠影響的工作。首先我們需要對橢圓的幾何性質有一定的了解。
+
+<P>
+（一）<SPAN  CLASS="textit">橢圓面積公式：橢圓面積 <SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img156.gif"
+ ALT="$=\pi ab$"></SPAN></SPAN>
+
+<P>
+設橢圓的長、短徑分別為 <SPAN CLASS="MATH">2<I>a</I></SPAN>, <SPAN CLASS="MATH">2<I>b</I></SPAN> 。現構造兩個圓，半徑分別為 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>，並把橢圓夾于兩者之間，如 [圖 8-21] 所示。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="414" HEIGHT="237" BORDER="0"
+ SRC="img157.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfysize =5cm \epsfbox{fig0821.e...
+... &amp;=&amp; a\cos \varphi \\ y &amp;=&amp; b\sin \varphi \end{array}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4111" ALIGN="CENTER">
+[ 圖 8-21 ]</DIV>
+
+
+<P>
+考慮圖中那條過 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN> 的窄條面積。由于 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.gif"
+ ALT="$x=a\cos\varphi$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.gif"
+ ALT="$y=b\sin\varphi$"></SPAN>，在橢圓內的窄條面積和整條窄條面積的比率約為：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="110" HEIGHT="42" BORDER="0"
+ SRC="img160.gif"
+ ALT="\begin{displaymath}\frac{2b\sin\varphi\,\Delta x}{2a\sin\varphi\, \Delta x} =\frac{b}{a}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這是一個與 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN> 位置無關的常數。當把所有這種窄條的面積加起來時，便得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="172" HEIGHT="39" BORDER="0"
+ SRC="img161.gif"
+ ALT="\begin{displaymath}\mbox{{\fontfamily{cwM16}\fontseries{m}\selectfont \cH158}\z{...
+...series{m}\selectfont \cH9}} = \pi a^2 \cdot \frac{b}{a} =\pi ab\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+（二） <SPAN  CLASS="textit">橢圓的極坐標方程式</SPAN>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="351" HEIGHT="260" BORDER="0"
+ SRC="img162.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfysize =5cm \epsfbox{fig0822.e...
+....3)*+{\displaystyle \frac{x^2}{a^2}+\frac{y^2}{b^2}=1}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4119" ALIGN="CENTER">
+[ 圖 8-22 ]</DIV>
+
+
+<P>
+如 [圖 8-22] 所示，橢圓上一點 <SPAN CLASS="MATH"><I>P</I></SPAN> 有 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>)</SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.gif"
+ ALT="$(r,\theta)$"></SPAN>
+兩種表示方法，而 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>)</SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.gif"
+ ALT="$(r,\theta)$"></SPAN> 之間的轉換可以用
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="191" HEIGHT="27" BORDER="0"
+ SRC="img164.gif"
+ ALT="\begin{displaymath}r\cos \theta=x+c,\quad r\sin \theta =y\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+來達成。把上面轉換方法代入熟悉的橢圓坐標方程式
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="92" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.gif"
+ ALT="$\displaystyle \frac{x^2}{a^2}+\frac{y^2}{b^2}=1$"></SPAN>，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="510" HEIGHT="154" BORDER="0"
+ SRC="img166.gif"
+ ALT="\begin{eqnarray*}
+b^2(r\cos\theta -c)^2 +a^2(r\sin\theta)^2 -a^2b^2 &amp;=&amp; 0 \\
+b^...
+...r-(rc\cos\theta +b^2)\big]\big[ar+(rc\cos\theta +b^2)\big] &amp;=&amp; 0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+因此 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img167.gif"
+ ALT="$\rule[-2.5ex]{0pt}{3ex}\displaystyle r=\frac{b^2}{a-c\cos\theta}$"></SPAN>（
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.gif"
+ ALT="$\displaystyle r=\frac{-b^2}{a+c\cos\theta}$"></SPAN> 是負值，它會以
+<SPAN CLASS="MATH"><I>P</I>'</SPAN> 來描繪出橢圓）。為了方便以後的計算，我們取其顛倒式為橢圓極坐標方程式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="103" HEIGHT="39" BORDER="0"
+ SRC="img169.gif"
+ ALT="\begin{displaymath}\frac{1}{r}=\frac{a-c\cos\theta}{b^2}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+（三）<SPAN  CLASS="textit">第二定律的數理分析</SPAN>
+
+<P>
+以太陽（焦點）為中心，極坐標 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.gif"
+ ALT="$(r,\theta)$"></SPAN> 表達行星位置。當 θ 增大到 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.gif"
+ ALT="$\theta+d\theta$"></SPAN> 時，太陽與行星的連線所掃過的面積為
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.gif"
+ ALT="$dA\approx\frac{1}{2}r^2d\theta$"></SPAN>，如 [圖 8-23] 所示
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="260" HEIGHT="192" BORDER="0"
+ SRC="img172.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfysize =4cm \epsfbox{fig0823.e...
+...font \cH114}}}
+,(3.2,3.25)*+{r}
+,(2.7,2.55)*+{d\theta}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4136" ALIGN="CENTER">
+[ 圖 8-23 ]</DIV>
+
+
+<P>
+運用第二定律，這個面積的改變速率為常數，即：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="370" HEIGHT="125" BORDER="0"
+ SRC="img173.gif"
+ ALT="\begin{eqnarray*}%% at page 8
+\frac{dA}{dt} &amp;=&amp; \frac{1}{2}r^2 \frac{d\theta}{dt...
+...{m}\selectfont \cH130})} \\
+r^2\omega &amp;=&amp; 2k=\frac{2 \pi ab}{T}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+注意在上面我們只是用了微積分的記號和想法，並沒有用到深奧技巧。
+
+<P>
+[註]：從物理學觀點來看，第二定律是有物理意義的。如 [圖 8-24] 所示，<SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img174.gif"
+ ALT="${\bf r}$"></SPAN> 是動點 <SPAN CLASS="MATH"><I>P</I></SPAN> 的位置向量，<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img175.gif"
+ ALT="${\bf v}$"></SPAN> 是其速度向量：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="257" HEIGHT="169" BORDER="0"
+ SRC="img176.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0824.e...
+...)*+{O}
+,(5.2,3.75)*+{P}
+,(4,5.4)*+{Q}
+,(-0.2,1.4)*+{R}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4142" ALIGN="CENTER">
+[ 圖 8-24 ]</DIV>
+
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.gif"
+ ALT="$\left\vert {\bf r}\times {\bf v}\right\vert$"></SPAN> 是平行四邊形 <SPAN CLASS="MATH"><I>OPQR</I></SPAN>
+的面積。但從物理學觀點來看，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="${\bf r}\times m{\bf v}$"></SPAN>
+是物體相對于 <SPAN CLASS="MATH"><I>O</I></SPAN> 點的角動量，因為是平面（橢圓）運動，此向量是恆垂直于平面的，所以由第二定律亦可得知角動量在行星運行中是不變的（這也是人類理性文明中首次接觸到角動量守恆律）。再者，
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="255" HEIGHT="58" BORDER="0"
+ SRC="img179.gif"
+ ALT="\begin{eqnarray*}
+{\bf0}=\frac{d}{dt}({\bf r}\times m{\bf v}) &amp;=&amp; {\bf v}\times m{\bf v} + {\bf r}\times m{\bf a} \\
+&amp;=&amp; {\bf r}\times {\bf F}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+所以引力 <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img180.gif"
+ ALT="${\bf F}$"></SPAN> 的作用方向是和 <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img174.gif"
+ ALT="${\bf r}$"></SPAN> 反向平行。
+
+<P>
+（四）<SPAN  CLASS="textit">溫習：<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\cos\theta$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\sin\theta$"></SPAN> 的微分</SPAN>
+
+<P>
+從圓的簡單幾何性質和簡單的物理觀念，我們很容易便得出 <SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\cos\theta$"></SPAN> 和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img182.gif"
+ ALT="$\sin\theta$"></SPAN> 的微分。其簡單的推導如下：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="332" HEIGHT="280" BORDER="0"
+ SRC="img183.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =7cm \epsfbox{fig0825.e...
+...(3.1,5.1)*+{\scriptstyle -\sin t}
+,(3.7,4.2)*+{\cos t}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4155" ALIGN="CENTER">
+[ 圖 8-25 ]</DIV>
+
+
+<P>
+如 [圖 8-25] 所示，動點 <SPAN CLASS="MATH"><I>P</I></SPAN>
+在單位圓上作單位速率運動。用熟知的圓的參數表示方法，<SPAN CLASS="MATH"><I>P</I></SPAN> 的坐標可寫成 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$(\cos t,\sin t)$"></SPAN> 。另一方面，從幾何觀點得知速度向量應是垂直于半徑，所以把圖中的 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.gif"
+ ALT="$\bigtriangleup OAP$"></SPAN> 平移至 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.gif"
+ ALT="$\bigtriangleup PA'P'$"></SPAN> 再旋轉
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.gif"
+ ALT="$\frac{\pi}{2}$"></SPAN> 至 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.gif"
+ ALT="$\bigtriangleup PA''P''$"></SPAN>
+。這樣，速度向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img175.gif"
+ ALT="${\bf v}$"></SPAN> 在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img189.gif"
+ ALT="$\overrightarrow{Ox}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.gif"
+ ALT="$\overrightarrow{Oy}$"></SPAN> 的分量為：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="170" HEIGHT="29" BORDER="0"
+ SRC="img191.gif"
+ ALT="\begin{displaymath}{v}_x =-\sin t,\quad {v}_y=\cos t\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+但從物理學觀點來說，速度向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img175.gif"
+ ALT="${\bf v}$"></SPAN> 正是：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="233" HEIGHT="45" BORDER="0"
+ SRC="img192.gif"
+ ALT="\begin{displaymath}
+{\bf v} = \left( \frac{d}{dt}\cos t \right){\bf e}_x
++ \left( \frac{d}{dt}\sin t \right){\bf e}_y
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+因此即得下面熟悉的公式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="235" HEIGHT="39" BORDER="0"
+ SRC="img193.gif"
+ ALT="\begin{displaymath}\frac{d}{dt}\cos t=-\sin t,\quad \frac{d}{dt}\sin t=\cos t \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+（五）<SPAN  CLASS="textit">向心加速的公式：
+<SPAN CLASS="MATH"><IMG
+ WIDTH="113" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$-\displaystyle
+(-r\omega^2+\frac{d^2r}{dt^2})$"></SPAN></SPAN>
+
+<P>
+上述公式只需對坐標 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.gif"
+ ALT="$x=r\cos \theta$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.gif"
+ ALT="$y=r\sin \theta$"></SPAN> 直接微分便可得出。計算過程大致如下：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="478" HEIGHT="95" BORDER="0"
+ SRC="img197.gif"
+ ALT="\begin{displaymath}\begin{array}{ll}
+&amp;\left\{\begin{array}{rcl} x&amp;=&amp; r\cos \thet...
+...heta+r\dot{\omega}\cos\theta
+\end{array} \right.
+\end{array} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+因此
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+(\ddot{x},\ddot{y}) = (\ddot{r}-r\omega^2)(\cos\theta,\sin\theta) + (2\dot{r}\omega+r\dot{\omega})(-\sin\theta,\cos\theta)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="393" HEIGHT="28" BORDER="0"
+ SRC="img198.gif"
+ ALT="\begin{displaymath}(\ddot{x},\ddot{y}) = (\ddot{r}-r\omega^2)(\cos\theta,\sin\theta) + (2\dot{r}\omega+r\dot{\omega})(-\sin\theta,\cos\theta) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由（四）知引力的方向是平行于位置方向 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.gif"
+ ALT="$(\cos\theta,\sin\theta)$"></SPAN>，所以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$(2\dot{r}\omega+r\dot{\omega})$"></SPAN>
+應該是 0，並只餘下向心加速 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="94" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.gif"
+ ALT="$-(-r\omega^2+\ddot{r})$"></SPAN> 。
+
+<P>
+（六）<SPAN  CLASS="textit">平方反比定律的証明（第一、第二定律的綜合分析）</SPAN>
+
+<P>
+要証明引力是滿足平方反比定律，我們只需驗証
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="114" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.gif"
+ ALT="$\displaystyle r^2\bigg(\frac{d^2r}{dt^2}-r\omega^2\bigg)$"></SPAN> 是否為一常數。先對橢圓的極坐標方程式微分：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="270" HEIGHT="118" BORDER="0"
+ SRC="img203.gif"
+ ALT="\begin{eqnarray*}
+\frac{1}{r} &amp;=&amp; \frac{a-c\cos\theta}{b^2} \\
+-\frac{1}{r^2}\f...
+...ac{c}{b^2}\sin\theta \,r^2\omega = -\frac{2\pi ac}{bT}\sin\theta
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+在上式用了（三）
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.gif"
+ ALT="$\displaystyle r^2\omega =\frac{2\pi ab}{T}$"></SPAN> 。同樣地在下面的計算中，我們盡可能分離出 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img205.gif"
+ ALT="$r^2\omega$"></SPAN> 這一項，然後換成常數
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="51" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.gif"
+ ALT="$\displaystyle \frac{2\pi ab}{T}$"></SPAN>。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="335" HEIGHT="205" BORDER="0"
+ SRC="img207.gif"
+ ALT="\begin{eqnarray*}
+\frac{d^2r}{dt^2}&amp;=&amp; -\frac{2\pi ac}{bT}\cos\theta\,\omega \\ ...
+...\
+&amp;=&amp; -\frac{4\pi^2 a^3}{T^2}+\frac{4\pi^2 a^2}{T^2}c\cos\theta
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+因此
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="200" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.gif"
+ ALT="$\displaystyle r^2 \left[ -r\omega^2+\frac{d^2r}{dt^2} \right] = -\frac{4\pi^2a^3}{T^2}$"></SPAN>。
+
+<P>
+（七）<SPAN  CLASS="textit">由行星引力到萬有引力</SPAN>
+
+<P>
+當牛頓想再進一步把行星與太陽之間的引力推廣到任何物體與物體之間的引力，他遇到一個困難，使這位科學史上的巨人困擾了數年。由于行星與太陽之間的距離很大，所以在計算中可把行星和太陽當作兩個質點，即可以假設質點集中了整個球體的質量；但當推廣至任何物體與物體之間的情形，如蘋果與地球，則便不可隨便地把地球當作為一個質點了。牛頓遇到的困難，就是他不能証明的確可以把地球當作為質點的猜想。即使在 1684 年他的好友
+Halley（哈雷）力邀牛頓發表已得的結果，他仍不願意<A NAME="tex2html34"
+ target="wNote" href="notes.html#foot1046"><SUP><SPAN CLASS="arabic">註3</SPAN></SUP></A>
+發表。到了 1686 年，他終于成功地証明了上述猜想，即一個密度只隨著到球心距離而變化的球體，在吸引球外一個質點時，所作用的力就像假設全部質量都集中在球心一樣。在這年他寫信給 Halley 表示同意寫出他的工作，這就是在次年 (1687)
+出版的科學巨著《自然哲學
+<A NAME="tex2html35"
+ target="wNote" href="notes.html#foot1047"><SUP><SPAN CLASS="arabic">註4</SPAN></SUP></A>
+的數學原理》(Philosophiae Naturalis Principia Mathematica) 。
+
+<P>
+牛頓在書中所給的証明是很繁複的。在這裡，我們給出另一個証明，它巧妙地運用了球的幾何特性而大大簡化了計算過程。
+
+<P>
+對于一個球面的最自然、最對稱的點當然就是球心。但是在研討球面與球外一點的互相作用時，從幾何觀點來看，最自然、最對稱的點就不再是球心，而是 [圖 8-26] 的 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點（這是 <SPAN CLASS="MATH"><I>P</I></SPAN> 相對于球面的反射對稱點）。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="375" HEIGHT="250" BORDER="0"
+ SRC="img209.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =8cm \epsfbox{fig0826.e...
+...bigtriangleup OPQ\sim \bigtriangleup OQP' \end{array}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4192" ALIGN="CENTER">
+[ 圖 8-26 ]</DIV>
+
+
+<P>
+設球體其中一層薄殼的半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN>，面密度為 ρ，薄殼質量為 <!-- MATH
+ $M=4\pi R^2\rho$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.gif"
+ ALT="$M=4\pi R^2\rho$"></SPAN>，球外質點 <SPAN CLASS="MATH"><I>P</I></SPAN> 的質量為 <SPAN CLASS="MATH"><I>m</I></SPAN> 。考慮在薄殼上的一小片面積 <SPAN CLASS="MATH"><I>dA</I></SPAN> 作用于 <SPAN CLASS="MATH"><I>P</I></SPAN> 的引力 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.gif"
+ ALT="$d{\bf F}$"></SPAN> 。因薄殼對于
+<SPAN CLASS="MATH"><I>OP</I></SPAN> 是旋轉對稱，<SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.gif"
+ ALT="$d{\bf F}$"></SPAN> 垂直于 <SPAN CLASS="MATH"><I>OP</I></SPAN> 的分量會被對稱小片 <SPAN CLASS="MATH"><I>dA</I>'</SPAN>
+所作用力抵消，所以只需考慮 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img211.gif"
+ ALT="$d{\bf F}$"></SPAN> 在 <SPAN CLASS="MATH"><I>OP</I></SPAN> 方向的分量：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="187" HEIGHT="47" BORDER="0"
+ SRC="img212.gif"
+ ALT="\begin{displaymath}\vert d{\bf F}\vert\cos \theta =G\frac{\rho dA\cdot m}{\overline{PQ}^2}\cos \theta\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+在直線段 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img213.gif"
+ ALT="$\overline{OP}$"></SPAN> 上選 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 使得
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="111" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img214.gif"
+ ALT="$\overline{OP}\cdot \overline{OP'}=R^2$"></SPAN>，並以 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 為心構造一個單位球面。令 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 連向 <SPAN CLASS="MATH"><I>dA</I></SPAN> 的射線在這單位球面上的影象為 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img215.gif"
+ ALT="$d\sigma$"></SPAN> 。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="297" HEIGHT="192" BORDER="0"
+ SRC="img216.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0827.e...
+...0.1,-0.25)*+{P'}
+,(5.7,3.2)*+{\overline{P'Q}^2d\sigma}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4215" ALIGN="CENTER">
+[ 圖 8-27 ]</DIV>
+
+
+<P>
+如 [圖 8-27] 所示，<SPAN CLASS="MATH"><I>dA</I></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img215.gif"
+ ALT="$d\sigma$"></SPAN> 之間有一個簡單的關係：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="150" HEIGHT="27" BORDER="0"
+ SRC="img217.gif"
+ ALT="\begin{displaymath}dA\cdot\cos \theta = \overline{P'Q}^2\cdot d\sigma\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+因此，整個薄殼作用于 <SPAN CLASS="MATH"><I>P</I></SPAN> 的力就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="427" HEIGHT="145" BORDER="0"
+ SRC="img218.gif"
+ ALT="\begin{eqnarray*}
+\vert{\bf F}\vert = {\textstyle \sum} \vert d{\bf F}\vert\cdot...
+...ac{R^2}{\overline{OP}^2}\cdot 4\pi = G\frac{Mm}{\overline{OP}^2}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+因此這層薄殼作用于 <SPAN CLASS="MATH"><I>P</I></SPAN> 的力就相等于將全部質量 <SPAN CLASS="MATH"><I>M</I></SPAN> 集中于 <SPAN CLASS="MATH"><I>O</I></SPAN> 而作用于 <SPAN CLASS="MATH"><I>P</I></SPAN> 的力。再將所有薄殼作用的力加起來，便得所需之公式。
+
+<P>
+這也就是由 Kepler 行星運行定律的數理分析自然而然地推導出牛頓萬有引力定律的一個簡樸詳盡的敘述。它就是牛頓的科學巨著 Philosophiae Naturalis Principia
+Mathematica 中所討論的主要結果。它也自然是後學後進應當心領神會，並從此體會人類理性文明世代相承，繼往開來的精要和精神。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="page7.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<b>8</b>│<a href="page9.html">9</a>　<a href="page9.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_08" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=八、圓錐截線的故事(ar_wy_geo_08)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page8.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:48:00 GMT -->
+</HTML>

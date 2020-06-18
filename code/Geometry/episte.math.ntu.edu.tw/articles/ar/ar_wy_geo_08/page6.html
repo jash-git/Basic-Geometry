@@ -1,0 +1,740 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page6.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:47:34 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="圓錐截線;橢圓;雙曲線;拋物線;焦點;Pascal定理;Menelous定理;圓錐曲線;Pappus定理">
+<META name="keyword_out" content="Euclid;Archimedes;Apollonius;Pappus;Kepler;Kepler三定律;笛卡兒;費瑪;正交坐標系;Pascal;Menelous;Menelous定理;射影幾何;Brahe;牛頓">
+<TITLE>八、圓錐截線的故事 (第 6 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="page5.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<b>6</b>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<a href="page9.html">9</a>　<a href="page7.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>八、圓錐截線的故事</FONT></FONT>
+    <FONT face="標楷體">（第 6 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    <BR>‧<a target="wNote" href="notes.html">註釋</a><BR>
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=4082 *** -->
+<!-- section head lev 1 -->
+<A name="06_SECTION0006"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">Pascal 定理和 Pappus 定理</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+上面所討論的是六點共在一二次曲線上的坐標代數條件式。很自然地我們還應該研討六點共在一二次曲線的幾何條件究竟是什麼？這也就是著名的 Pascal定理。Blaise Pascal (1623-1662)
+英年早逝，他在少年時代曾著有一本圓錐截線的小冊子，可惜當年印份極少，很早就連孤本也找不到了。但是 Leibniz 說他早年曾經拜讀過，還記得其中有下述這個美妙的定理，即在一個圓錐截線 Γ 上任取六點 
+<SPAN CLASS="MATH">{A<SUB>1</SUB>,<I>A</I><SUB>2</SUB>,<I>A</I><SUB>3</SUB>; <I>B</I><SUB>1</SUB>,<I>B</I><SUB>2</SUB>,<I>B</I><SUB>3</SUB>}</SPAN>，如 [圖 8-11] 所示，令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$P={A_1B_2}\cap {A_2B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.gif"
+ ALT="$Q={A_1B_3}\cap {A_3B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$R={A_2B_3}\cap {A_3B_2}$"></SPAN>，則恆有 <SPAN CLASS="MATH">{P,<I>Q</I>,<I>R</I>}</SPAN> 三點共線。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="239" HEIGHT="164" BORDER="0"
+ SRC="img108.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0811.e...
+...,2.42)*+{\scriptstyle Q}
+,(3.29,2.5)*+{\scriptstyle R}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3993" ALIGN="CENTER">
+[ 圖 8-11 ]</DIV>
+
+
+<P>
+但是 Leibniz 說他已經不記得 Pascal 在書中所給的証明了，所以我們現在只能從
+Pascal 當代的幾何認知環境來作一種合情合理的探討與推測。
+
+<P>
+早在紀元三世紀末，Pappus 的幾何著作中即已出現下述命題，即如 [圖 8-12] 所示，設 
+<SPAN CLASS="MATH">{A<SUB>1</SUB>,<I>A</I><SUB>2</SUB>,<I>A</I><SUB>3</SUB>}</SPAN>, 
+<SPAN CLASS="MATH">{ <I>B</I><SUB>1</SUB>,<I>B</I><SUB>2</SUB>,<I>B</I><SUB>3</SUB>}</SPAN> 是分別在 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\ell$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.gif"
+ ALT="$\ell'$"></SPAN>
+上的三點組。令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$P={A_1B_2}\cap {A_2B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.gif"
+ ALT="$Q={A_1B_3}\cap {A_3B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$R={A_2B_3}\cap {A_3B_2}$"></SPAN>，則 <SPAN CLASS="MATH">{P,<I>Q</I>,<I>R</I>}</SPAN> 三點共線。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="236" HEIGHT="206" BORDER="0"
+ SRC="img110.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0812.e...
+...iptstyle R}
+,(5.15,0.35)*+{\ell}
+,(4.65,5.08)*+{\ell'}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4003" ALIGN="CENTER">
+[ 圖 8-12 ]</DIV>
+
+
+<P>
+可惜這樣美妙的命題乃是僅僅以一個習題形式出現而並沒有在書中給以論証，顯然 Pappus 和當代的幾何學家們是知道如何証明上述命題的。他們當時究竟是怎麼証的呢？卻又是一個有待探討與推測的「証法考古題」。
+
+<P>
+現在讓我們先來探討 Pappus 定理的古証理當如何。由于這個命題是以習題形式出現，我們相信它是能夠以當年熟知的幾何定理推導出來的。回顧當年有關的幾何定理，其中就只有 Menelous 逆定理是以
+「三點共線」為其結論者，所以我們可以想到當年大概是要運用 Menelous
+逆定理來証明 Pappus 定理。我們先重溫 Menelous
+定理和其逆定理（詳見第二章例題）：
+
+<P>
+【Menelous定理和逆定理】：設直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\ell$"></SPAN> 與 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 三邊所在之直線 <SPAN CLASS="MATH"><I>AB</I></SPAN>, <SPAN CLASS="MATH"><I>BC</I></SPAN>, <SPAN CLASS="MATH"><I>CA</I></SPAN>
+分別相交于 <SPAN CLASS="MATH"><I>P</I>,<I>Q</I>,<I>R</I></SPAN> 相異三點，則下述<SPAN  CLASS="textit">有向長度比</SPAN>之乘積恆等于 <SPAN CLASS="MATH">-1</SPAN>：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="174" HEIGHT="49" BORDER="0"
+ SRC="img112.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{AP}\;}{\overrightarrow{PB}}\cdot \fra...
+...t \frac{\;\overrightarrow{CR}\;}{\overrightarrow{RA}} \equiv -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+反之，若相異三點 <SPAN CLASS="MATH"><I>P</I>,<I>Q</I>,<I>R</I></SPAN> 分別在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 三邊
+<SPAN CLASS="MATH"><I>AB</I></SPAN>, <SPAN CLASS="MATH"><I>BC</I></SPAN>, <SPAN CLASS="MATH"><I>CA</I></SPAN> 之上並滿足上面有向長度比的條件式，則 <SPAN CLASS="MATH"><I>P</I>,<I>Q</I>,<I>R</I></SPAN> 三點共線。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="301" HEIGHT="206" BORDER="0"
+ SRC="img113.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =6.7cm \epsfbox{fig0813...
+...,(0.7,1.8)*+{d_1}
+,(2.4,3.4)*+{d_3}
+,(3.25,0.9)*+{d_2}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4019" ALIGN="CENTER">
+[ 圖 8-13 ]</DIV>
+
+
+<P>
+現在讓我們運用 Menelous 定理和逆定理來証明 Pappus 定理。
+
+<P>
+就命題的圖形所給的八條直線，我們可以就地取材，選取其中三條分別過
+<SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 者來構成一個三角形，然後再對于其餘五條直線運用 Menelous 定理。如 [圖 8-14] 所示，我們選取了
+<SPAN CLASS="MATH"><I>A</I><SUB>1</SUB><I>B</I><SUB>3</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB><I>B</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>3</SUB><I>B</I><SUB>2</SUB></SPAN> 來構成 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.gif"
+ ALT="$\bigtriangleup STU$"></SPAN> 。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="236" HEIGHT="206" BORDER="0"
+ SRC="img115.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0814.e...
+...iptstyle U}
+,(5.15,0.35)*+{\ell}
+,(4.65,5.08)*+{\ell'}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4028" ALIGN="CENTER">
+[ 圖 8-14 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">對 <SPAN CLASS="MATH"><I>A</I><SUB>1</SUB><I>B</I><SUB>2</SUB></SPAN> 運用 Menelous 定理</SPAN>：
+
+<P>
+因 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="138" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.gif"
+ ALT="$ST\cap A_1B_2=\{A_1\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="141" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.gif"
+ ALT="$TU\cap A_1B_2=\{B_2\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="133" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img118.gif"
+ ALT="$US\cap A_1B_2=\{P\}$"></SPAN>，
+所以：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="185" HEIGHT="48" BORDER="0"
+ SRC="img119.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{SA_1}\;}{\overrightarrow{A_1T}}\cdot ...
+...}\cdot \frac{\;\overrightarrow{UP}\;}{\overrightarrow{PS}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">對 <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB><I>B</I><SUB>3</SUB></SPAN> 運用 Menelous 定理</SPAN>：
+
+<P>
+因 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="139" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.gif"
+ ALT="$ST\cap A_2B_3=\{B_3\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="134" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img121.gif"
+ ALT="$TU\cap A_2B_3=\{R\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.gif"
+ ALT="$US\cap A_2B_3=\{A_2\}$"></SPAN>，
+所以：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="185" HEIGHT="48" BORDER="0"
+ SRC="img123.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{SB_3}\;}{\overrightarrow{B_3T}}\cdot ...
+...ot \frac{\;\overrightarrow{UA_2}\;}{\overrightarrow{A_2S}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">對 <SPAN CLASS="MATH"><I>A</I><SUB>3</SUB><I>B</I><SUB>1</SUB></SPAN> 運用 Menelous 定理</SPAN>：
+
+<P>
+因 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.gif"
+ ALT="$ST\cap A_3B_1=\{Q\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$TU\cap A_3B_1=\{A_3\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.gif"
+ ALT="$US\cap A_3B_1=\{B_1\}$"></SPAN>，
+所以：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="185" HEIGHT="49" BORDER="0"
+ SRC="img127.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{SQ}\;}{\overrightarrow{QT}}\cdot \fra...
+...ot \frac{\;\overrightarrow{UB_1}\;}{\overrightarrow{B_1S}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">對 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\ell$"></SPAN> 運用 Menelous 定理</SPAN>（然後顛倒）：
+
+<P>
+因 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="107" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.gif"
+ ALT="$ST\cap \ell=\{A_1\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="109" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$TU\cap \ell=\{A_3\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="108" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.gif"
+ ALT="$US\cap \ell=\{A_2\}$"></SPAN>，
+所以：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="192" HEIGHT="48" BORDER="0"
+ SRC="img131.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{A_1T}\;}{\overrightarrow{SA_1}}\cdot ...
+...ot \frac{\;\overrightarrow{A_2S}\;}{\overrightarrow{UA_2}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">對 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.gif"
+ ALT="$\ell'$"></SPAN> 運用 Menelous 定理</SPAN>（然後顛倒）：
+
+<P>
+因 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="111" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.gif"
+ ALT="$ST\cap \ell'=\{B_3\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="113" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.gif"
+ ALT="$TU\cap \ell'=\{B_2\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="113" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img134.gif"
+ ALT="$US\cap \ell'=\{B_1\}$"></SPAN>，所以：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="192" HEIGHT="48" BORDER="0"
+ SRC="img135.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{B_3T}\;}{\overrightarrow{SB_3}}\cdot ...
+...ot \frac{\;\overrightarrow{B_1S}\;}{\overrightarrow{UB_1}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+現將上面所得的五條等式相乘起來，便會發現有很多項能夠互相抵消，最後便可得出下面等式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="172" HEIGHT="49" BORDER="0"
+ SRC="img136.gif"
+ ALT="\begin{displaymath}\frac{\;\overrightarrow{SQ}\;}{\overrightarrow{QT}}\cdot \fra...
+...}\cdot \frac{\;\overrightarrow{UP}\;}{\overrightarrow{PS}} = -1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+運用 Menelous 逆定理，即知 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 三點共線，Pappus 定理証畢。
+
+<P>
+接著讓我們來探討 Pascal 當年的証明究竟有那種合情合理的可能性。首先，他當然熟知
+Pappus 定理，而且也知道對于 Pappus 定理的上述証法。再者，他所要証明者，其實就是 Pappus 定理在非蛻化錐線的推廣。如
+[圖 8-15] 所示，Σ, <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img137.gif"
+ ALT="$\Sigma'$"></SPAN>
+分別是圓錐 Γ 和兩個平面 Π, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img138.gif"
+ ALT="$\Pi'$"></SPAN> 的截線，而且 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img137.gif"
+ ALT="$\Sigma'$"></SPAN> 是一個圓。令 
+<SPAN CLASS="MATH">{A<SUB>1</SUB>',<I>A</I><SUB>2</SUB>',<I>A</I><SUB>3</SUB>'; <I>B</I><SUB>1</SUB>',<I>B</I><SUB>2</SUB>',<I>B</I><SUB>3</SUB>'}</SPAN> 是 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img137.gif"
+ ALT="$\Sigma'$"></SPAN> 上的相應六點使得
+
+<SPAN CLASS="MATH">{O,<I>A</I><SUB><I>i</I></SUB>,<I>A</I><SUB><I>i</I></SUB>'}</SPAN> 和 
+<SPAN CLASS="MATH">{O,<I>B</I><SUB><I>i</I></SUB>,<I>B</I><SUB><I>i</I></SUB>'}</SPAN> 皆為共線三點組。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="290" HEIGHT="308" BORDER="0"
+ SRC="img139.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =6.5cm \epsfbox{fig0815...
+...)*+{\scriptstyle \Pi'}
+,(4.7,1.65)*+{\scriptstyle \Pi}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4066" ALIGN="CENTER">
+[ 圖 8-15 ]</DIV>
+
+
+<P>
+令 <!-- MATH
+ $P'={A_1'B_2'}\cap {A_2'B_1'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="136" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.gif"
+ ALT="$P'={A_1'B_2'}\cap {A_2'B_1'}$"></SPAN>,
+<!-- MATH
+ $Q'={A_1'B_3'}\cap {A_3'B_1'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="137" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$Q'={A_1'B_3'}\cap {A_3'B_1'}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="136" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.gif"
+ ALT="$R'={A_2'B_3'}\cap {A_3'B_2'}$"></SPAN>
+。不難看到
+<SPAN CLASS="MATH">{O,<I>P</I>,<I>P</I>'}</SPAN>, <SPAN CLASS="MATH">{O,<I>Q</I>,<I>Q</I>'}</SPAN>, <SPAN CLASS="MATH">{O,<I>R</I>,<I>R</I>'}</SPAN> 也都是共線三點組。所以
+<SPAN CLASS="MATH">{P',<I>Q</I>',<I>R</I>'}</SPAN> 三點共線的充要條件乃是 <SPAN CLASS="MATH">{P,<I>Q</I>,<I>R</I>}</SPAN> 三點共線。由此可以想到，Pascal 當年想要証明者，其實可以歸于圓的情形去加以証明的。換句話說，只要能夠把它對圓的「特殊情形」 加以証明，則「一般情形」的証明就可以運用上述透視對應加以推論而得！按照 Pascal 當代的幾何認知來判斷，上面這種運用圓錐截線「與生俱來」的透視對應把 Pascal 定理的証明歸于圓的情形加以論証的想法是相當自然的。總之，只要有了這個想法，就自然會同樣地去構造在 Pappus 定理的古証中那個分別含有 <SPAN CLASS="MATH"><I>P</I>',<I>Q</I>',<I>R</I>'</SPAN> 于其三邊之上的那個三角形，如 [圖 8-16] 所示的
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.gif"
+ ALT="$\bigtriangleup STU$"></SPAN> 。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="180" HEIGHT="296" BORDER="0"
+ SRC="img143.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4cm \epsfbox{fig0816.e...
+...5,2.41)*+{\scriptstyle T}
+,(1.3,5.2)*+{\scriptstyle U}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4078" ALIGN="CENTER">
+[ 圖 8-16 ]</DIV>
+
+
+<P>
+把 Pappus 定理中所用的 [圖 8-16] 和 [圖 8-14] 相比較，其差別是前者除
+<!-- MATH
+ $\bigtriangleup STU$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.gif"
+ ALT="$\bigtriangleup STU$"></SPAN> 的三邊之外尚有五條直線而後者則尚有三條直線和一個圓。我們當然可以先對這三條直線運用 Menelous 定理，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="190" HEIGHT="160" BORDER="0"
+ SRC="img144.gif"
+ ALT="\begin{eqnarray*}
+\frac{\;\overrightarrow{SA_1'}\;}{\overrightarrow{A_1'T}}\cdot...
+...\frac{\;\overrightarrow{UB_1'}\;}{\overrightarrow{B_1'S}} &amp;=&amp; -1
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+相乘之後再重組，其所得為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="515" HEIGHT="54" BORDER="0"
+ SRC="img145.gif"
+ ALT="\begin{displaymath}
+\frac{\;\overrightarrow{SA_1'}\;}{\overrightarrow{A_2'S}} \...
+...cdot \frac{\;\overrightarrow{UP'}\;}{\overrightarrow{P'S}}= -1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+把上式和 Menelous 逆定理中的條件相比，上式左側多了一個
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\frac{\;\overrightarrow{SA_1'}\;}{\overrightarrow{A_2'S}} \cdot  \frac{\;\overrightarrow{SB_3'}\;}{\overrightarrow{B_1'S}} \cdot  \frac{\;\overrightarrow{TB_2'}\;}{\overrightarrow{B_3'T}} \cdot  \frac{\;\overrightarrow{TA_3'}\;}{\overrightarrow{A_1'T}} \cdot  \frac{\;\overrightarrow{UA_2'}\;}{\overrightarrow{B_2'U}} \cdot  \frac{\;\overrightarrow{UB_1'}\;}{\overrightarrow{A_3'U}}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="314" HEIGHT="54" BORDER="0"
+ SRC="img146.gif"
+ ALT="\begin{displaymath}
+\frac{\;\overrightarrow{SA_1'}\;}{\overrightarrow{A_2'S}} \...
+...cdot \frac{\;\overrightarrow{UB_1'}\;}{\overrightarrow{A_3'U}}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+在此，自然會想到應該運用圓的幾何性質去証明它恆等于 1 。其實，如 [圖 8-17] 所示，由圓周角相等易見
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="225" HEIGHT="247" BORDER="0"
+ SRC="img147.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0817.e...
+....9,4.85)*+{B_1'}
+,(3.8,4.95)*+{B_3'}
+,(2.22,2.55)*+{S}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4084" ALIGN="CENTER">
+[ 圖 8-17 ]</DIV>
+
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.gif"
+ ALT="$\bigtriangleup SA_1'B_1'$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.gif"
+ ALT="$\bigtriangleup SA_2'B_3'$"></SPAN> 相似，所以
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="130" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.gif"
+ ALT="$\displaystyle \frac{\;\overrightarrow{SA_1'}\;}{\overrightarrow{A_2'S}} \cdot \frac{\;\overrightarrow{SB_3'}\;}{\overrightarrow{B_1'S}}=1$"></SPAN> 。同理即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="277" HEIGHT="54" BORDER="0"
+ SRC="img151.gif"
+ ALT="\begin{displaymath}
+\frac{\;\overrightarrow{TB_2'}\;}{\overrightarrow{B_3'T}} \c...
+...ot \frac{\;\overrightarrow{UB_1'}\;}{\overrightarrow{A_3'U}}=1
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這樣就可以証得 <SPAN CLASS="MATH"><I>P</I>',<I>Q</I>',<I>R</I>'</SPAN> 三點共線，再用透視對應即可証得 <SPAN CLASS="MATH"><I>P</I>,<I>Q</I>,<I>R</I></SPAN> 三點也共線。由上面這一段分析和探討來看，我們相信 Pascal 當年的証法，大致應該如此。
+
+<P>
+[註]：（一）Pascal 定理不但提供了六點共在一錐線的充要條件的幾何表述，而且也提供了描繪那個五點所定的錐線的點線作圖法。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="291" HEIGHT="225" BORDER="0"
+ SRC="img152.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =6.5cm \epsfbox{fig0818...
+....3,2.55)*+{Q}
+,(2.35,4.22)*+{B_2}
+,(4.85,4.95)*+{\ell}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4092" ALIGN="CENTER">
+[ 圖 8-18 ]</DIV>
+
+
+<P>
+（二）錐線的幾何本質乃是圓的透視投影。由此可見，關于圓的任何一個在「透視投影之下保持不變」的幾何性質，當然也是任給錐線所共有的幾何性質。上述 Pascal 定理只是其中之一，當然它是其中極為重要的錐線特徵性質；其他各種各樣的錐線的透視投影不變的共性，都可以用它來加以推導。
+
+<P>
+（三）Pappus 定理當年在 Pappus 的著作中，僅僅以習題形式出現，究其原因，大概是當代的幾何學家們認為它只是一個美妙的命題而已；它在「當時」的幾何體系中，並沒有基本的重要性。其實 Pappus 定理的深刻蘊涵，一直到了十九世紀後半在射影幾何學的研討中，才展現出它的基本重要性。它乃是整個射影幾何的基本定理
+(fundamental theorem of projective geometry) 。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="page5.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<b>6</b>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<a href="page9.html">9</a>　<a href="page7.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_08" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=八、圓錐截線的故事(ar_wy_geo_08)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page6.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:47:45 GMT -->
+</HTML>

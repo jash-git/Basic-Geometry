@@ -1,0 +1,551 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_00/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:13 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="點;動點;moving point;通路;path;射線;ray;直線段;interval;直線;straight line;凸子集;convex subset;平直子集;rectilinear subset;straight subset;凸包;convex hull;反射對稱;全等;平行;《原本》;《Elements》">
+<META name="keyword_out" content="笛卡兒;費瑪;變換群;Hamilton;Grassmann;全等;平行;歐幾里得;《Elements》">
+<TITLE>引言：空間的基本概念與基本結構</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>引言：空間的基本概念與基本結構</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">基本概念和基本結構</a>
+<LI><a href="page2.html#02_SECTION0002">平面上的次序與分隔</a>
+<LI><a href="page3.html#03_SECTION0003">對稱性</a>
+<LI><a href="page4.html#04_SECTION0004">平行性</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=2068 *** -->
+
+<!-- section text -->
+<P>
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{引言：空間的基本概念與基本結構}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_in{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{點::動點::moving point::通路::path::射線::ray::直線段::interval::直線::straight line::凸子集::convex subset::平直子集::rectilinear subset::straight subset::凸包::convex hull::反射對稱::全等::平行::《原本》::《Elements》}
+%\key_out{笛卡兒::費瑪::變換群::Hamilton::Grassmann::全等::平行::歐幾里得::《Elements》}
+-- episte: basic_info end -->
+
+<P>
+幾何學乃是人類理性文明，對于我們和大自然中的萬物萬象共存于其中的空間的「認識論」。宇宙中的所有事物皆存在于其中、發生于其內，當然也永遠受著空間本質的制約與蘊育。幾何學的課題也就是去研究、理解空間的本質，它是我們研討大自然、理解大自然的自然起點和基石所在；它也是整個自然科學的啟蒙者和奠基者，是理所當然的第一科學。不論在自然科學的發展順序上，或在全局的基本重要性上，幾何學都是當之無愧的先行者與奠基者，也是種種科學思想和方法論的自然發祥地。它源遠流長，歷經數千年世代相承精益求精的研究和逐步逐階的進展，至今依然根深幹粗，蓬勃茁壯。在現今廿一世紀，它會繼續是開拓新知的有力工具，而自然科學的拓展又必然對于空間幾何學的理解深度和廣度提出新的要求和問題。總之自然科學和幾何學的進展是密切相關、相輔相成的。伽利略 (Galileo) 曾說：「上帝必定是一個幾何學家 (God must be a geometer)。」
+其所指也許就是上述自然科學和幾何學之間的自然結合。
+
+<P>
+自古到今，幾何學的研究在方法論上大體可以劃分成下述幾個階段：
+
+<P>
+<DL COMPACT>
+<DT>(1)</DT>
+<DD><SPAN  CLASS="textit">實驗幾何</SPAN>：用歸納實驗去發現空間之本質。
+</DD>
+<DT>(2)</DT>
+<DD><SPAN  CLASS="textit">推理幾何</SPAN>：以實驗幾何之所得為基礎，<SPAN CLASS="MATH"></SPAN>改用縯譯法，以邏輯推理去探索新知，並對于已知的各種各樣空間本質，精益求精地作系統化和深刻的分析。在這方面，古希臘文明獲得了輝煌的成就，它也是全人類理性文明中的重大篇章。
+</DD>
+<DT>(3)</DT>
+<DD><SPAN  CLASS="textit">坐標解析幾何</SPAN>：笛卡兒 (Descartes) 和費瑪 (Fermat)
+通過坐標系的建立，把當代數學中的兩大主角——幾何學和代數學——簡明有力地結合起來，開創了近代數學的先河。其自然而然的結果是微積分的產生和大量地運用解析法研討自然現象。
+</DD>
+<DT>(4)</DT>
+<DD><SPAN  CLASS="textit">向量幾何</SPAN>：從現代的觀點來看，
+空間最為根本而且控制全局的本質乃是由它的所有保長變換所構成的變換群
+(transformation group)，通常又稱之為 3-維的歐氏群 (Euclidean group of <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\mathbb E^3$"></SPAN>)，而幾何學所研究者就是這個變換群的不變量理論
+(invariant theory) 。因為所有幾何量都根源于長度，所以必然在保長變換之下保持不變；反之，任何在保長變換群的作用之下保持不變的（亦即不變量—invariants）也都具有幾何意義，而且也一定根源于長度。向量幾何在本質上乃是坐標解析幾何的返璞歸真，它的最大優越性在于向量運算的正交不變性 (orthogonal invariance)。可以說，向量幾何乃是不依賴于坐標系的解析幾何
+(coordinate-free analytical geometry)，它自然而然地化解了原先在坐標解析幾何中，由坐標系的選取所引入的各種各樣（非幾何的）非不變量的困擾！
+Hamilton 和 Grassmann 分別是 3-維和高維的向量代數的創始者。
+</DD>
+</DL>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B2%C3%A5d%A8%E0">笛卡兒</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B6O%BA%BF">費瑪</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%C5%DC%B4%AB%B8s">變換群</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Hamilton">Hamilton</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Grassmann">Grassmann</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%FE%B5%A5">全等</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%A6%E6">平行</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%BC%DA%B4X%A8%BD%B1o">歐幾里得</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A1mElements%A1n">《Elements》</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=3188 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">基本概念和基本結構</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+<SPAN  CLASS="textit">位置</SPAN> (location) 是空間的基本概念之中最為<SPAN  CLASS="textit">原始</SPAN>者。空間本身其實就是宇宙之中所有可能的位置的總體。在幾何學的討論中，通常用<SPAN  CLASS="textit">點</SPAN> (point)
+來標記位置， 所以點其實就是位置的抽象化 (abstraction)。當一個動點 (moving point) 由一個位置移動到另一位置，其所經過的點組成這個運動的<SPAN  CLASS="textit">通路</SPAN> (path)。連結于空間各地之間的通路則是空間基本概念中第二個最原始者。再者，光線的普遍存在和我們的視覺很自然地啟示我們，並促使我們認識到空間的基本結構乃是：<BLOCKQUOTE>
+「連結給定兩點之間的所有通路之中，有一條唯一的最短通路——它就是連結兩點的直線段。」
+
+</BLOCKQUOTE>
+這也就是在我們日常生活的大氣層內，或者在太空中，光由一點射向另一點所經過的通路，亦即我們常見的光線 (light rays)。再者，我們日常的經驗是：若不受阻礙，光線是會一直向前無限延伸的。<SPAN  CLASS="textit">射線</SPAN> (ray) 這個基本幾何概念就是上述這種可以無限向前延伸的光線的抽象化，而空間中給定相異兩點 <SPAN CLASS="MATH">{ <I>A</I>,<I>B</I>}</SPAN> 所確定的直線則是由 <SPAN CLASS="MATH"><I>A</I></SPAN> 射向 <SPAN CLASS="MATH"><I>B</I></SPAN> 的射線和由 <SPAN CLASS="MATH"><I>B</I></SPAN> 射向 <SPAN CLASS="MATH"><I>A</I></SPAN> 的射線的和集 (union)。總結上述的討論，空間的基本結構可以描述如下：
+
+<P>
+【基本幾何結構】：對于空間給定相異兩點 <SPAN CLASS="MATH">{ <I>A</I>,<I>B</I>}</SPAN>
+存在有唯一連結于 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 之間的最短通路，稱之為連結 <SPAN CLASS="MATH"><I>A</I>,<I>B</I></SPAN> 的直線段
+(interval)，將以符號 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline{AB}$"></SPAN> 表示之。再者由 <SPAN CLASS="MATH"><I>A</I></SPAN> 到 <SPAN CLASS="MATH"><I>B</I></SPAN> 的最短通路可以向前無限延伸，稱之為由 <SPAN CLASS="MATH"><I>A</I></SPAN> 射向 <SPAN CLASS="MATH"><I>B</I></SPAN> 的射線，將以符號 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 表示之。而該線段向兩端無限延伸的通路，亦即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\overrightarrow{AB}\cup \overrightarrow{BA}$"></SPAN> ，則稱之為由 <SPAN CLASS="MATH">{ <I>A</I>,<I>B</I>}</SPAN> 所唯一確定的直線 (straight line)，將以符號 <SPAN CLASS="MATH"><I>AB</I></SPAN> 表示之。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="450" HEIGHT="39" BORDER="0"
+ SRC="img5.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,1){\epsfxsize=10cm \epsfbox{fig0001.eps}}*\frm{}
+,(1.25,-1)*+{A}
+,(3.75,-1)*+{B}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1008" ALIGN="CENTER">
+[ 圖0-1 ]</DIV>
+
+
+<P>
+[註]：點是最為原始的幾何事物 (geometric object)，所有其他的幾何事物都是由點組合而成的。直線段和直線則是第二種最為原始的幾何事物，所有其他的幾何結構和性質都是由它們所表達的基本結構來刻劃和表述的。
+
+<P>
+直線和直線段之間，顯然有下述基本關係：
+
+<P>
+<SPAN  CLASS="textit">直線上的次序與分隔</SPAN>：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD><SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline{AB}$"></SPAN> 是 <SPAN CLASS="MATH"><I>AB</I></SPAN> 的一個子集。若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$C\in \overline{AB}$"></SPAN>
+而且 <SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$C\neq A$"></SPAN> 或 <SPAN CLASS="MATH"><I>B</I></SPAN> ，則稱 <SPAN CLASS="MATH"><I>C</I></SPAN> 位于 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 之間。再者，若 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$C,D\in \overline{AB}$"></SPAN> 則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{CD} \subseteq \overline{AB}$"></SPAN> 。
+</DD>
+<DT>(ii)</DT>
+<DD>直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\ell$"></SPAN> 上任給一點 <SPAN CLASS="MATH"><I>P</I></SPAN> 把直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\ell$"></SPAN> 分割成兩段，稱為 <SPAN CLASS="MATH"><I>P</I></SPAN> 的兩側。屬于同側的兩點 <SPAN CLASS="MATH"><I>A</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB></SPAN> 其直線段 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\overline{A_{1}A_{2}}$"></SPAN> 不包含 <SPAN CLASS="MATH"><I>P</I></SPAN>；而屬于異側的兩點 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>
+其直線段 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline{AB}$"></SPAN> 則包含 <SPAN CLASS="MATH"><I>P</I></SPAN>。
+</DD>
+</DL>
+
+<P>
+設 <SPAN CLASS="MATH">{ <I>A</I>,<I>B</I>,<I>C</I>}</SPAN> 是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="54" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\ell \setminus \{ P\}$"></SPAN> 中的相異三點，而且 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$P\in \overline{AB}$"></SPAN>，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\overline{AC}$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\overline{BC}$"></SPAN> 中有一且僅有一包含 <SPAN CLASS="MATH"><I>P</I></SPAN> 。再者，由相異兩點定一直線段（或一直線）這兩種密切相關的空間基本結構，就可以自然地定義下述兩種和兩者各別相容的子集。
+
+<P>
+【定義】：空間中的子集 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 若滿足性質：
+
+<P>
+<DIV CLASS="centerline" ID="par1042" ALIGN="CENTER">
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="245" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.gif"
+ ALT="$\hbox{{\fontfamily{cwM2}\fontseries{m}\selectfont \cH74}} \; A,B\in {\cal S},\;...
+...ily{cwM0}\fontseries{m}\selectfont \cH134}}\quad \overline{AB} \subset {\cal S}$"></SPAN></DIV>
+
+
+<P>
+則稱 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 為一個<SPAN  CLASS="textit">凸子集</SPAN> (convex subset)。
+
+<P>
+【定義】：空間中的子集 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 若滿足性質：
+
+<P>
+<DIV CLASS="centerline" ID="par1046" ALIGN="CENTER">
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="245" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\hbox{{\fontfamily{cwM2}\fontseries{m}\selectfont \cH74}} \; A,B\in {\cal S}, \...
+...ox{{\fontfamily{cwM0}\fontseries{m}\selectfont \cH134}}\quad AB\subset {\cal S}$"></SPAN></DIV>
+
+
+<P>
+則稱 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="${\cal S}$"></SPAN> 為一個<SPAN  CLASS="textit">平直子集</SPAN>
+(straight or rectilinear subset)。
+
+<P>
+顯然，所有平直子集也都是凸子集。但是，反之則不然。例如直線段
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline{AB}$"></SPAN> 是一個凸子集，但是它並非平直子集，而直線 <SPAN CLASS="MATH"><I>AB</I></SPAN> 本身則當然是一個平直子集和凸子集。
+
+<P>
+再者，由上述定義，易見凸子集的交集 (intersection) 還是凸子集，平直子集的交集還是平直子集。由此可見，對于空間給定的點集 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN>，在所有包含 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN>
+的凸子集之中有一個唯一的<SPAN  CLASS="textit">最小者</SPAN>，它其實就是所有包含 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 的凸子集的<SPAN  CLASS="textit">交集</SPAN>是也，通常叫做
+<SPAN  CLASS="textit"><SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 的凸包</SPAN> (convex hull of <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="${\cal S}$"></SPAN>)，我們將以 <SPAN CLASS="MATH"><IMG
+ WIDTH="40" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.gif"
+ ALT="$C({\cal S})$"></SPAN> 表示之。同樣地，所有包含 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="${\cal S}$"></SPAN> 的平直子集的交集乃是那個包含
+<SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="${\cal S}$"></SPAN> 的平直子集中的最小者，通常叫做
+<SPAN  CLASS="textit">由 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> 所張的平直子集</SPAN>
+(the rectilinear subset spanned by <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\cal S$"></SPAN> )，我們將以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$&lt;\!\!{\cal S}\!\!&gt;$"></SPAN> 表示之。
+
+<P>
+<SPAN  CLASS="textit">注意</SPAN>：我們將把空集合 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\phi$"></SPAN> 和單點集合 <SPAN CLASS="MATH">{ <I>P</I>}</SPAN>
+想成凸子集和平直子集的特例。(因為它們根本不會含有相異兩點，所以其檢驗條件無從用起！)
+
+<P>
+【例子】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="${\cal S}=\{A\}$"></SPAN> 只含有單個點者，則
+<BLOCKQUOTE>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="108" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$C\big(\{A\}\big)=\{A\}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="100" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$&lt;\!\!\{A\}\!\!&gt;=\{A\}$"></SPAN>
+</BLOCKQUOTE>
+
+<P>
+</DD>
+<DT>(2)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.gif"
+ ALT="${\cal S}=\{A,B\}$"></SPAN> 是由相異兩點組成者，則
+<BLOCKQUOTE>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="125" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.gif"
+ ALT="$C\big(\{A,B\}\big)=\overline{AB}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="117" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.gif"
+ ALT="$&lt;\!\!\{A,B\}\!\!&gt;=AB$"></SPAN>
+</BLOCKQUOTE>
+
+<P>
+</DD>
+<DT>(3)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="104" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="${\cal S}=\{A,B,C\}$"></SPAN> 而且 <SPAN CLASS="MATH"><I>A</I>,<I>B</I>,<I>C</I></SPAN> 不共線，則
+<BLOCKQUOTE>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="175" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$C\big(\{A,B,C\}\big)=\bigtriangleup ABC,$"></SPAN>
+<BR>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$&lt;\!\!\{A,B,C\}\!\!&gt;$"></SPAN> 是由不共線三點所張的平面。
+
+</BLOCKQUOTE>
+
+<P>
+</DD>
+<DT>(4)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="${\cal S}=\{A,B,C,D\}$"></SPAN> 是由不共面四點所組成者，則
+<BLOCKQUOTE>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="118" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$C\big(\{A,B,C,D\}\big)$"></SPAN> 是以 <SPAN CLASS="MATH"><I>A</I>,<I>B</I>,<I>C</I>,<I>D</I></SPAN> 為其頂點的四面體，
+<BR>
+它的四個面就是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\bigtriangleup BCD$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$\bigtriangleup CDA$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.gif"
+ ALT="$\bigtriangleup DAB$"></SPAN>，
+<BR>
+而其所張的平直子集已經是全空間了！
+
+<DIV ALIGN="CENTER">
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="114" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.gif"
+ ALT="$&lt;\!\!\{A,B,C,D\}\!\!&gt;$"></SPAN> = 全空間。
+
+</DIV>
+</BLOCKQUOTE>
+</DD>
+</DL>
+
+<P>
+所以空間中的平直子集只有五種，即<SPAN  CLASS="textit">空集合</SPAN> <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\phi$"></SPAN>，<SPAN  CLASS="textit">單點子集</SPAN> <SPAN CLASS="MATH">{ <I>P</I>}</SPAN> ，<SPAN  CLASS="textit">直線</SPAN>，<SPAN  CLASS="textit">平面</SPAN>和<SPAN  CLASS="textit">全空間</SPAN>。
+
+<P>
+由此可見，平面乃是僅次于全空間的平直子集，它是一種介乎于直線和全空間之間，而又具有連點直線段和直線這種空間基本結構的子空間。所以，平面乃是一種既比空間簡單而又保有空間基本結構的幾何結構。平面幾何學的課題就是研究平面上所保有的空間基本結構和所反映的各種性質。它是進而研討空間（立體）幾何學的自然而且非常理想的中途站。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_00" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=引言：空間的基本概念與基本結構(ar_wy_geo_00)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_00/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:30 GMT -->
+</HTML>

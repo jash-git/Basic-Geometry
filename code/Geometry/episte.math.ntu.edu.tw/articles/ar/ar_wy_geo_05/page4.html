@@ -1,0 +1,723 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/page4.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:45:53 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="位移向量;displacement vector;向量;平移;translation;內積;inner product;面積的勾股定理;四元數;quaternions;圓冪定理;向量代數;外積;叉積;cross product">
+<META name="keyword_out" content="平移;Eudoxus;相似變換;勾股定理;內積;Hamilton;四元數;複數;協變;Menelous定理;Ceva定理;Ceva;圓冪定理">
+<TITLE>五、向量幾何和向量代數 (第 4 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="page3.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<b>4</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>五、向量幾何和向量代數</FONT><BR><FONT size="4">——空間結構的系統代數化</FONT></FONT>
+    <FONT face="標楷體">（第 4 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=1338 *** -->
+<!-- section head lev 1 -->
+<A name="07_SECTION0004"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">例題、習題和思考題</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+【例題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD><SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 三點共線的向量條件式：
+
+<P>
+設 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 三點共線，<SPAN CLASS="MATH"><I>O</I></SPAN> 是任選之原點，即如 [圖 5-6] 所示：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="188" HEIGHT="140" BORDER="0"
+ SRC="img250.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0506.eps}}*\fr...
+...)*+{O}
+,(0.7,5.1)*+{P}
+,(2.7,3.2)*+{Q}
+,(4.15,1.85)*+{R}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4314" ALIGN="CENTER">
+[ 圖 5-6 ]</DIV>
+
+
+<P>
+則存在實數 <SPAN CLASS="MATH"><I>k</I></SPAN>，使得 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.gif"
+ ALT="$\overrightarrow{PR} = k\overrightarrow{PQ}$"></SPAN>，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="240" HEIGHT="55" BORDER="0"
+ SRC="img252.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;\overrightarrow{OR}-\overrightarrow{OP} = k\big(\overrightar...
+...tarrow{OP}+(-k)\overrightarrow{OQ}+
+\overrightarrow{OR} ={\bf0}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+換言之，存在有不全為零的系數 α, β, γ  滿足
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="264" HEIGHT="46" BORDER="0"
+ SRC="img253.gif"
+ ALT="\begin{displaymath}\left\{ \begin{array}{l}
+\alpha \overrightarrow{OP}+\beta\ove...
+...ies{m}\selectfont \cH113} $\gamma\neq 0$)}
+\end{array} \right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+反之，若存在滿足上述條件的 α, β, γ（設
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.gif"
+ ALT="$\gamma\neq 0$"></SPAN>），即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="402" HEIGHT="42" BORDER="0"
+ SRC="img255.gif"
+ ALT="\begin{displaymath}\beta\big(\overrightarrow{OQ}-\overrightarrow{OP}\big)+\gamma...
+...\overrightarrow{PR}=(-\frac{\beta}{\gamma})\overrightarrow{PQ}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+</DD>
+<DT>(2)</DT>
+<DD>用向量代數証明 Menelous 定理：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="233" HEIGHT="198" BORDER="0"
+ SRC="img256.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0507.eps}}*\fr...
+...,(0.6,2.7)*+{R}
+,(1.15,3.7)*+{B}
+,(1.45,3.25)*+{{\bf b}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4322" ALIGN="CENTER">
+[ 圖 5-7 ]</DIV>
+
+
+<P>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="75" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.gif"
+ ALT="$\overrightarrow{OP}=k_1{\bf a}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.gif"
+ ALT="$\overrightarrow{OR}=k_2{\bf b}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.gif"
+ ALT="$\overrightarrow{OQ}=x{\bf a}+y{\bf b}$"></SPAN> 。首先，由 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>
+三點共線的向量條件式，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="231" HEIGHT="51" BORDER="0"
+ SRC="img260.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; x\cdot\overrightarrow{OA}+y\cdot \overrightarrow{OB}+
+(-1)\overrightarrow{OQ}={\bf0} \\
+\Rightarrow &amp;&amp; x+y-1=0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+再者，由 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 三點共線的向量條件式，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="252" HEIGHT="75" BORDER="0"
+ SRC="img261.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;\frac{x}{k_1}\cdot\overrightarrow{OP}+\frac{y}{k_2}
+\cdot \...
+...{OQ}={\bf0} \\
+\Rightarrow &amp;&amp; \frac{x}{k_1}+\frac{y}{k_2}-1 =0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+由此解得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="235" HEIGHT="42" BORDER="0"
+ SRC="img262.gif"
+ ALT="\begin{displaymath}x=\frac{k_1k_2 -k_1}{k_2-k_1}, \quad\quad
+y=\frac{k_1k_2-k_2}{k_1-k_2} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="228" HEIGHT="46" BORDER="0"
+ SRC="img263.gif"
+ ALT="\begin{displaymath}\frac{\overrightarrow{OP}}{\overrightarrow{PA}}=\frac{k_1}{k_...
+...{\overrightarrow{BR}}{\overrightarrow{RO}}=
+\frac{1-k_2}{k_2} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="246" HEIGHT="49" BORDER="0"
+ SRC="img264.gif"
+ ALT="\begin{displaymath}
+\frac{\overrightarrow{AQ}}{\overrightarrow{QB}}=\frac{y}{x}\...
+...w{QB}}\cdot
+\frac{\overrightarrow{BR}}{\overrightarrow{RO}} =-1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+</DD>
+<DT>(3)</DT>
+<DD>重心和 Ceva 定理：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="203" HEIGHT="179" BORDER="0"
+ SRC="img265.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0508.eps}}*\fr...
+...,2.3)*+{\bigtriangleup_2}
+,(1.6,2.1)*+{\bigtriangleup_3}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4338" ALIGN="CENTER">
+[ 圖 5-8 ]</DIV>
+
+
+<P>
+設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.gif"
+ ALT="${\bf a}_i=\overrightarrow{OP_i}$"></SPAN> 分別為質量 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.gif"
+ ALT="$\mu_i$"></SPAN>
+的三個質點的位置向量，則其重心的位置向量就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="411" HEIGHT="42" BORDER="0"
+ SRC="img268.gif"
+ ALT="\begin{displaymath}\frac{1}{\mu_1+\mu_2+\mu_3}(\mu_1{\bf a}_1+\mu_2{\bf a}_2+\mu_3{\bf a}_3)
+=m_1{\bf a}_1+m_2{\bf a}_2+m_3{\bf a}_3\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其中 <SPAN CLASS="MATH"><I>m</I><SUB><I>i</I></SUB></SPAN> 是 <SPAN CLASS="MATH"><I>P</I><SUB><I>i</I></SUB></SPAN> 的質量百分比（亦即
+<SPAN CLASS="MATH"><I>m</I><SUB>1</SUB>+<I>m</I><SUB>2</SUB>+<I>m</I><SUB>3</SUB>=1</SPAN>）。若改用重心作為原點，則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="82" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.gif"
+ ALT="$\{{\bf a}_1,{\bf a}_2,{\bf a}_3\}$"></SPAN> 滿足條件式
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="180" HEIGHT="27" BORDER="0"
+ SRC="img270.gif"
+ ALT="\begin{displaymath}m_1{\bf a}_1+m_2{\bf a}_2+m_3{\bf a}_3={\bf0}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="233" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.gif"
+ ALT="$(m_1{\bf a}_1+m_2{\bf a}_2+m_3{\bf a_3})\times {\bf a}_3={\bf0}$"></SPAN> 得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="215" HEIGHT="99" BORDER="0"
+ SRC="img272.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; m_1{\bf a}_1\times{\bf a}_3+m_2{\bf a}_2\times{\bf a}_3={\b...
+...m_1:m_2:m_3\\
+\Rightarrow &amp;&amp; \bigtriangleup_i=m_i\bigtriangleup
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+這其實乃是 Ceva 定理在「力學」中的表現。
+
+<P>
+</DD>
+<DT>(4)</DT>
+<DD>圓冪定理的向量証法：
+
+<P>
+設 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 為過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的直線，與圓交于 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN> 兩點。令 <SPAN CLASS="MATH"><I>X</I></SPAN> 為
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 上的一個動點，<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.gif"
+ ALT="${\bf u}$"></SPAN> 是沿 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 方向的單位長向量。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="286" HEIGHT="182" BORDER="0"
+ SRC="img273.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=6cm \epsfbox{fig0509.eps}}*\fr...
+...'}
+,(4.3,3)*+{{\bf u}}
+,(4.6,4.8)*+{\vert{\bf u}\vert=1}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4358" ALIGN="CENTER">
+[ 圖 5-9 ]</DIV>
+
+
+<P>
+易見有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="204" HEIGHT="25" BORDER="0"
+ SRC="img274.gif"
+ ALT="\begin{displaymath}\overrightarrow{OX}=\overrightarrow{OP}+\overrightarrow{PX}
+=\overrightarrow{OP}+x {\bf u}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見，直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 上的動點 <SPAN CLASS="MATH"><I>X</I></SPAN> 恰好位于以 <SPAN CLASS="MATH"><I>O</I></SPAN> 為圓心，半徑為
+<SPAN CLASS="MATH"><I>R</I></SPAN> 的圓上的條件式就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="290" HEIGHT="51" BORDER="0"
+ SRC="img275.gif"
+ ALT="\begin{eqnarray*}
+R^2 &amp;=&amp; \overrightarrow{OX}\cdot \overrightarrow{OX}
+=(\overr...
+...cdot \overrightarrow{OP}+2x\overrightarrow{OP}\cdot
+{\bf u}+x^2
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+上述二次方程式的兩個根 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.gif"
+ ALT="$\lambda_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.gif"
+ ALT="$\lambda_2$"></SPAN> 也就是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.gif"
+ ALT="$\overrightarrow{PQ_1}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.gif"
+ ALT="$\overrightarrow{PQ_2}$"></SPAN> 的有向長度。所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="183" HEIGHT="48" BORDER="0"
+ SRC="img280.gif"
+ ALT="\begin{displaymath}\left\{ \begin{array}{l} \lambda_1\cdot \lambda_2 =
+\overri...
+...bda_2 = -2\overrightarrow{OP}\cdot {\bf u}
+\end{array} \right.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+第一式的幾何意義就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="365" HEIGHT="30" BORDER="0"
+ SRC="img281.gif"
+ ALT="\begin{displaymath}\overrightarrow{PQ_1}\cdot\overrightarrow{PQ_2}=\big\vert\ove...
+...\cH236}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH220})} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+第二式的幾何意義是什麼呢？
+
+<P>
+令 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 是 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 上使得 <SPAN CLASS="MATH">(<I>PP</I>',<I>Q</I><SUB>1</SUB><I>Q</I><SUB>2</SUB>)</SPAN> 成調和點列之點，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="127" HEIGHT="53" BORDER="0"
+ SRC="img282.gif"
+ ALT="\begin{displaymath}\frac{\overrightarrow{Q_1P'}}{\overrightarrow{P'Q_2}}\cdot
+\frac{\overrightarrow{Q_2P}}{\overrightarrow{PQ_1}} =-1\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img283.gif"
+ ALT="$\overrightarrow{PP'}=k{\bf u}$"></SPAN>，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="274" HEIGHT="42" BORDER="0"
+ SRC="img284.gif"
+ ALT="\begin{displaymath}\frac{k-\lambda_1}{\lambda_2-k}\cdot \frac{-\lambda_2}{\lambd...
+...htarrow \quad k=\frac{2\lambda_1\lambda_2}{\lambda_1+\lambda_2}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="285" HEIGHT="70" BORDER="0"
+ SRC="img285.gif"
+ ALT="\begin{eqnarray*}
+\overrightarrow{PP'}\cdot \overrightarrow{OP} &amp;=&amp;
+k\cdot {\bf ...
+...-\lambda_1\lambda_2 =R^2-\big\vert\overrightarrow{OP}\big\vert^2
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+上述向量代數式的幾何意義就是：
+<SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img286.gif"
+ ALT="$\overrightarrow{PP'}$"></SPAN> 在直線 <SPAN CLASS="MATH"><I>OP</I></SPAN>
+上的垂直投影是一個固定的向量，亦即和 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img244.gif"
+ ALT="$\ell$"></SPAN> 無關。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="286" HEIGHT="188" BORDER="0"
+ SRC="img287.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=6cm \epsfbox{fig0510.eps}}*\fr...
+...)*+{Q_1}
+,(-0.1,5)*+{\ell}
+,(2.7,3.9)*+{\scriptstyle P'}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4382" ALIGN="CENTER">
+[ 圖 5-10 ]</DIV>
+
+
+<P>
+</DD>
+</DL>
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>試驗証在例題 (1) 中當 <SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.gif"
+ ALT="$\gamma\neq 0$"></SPAN> 的條件換成 <SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.gif"
+ ALT="$\alpha\neq 0$"></SPAN>
+或 <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.gif"
+ ALT="$\beta\neq 0$"></SPAN> 時，同樣結論亦成立。
+</DD>
+</DL>
+設 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$\ell_2$"></SPAN> 是空間中兩條（相異）直線，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.gif"
+ ALT="$A_1, B_1\in \ell_1$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.gif"
+ ALT="$A_2,B_2\in \ell_2$"></SPAN> 為線上給定的（相異）四點。令 <SPAN CLASS="MATH"><I>X</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>X</I><SUB>2</SUB></SPAN> 分別為 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\ell_1$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$\ell_2$"></SPAN> 上的動點，則容易把 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\overrightarrow{X_1X_2}$"></SPAN> 改寫成下述形式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="247" HEIGHT="27" BORDER="0"
+ SRC="img293.gif"
+ ALT="\begin{displaymath}\overrightarrow{X_1X_2}=\overrightarrow{A_1A_2}+x_1\overrightarrow{A_1B_1}
++x_2\overrightarrow{A_2B_2}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DL COMPACT>
+<DT>(2)</DT>
+<DD>問 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.gif"
+ ALT="$\overrightarrow{X_1X_2}$"></SPAN> 同時垂直于 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$\ell_2$"></SPAN>
+的代數條件式是什麼？
+</DD>
+<DT>(3)</DT>
+<DD>試討論在什麼的情況下這個公垂線段 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.gif"
+ ALT="$\overline{X_1X_2}$"></SPAN> 是
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>唯一存在的，而且其長度不為 <SPAN CLASS="MATH">0</SPAN>；
+</DD>
+<DT>(ii)</DT>
+<DD>唯一存在的，但是其長度為 <SPAN CLASS="MATH">0</SPAN>；
+</DD>
+<DT>(iii)</DT>
+<DD>並非唯一存在的。
+</DD>
+</DL>
+</DD>
+<DT>(4)</DT>
+<DD>令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.gif"
+ ALT="$\overline{P_1P_2}$"></SPAN> 為題 (3)(i) 情形中的公垂線段。試証這是所有
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.gif"
+ ALT="$\overline{X_1X_2}$"></SPAN> 中的最短者。
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<!-- episte: document end -->
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="page3.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<b>4</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_05" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=五、向量幾何和向量代數(ar_wy_geo_05)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/page4.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:46:03 GMT -->
+</HTML>

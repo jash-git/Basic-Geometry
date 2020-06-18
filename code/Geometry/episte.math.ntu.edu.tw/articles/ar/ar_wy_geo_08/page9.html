@@ -1,0 +1,804 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page9.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:48:00 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="圓錐截線;橢圓;雙曲線;拋物線;焦點;Pascal定理;Menelous定理;圓錐曲線;Pappus定理">
+<META name="keyword_out" content="Euclid;Archimedes;Apollonius;Pappus;Kepler;Kepler三定律;笛卡兒;費瑪;正交坐標系;Pascal;Menelous;Menelous定理;射影幾何;Brahe;牛頓">
+<TITLE>八、圓錐截線的故事 (第 9 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="page8.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<b>9</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>八、圓錐截線的故事</FONT></FONT>
+    <FONT face="標楷體">（第 9 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    <BR>‧<a target="wNote" href="notes.html">註釋</a><BR>
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=2636 *** -->
+<!-- section head lev 1 -->
+<A name="09_SECTION0009"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">圓錐截線例題，極與極線</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+【例一】：<SPAN  CLASS="textit">圓錐截線方程的矩陣表達式</SPAN>：在 中我們用到以矩陣來表達圓錐截線的方程式
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="320" HEIGHT="27" BORDER="0"
+ SRC="img219.gif"
+ ALT="\begin{displaymath}\Gamma:\; Ax^2+2Bxy+Cy^2+2Dx+2Ey+F=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+若引入矩陣記號
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="237" HEIGHT="64" BORDER="0"
+ SRC="img220.gif"
+ ALT="\begin{displaymath}
+M=
+\pmatrix{
+A &amp; B &amp; D \cr
+B &amp; C &amp; E \cr
+D &amp; E &amp; F \cr
+}, \quad
+{\bf u} =
+\pmatrix{
+x \cr
+y \cr
+1 \cr
+}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+則 Γ 的方程可簡潔地重新寫成下面模式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="351" HEIGHT="64" BORDER="0"
+ SRC="img221.gif"
+ ALT="\begin{displaymath}
+\Gamma:\, {\bf u}^T M {\bf u} =
+\pmatrix{ x &amp; y &amp; 1 \cr }
+\p...
+... &amp; E \cr
+D &amp; E &amp; F \cr
+}
+\pmatrix{
+x \cr
+y \cr
+1 \cr
+} = 0
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其中 <SPAN CLASS="MATH"><IMG
+ WIDTH="24" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img222.gif"
+ ALT="${\bf u}^T$"></SPAN> 表示把矩陣的行列互相轉置
+(transpose)，這個運算滿足下述簡單公式：
+
+<P>
+<DIV CLASS="centerline" ID="par4230" ALIGN="CENTER">
+設 <SPAN CLASS="MATH"><I>A</I></SPAN>, <SPAN CLASS="MATH"><I>B</I></SPAN> 為適當大小的矩陣，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$(A\cdot B)^T=B^T\cdot A^T$"></SPAN></DIV>
+
+
+<P>
+【例二】：<SPAN  CLASS="textit">圓錐截線切線方程</SPAN>：令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="323" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$\Gamma:\, Ax^2+2Bxy+Cy^2+2Dx+2Ey+F=0$"></SPAN> 為一圓錐截線，<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN>
+為 Γ 上任意的一點。在初等解析幾何中我們熟知過 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>
+點的切線方程可以寫成
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="516" HEIGHT="37" BORDER="0"
+ SRC="img225.gif"
+ ALT="\begin{displaymath}L_1: Ax_1x+2B\big(\frac{x_1y+y_1x}{2}\big)+Cy_1y + 2D\big(\frac{x+x_1}{2}\big)+2E\big(\frac{y+y_1}{2}\big)+F =0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="244" HEIGHT="137" BORDER="0"
+ SRC="img226.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0828.eps}}*\fr...
+...1)}
+,(-0.25,2.5)*+{L_1}
+,(1,1.4)*+{\Gamma}
+\endxy\hspace*{1cm}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4239" ALIGN="CENTER">
+[ 圖 8-28 ]</DIV>
+
+
+<P>
+這個公式的証明一般來說需要用到較為繁複的驗算。現在我們嘗試改用矩陣表達式和矩陣運算，把其驗算過程大大的簡化如下：
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：不妨假設 Γ 是非蛻化的情況。若改用矩陣表達式，則
+Γ 和 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 可以分別寫成
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="235" HEIGHT="28" BORDER="0"
+ SRC="img227.gif"
+ ALT="\begin{displaymath}\Gamma:\, {\bf u}^TM{\bf u}=0, \quad L_1:\, {\bf u}_1^TM{\bf u}=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其中 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="179" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.gif"
+ ALT="${\bf u}_1^T=\big( \begin{array}{ccccc} x_1&amp;&amp;y_1&amp;&amp;1 \end{array}\big)$"></SPAN> 。若 Γ 與 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 只交于 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 這一點，則 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 即為 Γ 在 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>
+點的切線；假若不然，即 Γ 與 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 至少交于 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 和 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 兩點：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="381" HEIGHT="64" BORDER="0"
+ SRC="img229.gif"
+ ALT="\begin{displaymath}P_1(x_1,y_1):{\bf u}_1 =\left( \begin{array}{c}x_1 \\ y_1 \\ ...
+... =\left( \begin{array}{c} x_2 \\ y_2 \\ 1
+\end{array} \right) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+首先，由所設 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 在 Γ 之上，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="199" HEIGHT="28" BORDER="0"
+ SRC="img230.gif"
+ ALT="\begin{displaymath}{\bf u}_1^TM{\bf u}_1 =0\quad \mbox{{\SaOu\cH163}} \quad
+{\bf u}_2^TM{\bf u}_2 =0 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，我們也假設了 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 在 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 之上，即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.gif"
+ ALT="${\bf u}_1^TM{\bf u}_2=0$"></SPAN> 。
+
+<P>
+現于直線 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB>=<I>P</I><SUB>1</SUB><I>P</I><SUB>2</SUB></SPAN> 上任取一點 <SPAN CLASS="MATH"><I>P</I></SPAN>，則可選取適當的實數 λ
+使得 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="275" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.gif"
+ ALT="$P=(\lambda x_1+(1-\lambda) x_2, \lambda y_1+(1-\lambda) y_2)$"></SPAN>
+。考慮 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的矩陣表達式：
+<SPAN CLASS="MATH"><IMG
+ WIDTH="149" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.gif"
+ ALT="${\bf v}=\lambda {\bf u}_1+(1-\lambda){\bf u_2}$"></SPAN>，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="482" HEIGHT="96" BORDER="0"
+ SRC="img234.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;{\bf v}^T M {\bf v} \\
+&amp;=&amp; (\lambda{\bf u}_1+(1-\lambda){\b...
+... u}_2^TM{\bf u}_1 + (1-\lambda)^2 {\bf u}_2^TM{\bf u}_2 \\
+&amp;=&amp;0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+所以 <SPAN CLASS="MATH"><I>P</I></SPAN> 點也同時在 Γ 之上，亦即 Γ 已包含整條直線
+<SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN>，這自然是和 Γ 是非蛻化的假設互相矛盾。由此可見，Γ
+與 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 只可能交于 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 這一點，亦即 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 乃是 Γ 在 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>
+的切線。
+
+<P>
+【例三】：當 <SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.gif"
+ ALT="$P_1\in \Gamma$"></SPAN> 時，已知 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="115" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.gif"
+ ALT="$L_1:\,{\bf u}_1^TM{\bf u}=0$"></SPAN> 乃是
+Γ 在 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 的切線；但若 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 不在 Γ
+之上（如 [圖 8-29] 所示）時，<SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 應該代表著什麼呢？
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="259" HEIGHT="163" BORDER="0"
+ SRC="img237.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0829.eps}}*\fr...
+....4)*+{P_1(x_1,y_1)}
+,(4.6,1.3)*+{\Gamma}
+,(2,0.2)*+{L_1}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4275" ALIGN="CENTER">
+[ 圖 8-29 ]</DIV>
+
+
+<P>
+[解答] <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 乃是由 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 到 Γ 的兩條切線
+<SPAN CLASS="MATH"><I>L</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>L</I><SUB>3</SUB></SPAN> 的切點 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>3</SUB></SPAN> 所定的那條直線，如 [圖 8-30] 所示。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="273" HEIGHT="187" BORDER="0"
+ SRC="img238.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0830.eps}}*\fr...
+....7)*+{P_3(x_3,y_3)}
+,(4.75,3.9)*+{L_2}
+,(3.9,0.5)*+{L_3}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4283" ALIGN="CENTER">
+[ 圖 8-30 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：由前面的結果已知 <SPAN CLASS="MATH"><I>L</I><SUB>2</SUB></SPAN> 和 <SPAN CLASS="MATH"><I>L</I><SUB>3</SUB></SPAN> 的方程分別是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="243" HEIGHT="28" BORDER="0"
+ SRC="img239.gif"
+ ALT="\begin{displaymath}L_2:\, {\bf u}_2^TM{\bf u}=0, \quad L_3:\, {\bf u}_3^TM{\bf u}=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，由于兩者都過 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN> 點，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="199" HEIGHT="28" BORDER="0"
+ SRC="img240.gif"
+ ALT="\begin{displaymath}{\bf u}_2^TM{\bf u}_1=0 \quad \mbox{{\SaOu\cH163}} \quad {\bf u}_3^TM{\bf u}_1=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+經轉置 (transpose) 後即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="199" HEIGHT="28" BORDER="0"
+ SRC="img241.gif"
+ ALT="\begin{displaymath}{\bf u}_1^TM{\bf u}_2=0 \quad \mbox{{\SaOu\cH163}} \quad {\bf u}_1^TM{\bf u}_3=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這就是說 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>3</SUB></SPAN> 在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="115" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.gif"
+ ALT="$L_1:\,{\bf u}_1^TM{\bf u}=0$"></SPAN> 之上。
+
+<P>
+【例四】：其實 [圖 8-29] 並不是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img242.gif"
+ ALT="$P_1\notin \Gamma$"></SPAN> 的唯一情況，我們還須考慮如 [圖 8-31] 的情況，即 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN> 在 Γ 之內：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="248" HEIGHT="147" BORDER="0"
+ SRC="img243.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0831.eps}}*\fr...
+...+{L_1}
+,(4.85,0.85)*+{\Gamma}
+,(2.5,1.8)*+{P_1(x_1,y_1)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4296" ALIGN="CENTER">
+[ 圖 8-31 ]</DIV>
+
+
+<P>
+[解答] <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 乃是由過 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 點的弦（如 [圖 8-32] 所示的
+<SPAN CLASS="MATH"><I>L</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>L</I><SUB>3</SUB></SPAN> 等），其兩端點切線的交點（如 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>3</SUB></SPAN> 等）所組成的點集。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="291" HEIGHT="178" BORDER="0"
+ SRC="img244.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0832.eps}}*\fr...
+...2)}
+,(3.65,4.75)*+{L_2}
+,(3.45,0.4)*+{L_3}
+\endxy\hspace*{1cm}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4304" ALIGN="CENTER">
+[ 圖 8-32 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：由前面的討論已知：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="113" HEIGHT="52" BORDER="0"
+ SRC="img245.gif"
+ ALT="\begin{eqnarray*}
+L_2 \mbox{ {\SbOu\cH237}\z{\SbOu\cH106}\z{\ScOu\cH6}\z{\SbOu\c...
+...Ou\cH106}\z{\ScOu\cH6}\z{\SbOu\cH117}} &amp;:&amp; {\bf u}_3^TM{\bf u}=0
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+由于 <SPAN CLASS="MATH"><I>L</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>L</I><SUB>3</SUB></SPAN> 都是過 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 點的弦，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="199" HEIGHT="28" BORDER="0"
+ SRC="img240.gif"
+ ALT="\begin{displaymath}{\bf u}_2^TM{\bf u}_1=0 \quad \mbox{{\SaOu\cH163}} \quad {\bf u}_3^TM{\bf u}_1=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.gif"
+ ALT="${\bf u}_1^TM{\bf u}_2=0$"></SPAN> 及 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img246.gif"
+ ALT="${\bf u}_1^TM{\bf u}_3=0$"></SPAN>
+。所以 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>3</SUB></SPAN> 皆在 <SPAN CLASS="MATH"><I>L</I><SUB>1</SUB></SPAN> 之上。
+
+<P>
+[註]：由上面的例子我們可以看出 <SPAN CLASS="MATH"><I>P</I></SPAN> 和 <SPAN CLASS="MATH"><I>L</I></SPAN> 的密切（對偶）關係：給出 <SPAN CLASS="MATH"><I>P</I></SPAN> 點，我們可以如前述例子般構作對應的 <SPAN CLASS="MATH"><I>L</I></SPAN>；反之，給出直線 <SPAN CLASS="MATH"><I>L</I></SPAN>，我們也可以把上面的程序倒過來構作 <SPAN CLASS="MATH"><I>P</I></SPAN>
+。在射影幾何中，<SPAN CLASS="MATH"><I>P</I></SPAN> 與 <SPAN CLASS="MATH"><I>L</I></SPAN> 分別稱為「極 (pole)」與「極線 (polar)」。
+
+<P>
+【例五】：<SPAN  CLASS="textit">Pascal 定理的純代數証明</SPAN>：在 中，我們運用了幾何透視對應方法來証明 Pascal 定理，即在一個圓錐截線 Γ 上任取六點 
+<SPAN CLASS="MATH">{A<SUB>1</SUB>,<I>A</I><SUB>2</SUB>,<I>A</I><SUB>3</SUB>; <I>B</I><SUB>1</SUB>,<I>B</I><SUB>2</SUB>,<I>B</I><SUB>3</SUB>}</SPAN>，如 [圖 8-11] 所示，令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$P={A_1B_2}\cap {A_2B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img106.gif"
+ ALT="$Q={A_1B_3}\cap {A_3B_1}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$R={A_2B_3}\cap {A_3B_2}$"></SPAN>，則恆有 <SPAN CLASS="MATH">{P,<I>Q</I>,<I>R</I>}</SPAN> 三點共線。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="239" HEIGHT="164" BORDER="0"
+ SRC="img108.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0811.e...
+...,2.42)*+{\scriptstyle Q}
+,(3.29,2.5)*+{\scriptstyle R}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4329" ALIGN="CENTER">
+[ 圖 8-11 ]</DIV>
+
+
+<P>
+現在我們改用純代數的方法來再次証明這個定理。這樣做的好處一來是反映出代數理論在幾何學上的不平凡應用；二來這種做法亦提供了一種途徑來研究高維、高次的代數曲線。設
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="232" HEIGHT="64" BORDER="0"
+ SRC="img247.gif"
+ ALT="\begin{displaymath}
+\begin{array}{lp{5pt}l}
+A_1B_2: \ell_1=0,&amp;&amp; A_2B_1: \ell_1'=...
+...ell_2'=0 \\
+A_3B_1: \ell_3=0, &amp;&amp; A_1B_3: \ell_3'=0
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="251" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.gif"
+ ALT="$F(k):\,\ell_1\cdot\ell_2\cdot\ell_3 +k\cdot\ell_1'\cdot\ell_2'\cdot\ell_3'=0$"></SPAN>，則易見對于任給的實數 <SPAN CLASS="MATH"><I>k</I></SPAN>，<SPAN CLASS="MATH"><I>A</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>A</I><SUB>3</SUB></SPAN>, <SPAN CLASS="MATH"><I>B</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>B</I><SUB>2</SUB></SPAN>, <SPAN CLASS="MATH"><I>B</I><SUB>3</SUB></SPAN>
+這六點必然在三次曲線 <SPAN CLASS="MATH"><I>F</I>(<I>k</I>)</SPAN> 之上，而且 <SPAN CLASS="MATH"><I>F</I>(<I>k</I>)</SPAN> 也包含了 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 這三點。不妨假設 Γ 為非蛻化圓錐截線。現于 Γ 上取第七點 <SPAN CLASS="MATH"><I>S</I></SPAN>
+（但不在已給的六點組
+
+<SPAN CLASS="MATH">{A<SUB>1</SUB>,<I>A</I><SUB>2</SUB>,<I>A</I><SUB>3</SUB>; <I>B</I><SUB>1</SUB>,<I>B</I><SUB>2</SUB>,<I>B</I><SUB>3</SUB>}</SPAN> 之內），然後選取適當的 <SPAN CLASS="MATH"><I>k</I>=<I>k</I><SUB>0</SUB></SPAN> 使得 <SPAN CLASS="MATH"><I>S</I></SPAN>
+同時也在 <SPAN CLASS="MATH"><I>F</I>(<I>k</I><SUB>0</SUB>)</SPAN> 之上，亦即 Γ 與 <SPAN CLASS="MATH"><I>F</I>(<I>k</I><SUB>0</SUB>)</SPAN> 相交于至少七點：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="254" HEIGHT="28" BORDER="0"
+ SRC="img249.gif"
+ ALT="\begin{displaymath}A_1,A_2,A_3, B_1,B_2,B_3,S\in \Gamma\cap F(k_0)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="239" HEIGHT="164" BORDER="0"
+ SRC="img250.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0833.e...
+...tstyle Q}
+,(3.29,2.5)*+{\scriptstyle R}
+\end{xy} \hspace*{1em}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4352" ALIGN="CENTER">
+[ 圖 8-33 ]</DIV>
+
+
+<P>
+因為 Γ 是一個非蛻化的二次曲線，<SPAN CLASS="MATH"><I>F</I>(<I>k</I><SUB>0</SUB>)</SPAN> 是一個三次曲線，一般來說它們最多只有六個交點，除非 Γ 本身就是 <SPAN CLASS="MATH"><I>F</I>(<I>k</I><SUB>0</SUB>)</SPAN> 的一個因式。由于我們的構作使它們兩者至少有七個交點，因此 Γ
+必然可以整除 <SPAN CLASS="MATH"><I>F</I>(<I>k</I><SUB>0</SUB>)</SPAN>，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="483" HEIGHT="28" BORDER="0"
+ SRC="img251.gif"
+ ALT="\begin{displaymath}F(k_0):\,(Ax^2+2Bxy+Cy^2+2Dx+2Ey+F)\cdot (Lx+My+N)=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+顯然 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>, <SPAN CLASS="MATH"><I>R</I></SPAN> 均不在 Γ 之上，所以它們必然全都在直線 <SPAN CLASS="MATH"><I>Lx</I>+<I>My</I>+<I>N</I>=0</SPAN>
+之上，Pascal 定理証畢。
+
+<P>
+當 <SPAN CLASS="MATH"><I>k</I></SPAN> 由 <SPAN CLASS="MATH"><I>k</I>=0</SPAN> 漸漸趨向 <SPAN CLASS="MATH"><I>k</I>=<I>k</I><SUB>0</SUB></SPAN>，<SPAN CLASS="MATH"><I>F</I>(<I>k</I>)</SPAN> 的變化就如 [圖 8-34] 所示：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="146" BORDER="0"
+ SRC="img252.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834a.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img253.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834b.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img254.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834c.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img255.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834d.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img256.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834e.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img257.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834f.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img258.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834g.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="147" BORDER="0"
+ SRC="img259.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834h.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="193" HEIGHT="146" BORDER="0"
+ SRC="img260.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.3cm \epsfbox{fig0834i.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4374" ALIGN="CENTER">
+[ 圖 8-34 ]</DIV>
+
+
+<P>
+
+<!-- episte: document end -->
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="page8.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<b>9</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_08" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=八、圓錐截線的故事(ar_wy_geo_08)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/page9.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:48:10 GMT -->
+</HTML>

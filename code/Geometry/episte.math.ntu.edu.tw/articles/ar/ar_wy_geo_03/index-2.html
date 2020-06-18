@@ -1,0 +1,643 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_03/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:44:28 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="圓;三角形;三角函數;正弦;餘弦;三角學;Trigonometry;和角公式;複數;複數坐標;和化積;和差化積;正弦定律;餘弦定律;Heron's formula;海龍公式">
+<META name="keyword_out" content="圓;三角形;三角學;複數;Archimedes;秦九韶;Heron;二項定理">
+<TITLE>三、圓與三角學</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>三、圓與三角學</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">正弦、餘弦函數的基本性質</a>
+<LI><a href="page2.html#02_SECTION0002">三角定律</a>
+<LI><a href="page3.html#03_SECTION0003">習題</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{三、圓與三角學}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_in{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{圓::三角形::三角函數::正弦::餘弦::三角學::Trigonometry::和角公式::複數::複數坐標::和化積::和差化積::正弦定律::餘弦定律::Heron's formula::海龍公式}
+%\key_out{圓::三角形::三角學::複數::Archimedes::秦九韶::Heron::二項定理}
+-- episte: basic_info end -->
+
+<P>
+在各種各樣的平面形之中，圓是最為完美對稱者，
+而三角形則是最為簡單者。所以在平面幾何的研討中，圓和三角形理所當然地是其精要之所在。例如定量平面幾何中的基本定理，首推三角形的面積公式、相似三角形定理和勾股定理，即
+
+<P>
+<DL COMPACT>
+<DT></DT>
+<DD><SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="12" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\bullet$"></SPAN> <SPAN  CLASS="textit">面積公式</SPAN>：三角形面積 =
+<!-- MATH
+ ${\displaystyle \frac{1}{2}\hbox{ {\fontfamily{cwM1}\fontseries{m}\selectfont \cH23} }\times \hbox{{\fontfamily{cwM2}\fontseries{m}\selectfont \cH242}} }$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="${\displaystyle \frac{1}{2}\hbox{ {\fontfamily{cwM1}\fontseries{m}\selectfont \cH23} }\times \hbox{{\fontfamily{cwM2}\fontseries{m}\selectfont \cH242}} }$"></SPAN>
+
+<P>
+</DD>
+<DT></DT>
+<DD><SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="12" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\bullet$"></SPAN> <SPAN  CLASS="textit">相似三角形定理</SPAN>：設 <!-- MATH
+ $\bigtriangleup ABC$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+和 <!-- MATH
+ $\bigtriangleup A'B'C'$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\bigtriangleup A'B'C'$"></SPAN> 的三內角對應相等，則其三對對應邊成比例，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\frac{\overline{AB}}{\overline{A'B'}}=
+  \frac{\overline{AC}}{\overline{A'C'}}=
+  \frac{\overline{BC}}{\overline{B'C'}}=k\quad \hbox{($k$ : {\fontfamily{cwM1}\fontseries{m}\selectfont \cH243}\z{\fontfamily{cwM0}\fontseries{m}\selectfont \cH78}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH170})}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="278" HEIGHT="44" BORDER="0"
+ SRC="img5.gif"
+ ALT="\begin{displaymath}
+\frac{\overline{AB}}{\overline{A'B'}}=
+\frac{\overline{AC}}...
+... \cH78}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH170})}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+</DD>
+<DT></DT>
+<DD><SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="12" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\bullet$"></SPAN> <SPAN  CLASS="textit">勾股定理</SPAN>：直角三角形的邊長滿足
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="248" HEIGHT="52" BORDER="0"
+ SRC="img6.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; \overline{AC}^2+\overline{BC}^2=\overline{AB}^2\quad
+\hbox...
+...t \cH253}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH106})}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+</DD>
+</DL>
+
+<P>
+本章將以上述三者為基礎，研討圓與三角形的解析幾何，其所得之基礎理論也就是三角函數的基本性質和三角定律。正弦、餘弦函數是一對起源于圓周運動，密切配合的週期函數，它們是解析幾何學和週期函數的分析學中最為基本和重要的函數；而正弦、餘弦函數的基本性質乃是圓的幾何性質（主要是其對稱性）的直接反映。
+
+<P>
+<SPAN  CLASS="textit">三角學</SPAN> (Trigonometry) 所討論的課題是三角形的各種各樣幾何量之間的函數關聯。由此可見，三角學其實就是三角形的解析幾何，可以說是具體而微的解析幾何；它是整個平面解析幾何的基礎所在，也是用解析法系統研究幾何的基本公具。
+
+<P>
+
+<!-- section head *** text_length=1038 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">正弦、餘弦函數的基本性質</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+如 [圖&nbsp;3-1] 所示，設 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN> 是在單位圓上，以 <SPAN CLASS="MATH">(1,0)</SPAN> 為起點作逆時鐘方向的單位速率運動的動點，則它的 <SPAN CLASS="MATH"><I>x</I></SPAN>, <SPAN CLASS="MATH"><I>y</I></SPAN> 坐標乃是時間 <SPAN CLASS="MATH"><I>t</I></SPAN>
+的函數，分別定義為餘弦函數 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\cos t$"></SPAN> 和正弦函數 <SPAN CLASS="MATH"><IMG
+ WIDTH="32" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$\sin t$"></SPAN> 。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="214" HEIGHT="234" BORDER="0"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4.5cm \epsfbox{fig0301...
+...35,5.1)*+{y}
+,(3.4,2.1)*+{\cos t}
+,(4.5,2.8)*+{\sin t}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1571" ALIGN="CENTER">
+[ 圖&nbsp;3-1 ]</DIV>
+
+
+<P>
+其實，<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="$x=\cos t$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="62" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$y=\sin t$"></SPAN> 乃是單位圓的自然的動態（解析）描述。由此可以想到，正弦、餘弦函數的基本性質乃是圓的幾何性質（主要是對稱性）的解析表述。例如
+
+<P>
+<B>1</B>.  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="242" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\overline{OP}^2=1 \quad \Leftrightarrow \quad \cos^2t+\sin^2t=1$"></SPAN>
+（勾股定理）
+
+<P>
+<B>2</B>. 圓周周長 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.gif"
+ ALT="$=2\pi\; \Leftrightarrow$"></SPAN> 週期性：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="364" HEIGHT="45" BORDER="0"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}
+\left\{ \begin{array}{rcl} \cos(2\pi+t) &amp;=&amp; \cos t \\
+\sin(2\pi+t) &amp;=&amp; \sin t \end{array}\right. \eqno{(3.1)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<B>3</B>. 對于 <SPAN CLASS="MATH"><I>x</I></SPAN>-軸（或 <SPAN CLASS="MATH"><I>y</I></SPAN>-軸）的反射對稱性（參看 [圖&nbsp;3-2]）
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="447" HEIGHT="45" BORDER="0"
+ SRC="img15.gif"
+ ALT="\begin{displaymath}
+\Leftrightarrow \quad \begin{array}{c}
+\cos (-t)=\cos t,\qua...
+...\cos t,\quad \sin(\pi-t)=\sin t \big)
+\end{array} \eqno{(3.2)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<B>4</B>. 對于直線 <SPAN CLASS="MATH"><I>x</I>=<I>y</I></SPAN>
+的反射對稱性（參看 [圖&nbsp;3-2]）：
+<SPAN CLASS="MATH"><IMG
+ WIDTH="103" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$(x,y)\leftrightarrow (y,x)$"></SPAN>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="427" HEIGHT="35" BORDER="0"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}
+\Leftrightarrow \quad \sin(\frac{\pi}{2}-t)=\cos t,\quad
+\cos(\frac{\pi}{2}-t)=\sin t
+\eqno{(3.3)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="458" HEIGHT="306" BORDER="0"
+ SRC="img18.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=7cm \epsfbox{fig0302.eps}}*\fr...
+... t}
+,(3.05,2.61)*+{ \frac{\pi}{2}-t}
+,(4.4,2.2)*+{(1,0)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1584" ALIGN="CENTER">
+[ 圖&nbsp;3-2 ]</DIV>
+
+
+<P>
+<B>5</B>. 圓的旋轉對稱性 <!-- MATH
+ $\Leftrightarrow$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\Leftrightarrow$"></SPAN> 複角公式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="401" HEIGHT="28" BORDER="0"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}
+\cos (\beta-\alpha)=\cos \beta\cos\alpha+\sin\beta\sin \alpha
+\eqno{(3.4)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="464" HEIGHT="316" BORDER="0"
+ SRC="img21.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =7cm \epsfbox{fig0303.e...
+...in\alpha)}
+,(3.8,4.5)*+{ P_\beta(\cos\beta,\sin\beta)}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1588" ALIGN="CENTER">
+[ 圖&nbsp;3-3 ]</DIV>
+
+
+<P>
+如 [圖&nbsp;3-3] 所示，<!-- MATH
+ $\bigtriangleup OP_\alpha P_\beta$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\bigtriangleup OP_\alpha P_\beta$"></SPAN> 乃是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="85" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\bigtriangleup OP_0P_{\beta-\alpha}$"></SPAN> 旋轉 α 角之所得，所以當然有
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\overline{P_\alpha P_\beta}^2=\overline{P_0P_{\beta-\alpha}}^2$"></SPAN>，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="471" HEIGHT="30" BORDER="0"
+ SRC="img25.gif"
+ ALT="\begin{displaymath}(\cos \beta-\cos \alpha)^2+(\sin\beta-\sin\alpha)^2
+= \big(\cos(\beta-\alpha)-1\big)^2+\sin^2(\beta-\alpha)\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="509" HEIGHT="90" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}
+\begin{eqalign}
+&amp; \cos^2\beta+\sin^2\beta+\cos^2\alpha+\sin...
+...a\cos\alpha+\sin\beta\sin\alpha \\
+\end{eqalign} \eqno{(3.5)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+把 (3.4)-式和 (3.2)-式結合，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="401" HEIGHT="59" BORDER="0"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}
+\begin{eqalign}
+\cos(\beta+\alpha) &amp;= \cos(\beta-(-\alpha)) ...
+...a\cos\alpha-\sin\beta\sin\alpha \\
+\end{eqalign} \eqno{(3.6)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再把 (3.6)-式和 (3.3)-式相結合，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="401" HEIGHT="71" BORDER="0"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}
+\begin{eqalign}
+\sin(\alpha+\beta) &amp;= \cos \left[ (\frac{\pi...
+...\cos\beta + \cos\alpha\sin\beta \\
+\end{eqalign} \eqno{(3.7)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+我們還可以把 (3.6)-式和
+(3.7)-式用複數的乘法組合成下述更加整齊的複值形式，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="477" HEIGHT="28" BORDER="0"
+ SRC="img29.gif"
+ ALT="\begin{displaymath}
+(\cos\alpha+i\sin\alpha)(\cos\beta+i\sin\beta)=\cos(\alpha+\beta)
++i\sin(\alpha+\beta)
+\eqno{(3.8)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，我們可以把 <SPAN CLASS="MATH"><I>z</I>=<I>x</I>+<I>iy</I></SPAN> 想為平面上 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN> 點的複數坐標
+(complex coordinate) 。如 [圖&nbsp;3-4] 所示，<SPAN CLASS="MATH"><I>P</I></SPAN> 點的極坐標
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="146" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\overline{OP}=r=\sqrt{x^2+y^2}$"></SPAN> 和 θ 分別就是 <SPAN CLASS="MATH"><I>z</I></SPAN> 的絕對值和幅角。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="430" HEIGHT="162" BORDER="0"
+ SRC="img31.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0304.e...
+...=&amp; x+iy \\ &amp;=&amp; r(\cos\theta+i\sin\theta)
+\end{array}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1603" ALIGN="CENTER">
+[ 圖&nbsp;3-4 ]</DIV>
+
+
+<P>
+將 (3.8)-式用來表達複數的乘法，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="451" HEIGHT="59" BORDER="0"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}
+\begin{eqalign}
+z_1\cdot z_2 &amp;= \vert z_1\vert(\cos\theta_1+...
+...ta_2)+i\sin(\theta_1+\theta_2)) \\
+\end{eqalign} \eqno{(3.9)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即兩個複數 <SPAN CLASS="MATH"><I>z</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>z</I><SUB>2</SUB></SPAN> 相乘，其絕對值相乘而其幅角則相加。此事在研討複數時具有基本的重要性。
+
+<P>
+<B>6</B>. 和化積公式和反射對稱性
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="453" HEIGHT="311" BORDER="0"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =7cm \epsfbox{fig0305.e...
+...{1}{2}(\alpha+\beta),
+\sin\frac{1}{2}(\alpha+\beta))}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par1608" ALIGN="CENTER">
+[ 圖&nbsp;3-5 ]</DIV>
+
+
+<P>
+如 [圖&nbsp;3-5] 所示，等腰三角形 <!-- MATH
+ $\bigtriangleup OAB$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$\bigtriangleup OAB$"></SPAN> 對于 <SPAN CLASS="MATH"><I>OM</I></SPAN>
+成反射對稱。所以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="139" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$\angle AOM=\frac{1}{2}(\beta-\alpha)$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="132" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$\angle xOC=\frac{1}{2}(\alpha+\beta)$"></SPAN> 。即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="421" HEIGHT="129" BORDER="0"
+ SRC="img37.gif"
+ ALT="\begin{displaymath}
+\begin{eqalign}
+M &amp;= (\frac{1}{2}(\cos\alpha+\cos\beta),\fr...
+... \cos\frac{1}{2}(\alpha-\beta) \\
+\end{eqalign} \eqno{(3.10)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="459" HEIGHT="86" BORDER="0"
+ SRC="img38.gif"
+ ALT="\begin{displaymath}
+\Rightarrow\quad \left\{
+\begin{eqalign}
+\frac{1}{2}(\cos\al...
+...ac{1}{2}(\alpha+\beta) \\
+\end{eqalign}\right.
+\eqno{(3.11)}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B6%EA">圓</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4T%A8%A4%A7%CE">三角形</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4T%A8%A4%BE%C7">三角學</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%BD%C6%BC%C6">複數</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Archimedes">Archimedes</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%AF%B3%A4E%BB%E0">秦九韶</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Heron">Heron</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4G%B6%B5%A9w%B2z">二項定理</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_03" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=三、圓與三角學(ar_wy_geo_03)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_03/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:44:28 GMT -->
+</HTML>

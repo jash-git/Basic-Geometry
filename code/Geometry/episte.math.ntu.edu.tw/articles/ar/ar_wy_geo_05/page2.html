@@ -1,0 +1,2191 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:45:09 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="位移向量;displacement vector;向量;平移;translation;內積;inner product;面積的勾股定理;四元數;quaternions;圓冪定理;向量代數;外積;叉積;cross product">
+<META name="keyword_out" content="平移;Eudoxus;相似變換;勾股定理;內積;Hamilton;四元數;複數;協變;Menelous定理;Ceva定理;Ceva;圓冪定理">
+<TITLE>五、向量幾何和向量代數 (第 2 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>五、向量幾何和向量代數</FONT><BR><FONT size="4">——空間結構的系統代數化</FONT></FONT>
+    <FONT face="標楷體">（第 2 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=599 *** -->
+<!-- section head lev 1 -->
+<A name="02_SECTION0002"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">位移向量的運算律</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在上一節所定義的位移向量的加法運算，顯然具有下述熟悉的運算律：
+
+<P>
+<SPAN  CLASS="textit">交換律</SPAN>： &nbsp;&nbsp;&nbsp;&nbsp;
+<SPAN CLASS="MATH"><B>a+b=b+a</B></SPAN>
+
+<P>
+<SPAN  CLASS="textit">結合律</SPAN>： &nbsp;&nbsp;&nbsp;&nbsp;
+<SPAN CLASS="MATH"><B>(a+b)+c=a+(b+c)</B></SPAN>
+
+<P>
+[註]：因為一般的變換組合都是滿足結合律的，而位移向量的加法是定義為平移的組合，當然也會滿足結合律。再者，由
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="263" HEIGHT="28" BORDER="0"
+ SRC="img58.gif"
+ ALT="\begin{displaymath}(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}= \overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="265" HEIGHT="28" BORDER="0"
+ SRC="img59.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})= \overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦可以直接驗証位移向量的加法結合律。
+
+<P>
+<SPAN  CLASS="textit">零和可逆性</SPAN>： 以 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.gif"
+ ALT="${\bf0}$"></SPAN>
+表示恆等變換這個特殊的平移，<SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.gif"
+ ALT="$(-{\bf a})$"></SPAN> 表示和 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN> 互逆的平移，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="405" HEIGHT="28" BORDER="0"
+ SRC="img61.gif"
+ ALT="\begin{displaymath}\mathbf{0+a=a+0=a} \quad \mbox{{\fontfamily{cwM0}\fontseries{...
+...ont \cH65}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH13}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+[註]：平移和[定理 5.2]的証明都和空間中的「平行性」 (parallelism)
+以及平行四邊形定理密切相關的。而交換律 
+<SPAN CLASS="MATH"><B>a + b = b + a</B></SPAN>
+更可以想成是平行四邊形定理的向量表述形式。由此可見，往後我們每次運用向量加法交換律，其實也就是對于所研討的幾何問題用了一次平行四邊形定理。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=1122 *** -->
+<!-- section head lev 2 -->
+<A name="03_SECTION00021"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#EAF0FF">
+ <FONT face="標楷體" size=4 class="seclev2">相似三角形定理和位移向量的倍積</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+一個數 <SPAN CLASS="MATH"><I>a</I></SPAN> 的整數倍 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img62.gif"
+ ALT="$n\cdot a$"></SPAN> 其實就是 <SPAN CLASS="MATH"><I>n</I></SPAN> 個 <SPAN CLASS="MATH"><I>a</I></SPAN> 相加的總和。同樣我們也自然地把 <SPAN CLASS="MATH"><I>n</I></SPAN> 個（位移向量）<SPAN CLASS="MATH"><B>a</B></SPAN> 相加的總和定義為<SPAN  CLASS="textit">倍積</SPAN>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img63.gif"
+ ALT="$n\cdot \mathbf{a}$"></SPAN>，亦即：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="335" HEIGHT="54" BORDER="0"
+ SRC="img64.gif"
+ ALT="\begin{displaymath}
+n\cdot \mathbf{a}=\underbrace{\mathbf{a+a+\,\ldots\,+a}}_{ n...
+... \quad
+(n+1)\cdot \mathbf{a} = n\cdot \mathbf{a} + \mathbf{a}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="211" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="$(-n)\cdot \mathbf{a}=n\cdot (\mathbf{-a})=-(n\cdot \mathbf{a})$"></SPAN> 。
+
+<P>
+由上述位移向量的整數倍的定義，容易直接驗証下列運算律，即：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="185" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.gif"
+ ALT="$m\cdot \mathbf{a}+n\cdot \mathbf{a}=(m+n)\cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="149" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.gif"
+ ALT="$m\cdot (n\cdot \mathbf{a})=(mn)\cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(iii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="178" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$n\cdot (\mathbf{a+b})=n\cdot \mathbf{a}+n\cdot \mathbf{b}$"></SPAN>
+</DD>
+</DL>
+對于任給整數 <SPAN CLASS="MATH"><I>m</I></SPAN>, <SPAN CLASS="MATH"><I>n</I></SPAN> 和任給位移向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 恆成立。
+
+<P>
+[習題：試用歸納法驗証 (i), (ii) 和 (iii)。]
+
+<P>
+設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="89" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.gif"
+ ALT="$\mathbf{a}=\overrightarrow{AB}\neq \mathbf{0}$"></SPAN>，我們可以把 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline{AB}$"></SPAN> 作 <SPAN CLASS="MATH"><I>n</I></SPAN> 等分，令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="150" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.gif"
+ ALT="$\{B_i,1\leq i \leq (n-1)\}$"></SPAN>
+為其等分點，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="433" HEIGHT="28" BORDER="0"
+ SRC="img71.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB_1}=\overrightarrow{B_1B_2}=\ldots =\overri...
+...{n-1}B},\quad n\cdot \overrightarrow{AB_1}= \overrightarrow{AB}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見，我們應該把 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\frac{1}{n}\cdot \mathbf{a}$"></SPAN>
+定義為 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\overrightarrow{AB_1}$"></SPAN>，因為它是那個滿足
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="65" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img74.gif"
+ ALT="$n\cdot \mathbf{x}=\mathbf{a}$"></SPAN> 的唯一解。再者
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="40" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.gif"
+ ALT="$\frac{m}{n} \cdot \mathbf{a}$"></SPAN>
+的定義應該就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="220" HEIGHT="45" BORDER="0"
+ SRC="img76.gif"
+ ALT="\begin{displaymath}
+\frac{m}{n} \cdot \mathbf{a} = m\cdot \bigg( \frac{1}{n}\cdot \mathbf{a}\bigg)=\frac{1}{n}(m\cdot \mathbf{a})
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這樣，就可以把位移向量的倍積由整數倍擴張到有理數倍。而且上述擴張法是唯一能夠使得下列運算律依然成立者，即
+<DL COMPACT>
+<DT>(i<SPAN CLASS="MATH">'</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="208" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.gif"
+ ALT="$\displaystyle \frac{m}{n} \cdot \mathbf{a} + \displaystyle \frac{p}{q} \cdot \m...
+...igg(\displaystyle \frac{m}{n} + \displaystyle \frac{p}{q}\bigg)\cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(ii<SPAN CLASS="MATH">'</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="195" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.gif"
+ ALT="$\displaystyle \frac{m}{n} \cdot \bigg(\displaystyle \frac{p}{q} \cdot \mathbf{a...
+...displaystyle \frac{m}{n} \cdot \displaystyle \frac{p}{q}\bigg) \cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(iii<SPAN CLASS="MATH">'</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="203" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.gif"
+ ALT="$\displaystyle \frac{m}{n}\cdot (\mathbf{a+b})=\frac{m}{n} \cdot \mathbf{a} +\displaystyle \frac{m}{n} \cdot \mathbf{b}$"></SPAN>
+</DD>
+</DL>
+
+<P>
+最後一步，讓我們來分析一下位移向量的實數倍應該如何定義。設 λ
+是一個非比實數（亦稱為無理數），
+<SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.gif"
+ ALT="$\mathbf{a}=\overrightarrow{AB}$"></SPAN>
+。令 <SPAN CLASS="MATH"><I>B</I><SUP>*</SUP></SPAN> 是直線 <SPAN CLASS="MATH"><I>AB</I></SPAN> 上那個唯一的點使得有向長度之比
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="101" HEIGHT="24" BORDER="0"
+ SRC="img81.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB^*}:\overrightarrow{AB}=\lambda\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img82.gif"
+ ALT="$\lambda \cdot \mathbf{a}$"></SPAN> 應該定義為 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img83.gif"
+ ALT="$\overrightarrow{AB^*}$"></SPAN>，因為它是唯一能夠使得下述比較原則成立者，即
+<BLOCKQUOTE>
+「設 λ 介于兩個有理數 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.gif"
+ ALT="$\displaystyle \frac{m}{n}$"></SPAN>
+和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.gif"
+ ALT="$\displaystyle \frac{p}{q}$"></SPAN> 之間而且
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="100" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.gif"
+ ALT="$\overrightarrow{AB'}=\displaystyle \frac{m}{n}\,\overrightarrow{AB}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="98" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.gif"
+ ALT="$\overrightarrow{AB''}=\displaystyle \frac{p}{q}\,\overrightarrow{AB}$"></SPAN>，
+則 <SPAN CLASS="MATH"><I>B</I><SUP>*</SUP></SPAN> 亦必介于 <SPAN CLASS="MATH"><I>B</I>'</SPAN>, <SPAN CLASS="MATH"><I>B</I>''</SPAN> 之間。」
+
+</BLOCKQUOTE>
+而運用上述比較原則和 Eudoxus 夾逼原理即可驗証上述所定義的實數倍的倍積也滿足同樣的運算律，即
+<DL COMPACT>
+<DT>(i<SPAN CLASS="MATH">''</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="176" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.gif"
+ ALT="$\lambda \cdot \mathbf{a}+\mu \cdot \mathbf{a} =
+(\lambda +\mu )\cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(ii<SPAN CLASS="MATH">''</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$\lambda \cdot (\mu \cdot \mathbf{a}) =
+(\lambda \mu)\cdot \mathbf{a}$"></SPAN>
+</DD>
+<DT>(iii<SPAN CLASS="MATH">''</SPAN>)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="177" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.gif"
+ ALT="$\lambda \cdot (\mathbf{a+b}) = \lambda \cdot
+\mathbf{a} +\lambda\cdot \mathbf{b}$"></SPAN>
+</DD>
+</DL>
+
+<P>
+對于任給實數 λ, μ 和位移向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 恆成立。
+
+<P>
+[註]：放大、縮小這種相似變換是空間中常見常用者，而平面幾何中的相似三角形定理則是關于相似變換的基本定理。在此，值得注意的是倍積分配律
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="176" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$k\cdot (\mathbf{a+b})=k\cdot \mathbf{a}+k\cdot \mathbf{b}$"></SPAN>
+的本質就是上述基本定理的代數化形式（參看 [圖 5-2]）。
+
+<P>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="59" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.gif"
+ ALT="$\mathbf{a}=\overrightarrow{AB}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img92.gif"
+ ALT="$\mathbf{b}=\overrightarrow{BC}$"></SPAN>，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.gif"
+ ALT="$\mathbf{a+b}=\overrightarrow{AC}$"></SPAN> 。如 [圖 5-2] 所示，
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="206" HEIGHT="181" BORDER="0"
+ SRC="img94.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0502.eps}}*\fr...
+...+{B}
+,(2.7,3.15)*+{C}
+,(3.9,-0.3)*+{B'}
+,(5.2,5.3)*+{C'}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3975" ALIGN="CENTER">
+[ 圖 5-2 ]</DIV>
+
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="142" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$\bigtriangleup ABC \sim \bigtriangleup A'B'C'$"></SPAN>, <SPAN CLASS="MATH"><I>A</I>=<I>A</I>'</SPAN>
+而且 <SPAN CLASS="MATH"><I>k</I></SPAN> 是其相似比，則 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img96.gif"
+ ALT="$\overrightarrow{AB'}=k\cdot \mathbf{a}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="90" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.gif"
+ ALT="$\overrightarrow{B'C'}=k\cdot \mathbf{b}$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="196" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.gif"
+ ALT="$\overrightarrow{A'C'}= k\cdot \overrightarrow{AC}=k\cdot (\mathbf{a+b})$"></SPAN> 。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=3131 *** -->
+<!-- section head lev 2 -->
+<A name="04_SECTION00022"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#EAF0FF">
+ <FONT face="標楷體" size=4 class="seclev2">勾股定理和位移向量的內積</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+一個位移向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="103" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.gif"
+ ALT="$\overrightarrow{AB}=\tau(A,B)$"></SPAN> 含有方向和長度這樣兩種本質，我們將用符號 <SPAN CLASS="MATH">|<B>a</B>|</SPAN> 表示其長度，以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.gif"
+ ALT="$\angle \mathbf{a,b} )$"></SPAN> 表示兩者的方向之差，亦即兩者之間的夾角。在平面幾何學的研討中，三角形是既精且簡的基本圖形，用向量來表達三角形，則它的三個有向邊就可以分別表達成 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.gif"
+ ALT="${\bf a}+{\bf b}$"></SPAN>
+。由平面幾何中所熟知的 S.S.S. 疊合條件可見夾角
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.gif"
+ ALT="$\angle {\bf a},{\bf b})$"></SPAN> 業已被其三邊邊長 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.gif"
+ ALT="$\vert{\bf a}\vert$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.gif"
+ ALT="$\vert{\bf b}\vert$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$\vert{\bf a}+{\bf b}\vert$"></SPAN> 所唯一確定。再者，中國古算中的勾股定理（即古希臘的畢氏定理）則可以改寫成
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="304" HEIGHT="28" BORDER="0"
+ SRC="img106.gif"
+ ALT="\begin{displaymath}
+\mbox{{\fontfamily{cwM2}\fontseries{m}\selectfont \cH74} } \...
+...\bf a}+{\bf b}\vert^2 =\vert{\bf a}\vert^2+\vert{\bf b}\vert^2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而在一般 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 並非互相垂直的情形則
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="178" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.gif"
+ ALT="$\vert{\bf a}+{\bf b}\vert^2-\vert{\bf a}\vert^2-\vert{\bf b}\vert^2 \neq 0$"></SPAN> 。例如當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img108.gif"
+ ALT="${\bf a}={\bf b}$"></SPAN>
+的特殊情形，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="338" HEIGHT="28" BORDER="0"
+ SRC="img109.gif"
+ ALT="\begin{displaymath}\vert{\bf a}+{\bf b}\vert^2-\vert{\bf a}\vert^2-\vert{\bf b}\...
+...ert{\bf a}\vert^2
+-\vert{\bf a}\vert^2 =2\vert{\bf a}\vert^2 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+總之，對于任給兩個位移向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN>，下述函數
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+
+<A NAME="5.1"></A>
+<TABLE WIDTH="100%"  align="right">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="5.1"></A><IMG
+ WIDTH="242" HEIGHT="38" BORDER="0"
+ SRC="img110.gif"
+ ALT="\begin{displaymath}
+f({\bf a},{\bf b})=\frac{1}{2}\big\{\vert{\bf a}+{\bf b}\vert^2
+-\vert{\bf a}\vert^2-\vert{\bf b}\vert^2\big\}
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+是一個值得研討的幾何量，例如 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="81" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.gif"
+ ALT="$f({\bf a},{\bf b})=0$"></SPAN> 乃是 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN>
+互相垂直的充要條件，而 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="97" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.gif"
+ ALT="$f({\bf a},{\bf a})=\vert{\bf a}\vert^2$"></SPAN> 。所以它顯然是一個和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 的長度、夾角都密切相關的幾何量。但是歸根究底
+(5.1)-式所定義的幾何量是否真正有用、好用，還得要看它是否具有簡潔好用的優良性質。它顯然具有對稱性，即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="121" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.gif"
+ ALT="$f({\bf a},{\bf b})=f({\bf b},{\bf a})$"></SPAN>，而詳加研討的結果會發現它其實還具有下述簡潔易算的性質，即
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+
+<A NAME="5.2"></A>
+<TABLE WIDTH="100%"  align="right">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="5.2"></A><IMG
+ WIDTH="208" HEIGHT="28" BORDER="0"
+ SRC="img114.gif"
+ ALT="\begin{displaymath}
+f({\bf a},{\bf b}+{\bf c})=f({\bf a},{\bf b})+f({\bf a},{\bf c})
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+若以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="52" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.gif"
+ ALT="$f({\bf a},{\bf b})$"></SPAN> 的定義（即 (5.1)-式）代入
+(5.2)-式，即得所需証者，實乃下述含有三個任意向量的恆等式，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="360" HEIGHT="100" BORDER="0"
+ SRC="img116.gif"
+ ALT="\begin{displaymath}
+% latex2html id marker 2191\renewedcommand{arraystretch}{1...
+...{array} \renewedcommand{arraystretch}{1}\leqno(\ref{eqn0502}')
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+要証明上述對于任給三個向量 <!-- MATH
+ $\{{\bf a},{\bf b},{\bf c}\}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="61" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.gif"
+ ALT="$\{{\bf a},{\bf b},{\bf c}\}$"></SPAN> 都普遍成立的恆等式之前，自然要看一看是否有一種對于任給二個向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img118.gif"
+ ALT="$\{{\bf u},{\bf v}\}$"></SPAN> 都普遍成立的恆等式呢？若有，則一來肯定比較容易証明，二來說不定還可以把「後者」用來証明「前者」。要把上述想法付諸實踐，當然就得有一個「後者」究竟是怎麼樣的恆等式的「猜想」才能進而証明之，是不？
+
+<P>
+在此，我們自然要用上反推法去「按圖索驥」。亦即假想 (5.2)-式成立的話，應該會有那種對于任何一對向量都普遍成立的恆等式？若用 (5.2)-式反推，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="328" HEIGHT="100" BORDER="0"
+ SRC="img119.gif"
+ ALT="\begin{eqnarray*}
+\vert{\bf u} + {\bf v}\vert^2 &amp; = &amp; f({\bf u}+{\bf v},{\bf u}+...
+...t^2 + \vert{\bf v}\vert^2 -f({\bf u},{\bf v})-f({\bf v},{\bf u})
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+由此可見，<SPAN  CLASS="textit">應該</SPAN>有恆等式（稱之為廣義勾股定理）
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+
+<A NAME="5.3"></A>
+<TABLE WIDTH="100%"  align="right">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="5.3"></A><IMG
+ WIDTH="236" HEIGHT="28" BORDER="0"
+ SRC="img120.gif"
+ ALT="\begin{displaymath}
+\vert{\bf u}+{\bf v}\vert^2+\vert{\bf u}-{\bf v}\vert^2 \equiv 2\vert{\bf u}\vert^2 +2\vert{\bf v}\vert^2
+\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+請注意，上面這一小段反推法分析只是說明：假如 (5.2)-式恆成立，則 (5.3)-式也恆成立。而我們真正要做的是先用幾何直接証明
+(5.3)-式恆成立，然後再設法用它來証明 (5.2)-式（亦即 (5.2')-式）恆成立。反推法的分析其實只是讓我們想到
+(5.3)-式恆成立這個<SPAN  CLASS="textit">待証的猜想</SPAN>。在論証上述猜想之前，不妨先對幾個特別簡單的情形，看一看它是否成立，亦即在 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.gif"
+ ALT="${\bf u}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img122.gif"
+ ALT="${\bf v}$"></SPAN>
+之間的夾角是 <SPAN CLASS="MATH">0</SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.gif"
+ ALT="$\frac{\pi}{2}$"></SPAN> 和 π 這三種情形：
+
+<P>
+當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.gif"
+ ALT="$\angle ({\bf u},{\bf v}) =0$"></SPAN> 時，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="141" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$\vert{\bf u}\pm {\bf v}\vert=\big\vert\vert{\bf u}\vert\pm \vert{\bf v}\vert\big\vert$"></SPAN>，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="434" HEIGHT="30" BORDER="0"
+ SRC="img126.gif"
+ ALT="\begin{displaymath}\vert{\bf u}+{\bf v}\vert^2+\vert{\bf u}-{\bf v}\vert^2 =\big...
+...{\bf v}\vert\big)^2 =2\vert{\bf u}\vert^2+2\vert{\bf v}\vert^2 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="78" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.gif"
+ ALT="$\angle {\bf u},{\bf v}) =\pi$"></SPAN> 時，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="141" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.gif"
+ ALT="$\vert{\bf u}\pm {\bf v}\vert=\big\vert\vert{\bf u}\vert\mp \vert{\bf v}\vert\big\vert$"></SPAN>，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="434" HEIGHT="30" BORDER="0"
+ SRC="img129.gif"
+ ALT="\begin{displaymath}\vert{\bf u}+{\bf v}\vert^2+\vert{\bf u}-{\bf v}\vert^2 =\big...
+...{\bf v}\vert\big)^2 =2\vert{\bf u}\vert^2+2\vert{\bf v}\vert^2 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img130.gif"
+ ALT="${\bf u}\perp {\bf v}$"></SPAN> 時，由勾股定理，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="261" HEIGHT="56" BORDER="0"
+ SRC="img131.gif"
+ ALT="\begin{displaymath}\renewedcommand{arraystretch}{1.3}\begin{array}{l}
+\vert{\bf...
+...vert{\bf v}\vert^2
+\end{array}\renewedcommand{arraystretch}{1}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+上述對于三種簡單特例的驗証，其實也提供了下述把一般的情形的証明歸于上述業已
+驗証的三種特殊情形來加以推導的思路，如 [圖 5-3] 所示，我們可以用垂直投影把
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img122.gif"
+ ALT="${\bf v}$"></SPAN> 分解成 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="57" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.gif"
+ ALT="${\bf v}_1+{\bf v}_2$"></SPAN>，其中 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.gif"
+ ALT="${\bf v}_2$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.gif"
+ ALT="${\bf u}$"></SPAN> 垂直
+而 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img134.gif"
+ ALT="${\bf v}_1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.gif"
+ ALT="${\bf u}$"></SPAN> 同向（或反向）。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="281" HEIGHT="180" BORDER="0"
+ SRC="img135.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=3cm \epsfbox{fig0503a.eps}}*\f...
+...0.4,3.1)*+{{\bf u}-{\bf v}}
+,(4,5.35)*+{{\bf u}+{\bf v}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=3cm \epsfbox{fig0503b.eps}}*\frm{}
+,(0.5,-0.3)*+{{\bf v}_1}
+,(2.45,-0.3)*+{{\bf u}}
+,(4.2,-0.3)*+{{\bf v}_1}
+,(4.5,2.3)*+{{\bf v}}
+,(3.3,2.25)*+{{\bf v}_2}
+,(-0.2,2.2)*+{{\bf v}_2}
+,(1.1,5.3)*+{{\bf u}-{\bf v}}
+,(3,5.3)*+{{\bf u}+{\bf v}}
+\endxy
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="241" HEIGHT="178" BORDER="0"
+ SRC="img136.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=3cm \epsfbox{fig0503b.eps}}*\f...
+...(1.1,5.3)*+{{\bf u}-{\bf v}}
+,(3,5.3)*+{{\bf u}+{\bf v}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4036" ALIGN="CENTER">
+[ 圖 5-3 ]</DIV>
+
+
+<P>
+這樣，就可以把
+(5.3)-式的証明歸于上述三種業已驗証的情形作如下推導：
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT" CLASS="mathdisplay">
+
+
+<A NAME="5.4"></A>
+<TABLE WIDTH="100%"  align="right">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="5.4"></A><IMG
+ WIDTH="353" HEIGHT="98" BORDER="0"
+ SRC="img137.gif"
+ ALT="\begin{displaymath}
+\renewedcommand{arraystretch}{1.2}\begin{array}{l}
+\vert{\bf...
+...vert{\bf v}\vert^2
+\end{array}\renewedcommand{arraystretch}{1}\end{displaymath}"></TD>
+<TD CLASS="eqno" WIDTH=10 ALIGN="RIGHT">
+(<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+現在讓我們再用剛才証明的 (5.3)-式純代數地去推導
+(5.2')-式的普遍成立：
+
+<P>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="74" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.gif"
+ ALT="${\bf u}={\bf a}+{\bf b}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img139.gif"
+ ALT="${\bf v}={\bf c}$"></SPAN>，即有
+<DL COMPACT>
+<DT>(i)</DT>
+<DD> 
+  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="350" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.gif"
+ ALT="$\vert{\bf a}+{\bf b}+{\bf c}\vert^2 +\vert{\bf a}+{\bf b}-{\bf c}\vert^2
+-2\vert{\bf a}+{\bf b}\vert^2 -2\vert{\bf c}\vert^2 =0$"></SPAN>
+</DD>
+</DL>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img141.gif"
+ ALT="${\bf u}={\bf a}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="73" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.gif"
+ ALT="${\bf v}={\bf b}-{\bf c}$"></SPAN>，即有
+<DL COMPACT>
+<DT>(ii)</DT>
+<DD> 
+  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="363" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.gif"
+ ALT="$-\vert{\bf a}+{\bf b}-{\bf c}\vert^2 -\vert{\bf a}-{\bf b}+{\bf c}\vert^2
++2\vert{\bf a}\vert^2 +2\vert{\bf b}-{\bf c}\vert^2 =0$"></SPAN>
+</DD>
+</DL>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.gif"
+ ALT="${\bf u}={\bf a}+{\bf c}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="45" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img145.gif"
+ ALT="${\bf v}={\bf b}$"></SPAN>，即有
+<DL COMPACT>
+<DT>(iii)</DT>
+<DD> 
+   
+<SPAN CLASS="MATH"><IMG
+ WIDTH="350" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.gif"
+ ALT="$\vert{\bf a}-{\bf b}+{\bf c}\vert^2 +\vert{\bf a}+{\bf b}+{\bf c}\vert^2
+-2\vert{\bf a}+{\bf c}\vert^2 -2\vert{\bf b}\vert^2 =0$"></SPAN>
+</DD>
+</DL>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="46" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img147.gif"
+ ALT="${\bf u}={\bf b}$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img139.gif"
+ ALT="${\bf v}={\bf c}$"></SPAN>，即有
+<DL COMPACT>
+<DT>(iv)</DT>
+<DD> 
+   
+<SPAN CLASS="MATH"><IMG
+ WIDTH="293" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.gif"
+ ALT="$-2\vert{\bf b}+{\bf c}\vert^2 -2\vert{\bf b}-{\bf c}\vert^2
++4\vert{\bf b}\vert^2 +4\vert{\bf c}\vert^2 =0$"></SPAN>
+</DD>
+</DL>
+
+<P>
+將上述四個恆等式相加後再遍乘以 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.gif"
+ ALT="$\frac{1}{2}$"></SPAN>，即得恆等式 (5.2')，亦即 (5.2)-式普遍成立。
+
+<P>
+總結上面的討論，我們以勾股定理為基礎，証明幾何量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="246" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.gif"
+ ALT="$f({\bf a},{\bf b})=
+\frac{1}{2}\big\{\vert{\bf a}+{\bf b}\vert^2-\vert{\bf a}\vert^2-\vert{\bf b}\vert^2\big\}$"></SPAN>
+具有 (5.2)-式所表達既簡且精的性質，它將是用向量去研討幾何廣泛有用的有力工具。在向量代數中，我們索興把它想成是一種由兩個向量求得一個數值的一種<SPAN  CLASS="textit">乘積</SPAN>，叫做<SPAN  CLASS="textit">向量的內積</SPAN>
+(inner product) 並改用符號 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img151.gif"
+ ALT="${\bf a}\cdot {\bf b}$"></SPAN> 表達之，亦即以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="388" HEIGHT="38" BORDER="0"
+ SRC="img152.gif"
+ ALT="\begin{displaymath}
+{\bf a}\cdot {\bf b} =\frac{1}{2}\big\{\vert{\bf a}+{\bf b}\...
+...^2-\vert{\bf a}\vert^2-\vert{\bf b}\vert^2 \big\} \leqno(5.1')
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+為<SPAN  CLASS="textit">向量內積的定義式</SPAN>。這樣做的基本原由就是使得性質 (5.2) 可以直截了當地改寫成
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="361" HEIGHT="28" BORDER="0"
+ SRC="img153.gif"
+ ALT="\begin{displaymath}
+{\bf a}\cdot ({\bf b}+{\bf c})={\bf a}\cdot {\bf b}+{\bf a}\cdot {\bf c} \leqno(5.2'')
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這種分配律的形式，使得它運用起來能夠更加得心應手。
+
+<P>
+【定義】：（向量內積）位移向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN>
+的內積 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img154.gif"
+ ALT="$\mathbf{a\cdot b}$"></SPAN> 定義為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="225" HEIGHT="38" BORDER="0"
+ SRC="img155.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot b}= \frac{1}{2}\big\{\vert\mathbf{a+b}\vert^2-\vert\mathbf{a}\vert^2- \vert\mathbf{b}\vert^2\big\}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">內積的運算律</SPAN>：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="86" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img156.gif"
+ ALT="$\mathbf{a\cdot b=b\cdot a}$"></SPAN>
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="174" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.gif"
+ ALT="$\mathbf{a\cdot (b+c)=a\cdot b+a\cdot c}$"></SPAN>
+</DD>
+<DT>(iii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="202" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img158.gif"
+ ALT="$(k\mathbf{a})\cdot \mathbf{b}=\mathbf{a}\cdot (k\mathbf{b})=k(\mathbf{a\cdot b})$"></SPAN>
+</DD>
+</DL>
+
+<P>
+[當 <SPAN CLASS="MATH"><I>k</I></SPAN> 是整數或有理數時，(iii) 是 (i) 和 (ii) 的推論。當 <SPAN CLASS="MATH"><I>k</I></SPAN> 是非比實數時，則可用倍積的比較原則和 Eudoxus 原理加以推導。]
+
+<P>
+<SPAN  CLASS="textit">內積的幾何意義</SPAN>：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.gif"
+ ALT="$\mathbf{a}\cdot \mathbf{a}=\vert\mathbf{a}\vert^2$"></SPAN>
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="129" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img160.gif"
+ ALT="$\mathbf{a\cdot b}=0 \Leftrightarrow \mathbf{a\perp b}$"></SPAN>  （亦即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="94" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.gif"
+ ALT="$\angle \mathbf{a,b})=\pm \displaystyle \frac{\pi}{2}$"></SPAN> ）
+</DD>
+<DT>(iii)</DT>
+<DD>在 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="76" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.gif"
+ ALT="$\angle \mathbf{a,b})=\theta$"></SPAN> 的一般情形
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="133" HEIGHT="28" BORDER="0"
+ SRC="img163.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot b}=\vert\mathbf{a}\vert\cdot \vert\mathbf{b}\vert\cos\theta \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+</DD>
+</DL>
+
+<P>
+[ (iii) 的証明] 先驗証 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img164.gif"
+ ALT="$\theta = 0$"></SPAN> 或 <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img165.gif"
+ ALT="$\theta = \pi$"></SPAN> 這兩種特殊情形。
+
+<P>
+若 <SPAN CLASS="MATH"><IMG
+ WIDTH="41" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img164.gif"
+ ALT="$\theta = 0$"></SPAN>，則有 
+<SPAN CLASS="MATH">|<B>a+b</B>|=|<B>a</B>|+|<B>b</B>|</SPAN> 。所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="420" HEIGHT="38" BORDER="0"
+ SRC="img166.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot b}=\frac{1}{2}\big\{(\vert\mathbf{a}\vert+\ver...
+...{b}\vert=\vert\mathbf{a}\vert\cdot \vert\mathbf{b}\vert \cos 0 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+若 <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img165.gif"
+ ALT="$\theta = \pi$"></SPAN>，則有 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="140" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img167.gif"
+ ALT="$\vert\mathbf{a+b}\vert=\Big\vert \vert\mathbf{a}\vert-\vert\mathbf{b}\vert\Big\vert$"></SPAN>，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="435" HEIGHT="38" BORDER="0"
+ SRC="img168.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot b}=\frac{1}{2}\big\{(\vert\mathbf{a}\vert-\ver...
+...\vert = \vert\mathbf{a}\vert\cdot \vert\mathbf{b}\vert \cos\pi \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+在一般的情形，可將 <SPAN CLASS="MATH"><B>b</B></SPAN> 分解成
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="163" HEIGHT="27" BORDER="0"
+ SRC="img169.gif"
+ ALT="\begin{displaymath}
+\mathbf{b} = \mathbf{b}_1 + \mathbf{b}_2, \quad
+\mathbf{b}_1 \perp \mathbf{b}_2
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.gif"
+ ALT="$\angle \mathbf{a},\mathbf{b}_1)=0$"></SPAN> 或 π，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="254" HEIGHT="52" BORDER="0"
+ SRC="img171.gif"
+ ALT="\begin{eqnarray*}
+\mathbf{a\cdot b} &amp;=&amp; \mathbf{a}\cdot (\mathbf{b}_1+\mathbf{b}...
+...athbf{b}_1=\pm \vert\mathbf{a}\vert\cdot \vert\mathbf{b}_1\vert
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+而 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="117" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.gif"
+ ALT="$\pm \vert\mathbf{b}_1\vert=\vert\mathbf{b}\vert\cos\theta$"></SPAN> 。 □
+
+<P>
+[註]：上述公式提供了用內積表達兩個非零向量的夾角餘弦的公式，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="215" HEIGHT="45" BORDER="0"
+ SRC="img173.gif"
+ ALT="\begin{displaymath}
+\cos\theta = \frac{\mathbf{a\cdot b}}{\vert\mathbf{a}\vert\c...
+...t b}}{\sqrt{ \mathbf{a\cdot a} } \sqrt{ \mathbf{b \cdot b} } }
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其實，上述公式就是平面幾何中熟悉的餘弦定律。由此可見，長度和角度都可以用向量內積去有效計算，而內積本身又具有一套十分簡明有力的運算律，特別是分配律。在本質上，內積分配律乃是勾股定理的提升和精簡之所得，也可以說是勾股定理代數化的最佳形式。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=3290 *** -->
+<!-- section head lev 2 -->
+<A name="05_SECTION00023"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#EAF0FF">
+ <FONT face="標楷體" size=4 class="seclev2">面積的勾股定理和位移向量的 × -積</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+四面體是三角形的三維推廣。而具有三個棱正交于一點的四面體則是直角三角形的推廣，我們將稱之為正交四面體，如 [圖 5-4] 所示：
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="200" HEIGHT="238" BORDER="0"
+ SRC="img174.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0504.eps}}*\fr...
+...ntfamily{cwM0}\fontseries{m}\selectfont \cH199} 5--4 ]}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">面積的勾股定理</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img175.gif"
+ ALT="$\overline{OA}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.gif"
+ ALT="$\overline{OB}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.gif"
+ ALT="$\overline{OC}$"></SPAN> 正交于 <SPAN CLASS="MATH"><I>O</I></SPAN>，它共交于 <SPAN CLASS="MATH"><I>O</I></SPAN> 點的三個三角形 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.gif"
+ ALT="$\bigtriangleup OAB$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.gif"
+ ALT="$\bigtriangleup OBC$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.gif"
+ ALT="$\bigtriangleup OCA$"></SPAN> 互相垂直，而 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN>
+則是和其他三個面斜交者。是否也有類似于勾股定理的公式說明上述正交四面體的四個面積之間的關係呢？例如斜面面積的平方是否恆等于其他三個面的面積平方之和呢？這就是我們接著所要論証者。
+
+<P>
+【定理 5.3】：（面積的勾股定理）一個正交四面體的斜面面積的平方恆等于其他三個面的面積平方之和，亦即如 [圖 5-4] 所示
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="341" HEIGHT="28" BORDER="0"
+ SRC="img182.gif"
+ ALT="\begin{displaymath}(\bigtriangleup ABC)^2=(\bigtriangleup OAB)^2 + (\bigtriangleup OBC)^2+(\bigtriangleup OCA)^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：令正交四面體的三個正交于 <SPAN CLASS="MATH"><I>O</I></SPAN> 點的棱長分別是
+<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.gif"
+ ALT="$\ell_2$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.gif"
+ ALT="$\ell_3$"></SPAN>，則由勾股定理即得其斜面
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.gif"
+ ALT="$\bigtriangleup ABC$"></SPAN> 的三邊邊長分別是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="311" HEIGHT="36" BORDER="0"
+ SRC="img186.gif"
+ ALT="\begin{displaymath}a=\sqrt{\ell_2^2+\ell_3^2}\,,\;\; b=\sqrt{\ell_1^2+\ell_3^2}\, ,\;\;
+c=\sqrt{\ell_1^2+\ell_2^2}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+易見其三個互相正交的三角形的面積分別為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="366" HEIGHT="38" BORDER="0"
+ SRC="img187.gif"
+ ALT="\begin{displaymath}\bigtriangleup OAB=\frac{1}{2}\ell_1\ell_2,\;\;
+\bigtriangl...
+...}\ell_2\ell_3,\;\;
+\bigtriangleup OCA=\frac{1}{2}\ell_3\ell_1 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，由平面幾何中的秦九韶公式，其斜面面積平方是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="460" HEIGHT="197" BORDER="0"
+ SRC="img188.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; (\bigtriangleup ABC)^2 \\
+&amp;=&amp; \frac{1}{16}\big\{2(a^2b^2+b...
+...triangleup OAB)^2 +(\bigtriangleup OBC)^2+(\bigtriangleup OCA)^2
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+□
+
+<P>
+在坐標幾何中，勾股定理的重要推論是下述距離公式
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="318" HEIGHT="30" BORDER="0"
+ SRC="img189.gif"
+ ALT="\begin{displaymath}\big\vert\overline{P_1P_2}\big\vert^2=(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其幾何意義是：空間中直線段 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.gif"
+ ALT="$\overline{P_1P_2}$"></SPAN> 的長度平方等于它在三個互相垂直的直線上的各別垂直投影的長度平方之和。再者，設向量 <SPAN CLASS="MATH"><B>a</B></SPAN>
+和 <SPAN CLASS="MATH"><B>b</B></SPAN> 在三個坐標軸上的垂直投影的有向長度分別是
+<SPAN CLASS="MATH">(<I>a</I><SUB>1</SUB>,<I>a</I><SUB>2</SUB>,<I>a</I><SUB>3</SUB>)</SPAN> 和 <SPAN CLASS="MATH">(<I>b</I><SUB>1</SUB>,<I>b</I><SUB>2</SUB>,<I>b</I><SUB>3</SUB>)</SPAN>，則有內積坐標計算公式
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="183" HEIGHT="27" BORDER="0"
+ SRC="img191.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot b}=a_1b_1+a_2b_2+a_3b_3,\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+當 <SPAN CLASS="MATH"><B>a=b</B></SPAN> 時，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="179" HEIGHT="28" BORDER="0"
+ SRC="img192.gif"
+ ALT="\begin{displaymath}\vert\mathbf{a}\vert^2=\mathbf{a\cdot a}=a_1^2+a_2^2+a_3^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見上述內積公式實乃距離公式的推廣。
+
+<P>
+[定理 5.3]的幾何意義是：空間中一片平面的面積平方等于它在三個互相垂直的平面（例如一個正交坐標系的三個坐標面）上的垂直投影的面積平方之和。由此可以猜想到，我們也應該試著將面積的勾股定理的本質進一步轉化為在空間中一片平面和另一片平面之間的「內積」的適當定義。
+
+<P>
+假如我們把一個有向線段想成一種有向的 1-維基本幾何事物，定向平行四邊形
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 想成一種有向的 2-維基本幾何事物，就自然會想到是否也可以定義一種 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+之間的「內積」使得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="260" HEIGHT="28" BORDER="0"
+ SRC="img195.gif"
+ ALT="\begin{displaymath}/\!/(\mathbf{a,b}) \cdot /\!/(\mathbf{a,b})=/\!/(\mathbf{a,b}...
+...t \cH19}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH106}} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而且 <!-- MATH
+ $/\!/(\mathbf{a,b})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+的「內積」也可以有類似于上述的坐標計算公式。
+
+<P>
+讓我們先來看看 1-維的情形。設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.gif"
+ ALT="$\overrightarrow{CD}$"></SPAN>
+共線，則兩者的內積就等于它們的有向長度的乘積，即：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="307" HEIGHT="48" BORDER="0"
+ SRC="img197.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB}\cdot \overrightarrow{CD} = \left\{ \begin...
+...mily{cwM0}\fontseries{m}\selectfont \cH1}} \end{array} \right. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+若 <!-- MATH
+ $\overrightarrow{AB}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{AB}$"></SPAN> 和 <!-- MATH
+ $\overrightarrow{CD}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.gif"
+ ALT="$\overrightarrow{CD}$"></SPAN> 不共線，令 <!-- MATH
+ $\overrightarrow{C'D'}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img198.gif"
+ ALT="$\overrightarrow{C'D'}$"></SPAN> 是 <!-- MATH
+ $\overrightarrow{CD}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="30" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.gif"
+ ALT="$\overrightarrow{CD}$"></SPAN> 在 <SPAN CLASS="MATH"><I>AB</I></SPAN>
+上的垂直投影，則
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="287" HEIGHT="26" BORDER="0"
+ SRC="img199.gif"
+ ALT="\begin{displaymath}\overrightarrow{AB}\cdot \overrightarrow{CD} = \overrightarro...
+...ctfont \cH9}{\fontfamily{cwM0}\fontseries{m}\selectfont \cH1}} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+現在讓我們試著對于 <!-- MATH
+ $/\!/(\mathbf{a,b})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 <!-- MATH
+ $/\!/(\mathbf{c,d})$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+的內積作類同的定義如下，即
+
+<P>
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+共面時，定義其內積為兩者的定向面積的乘積；
+
+<P>
+</DD>
+<DT>(ii)</DT>
+<DD>當 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+不共面時，則定義其內積為 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$/\!/(\mathbf{c',d'})$"></SPAN>
+的定向面積的乘積，其中 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$/\!/(\mathbf{c',d'})$"></SPAN> 乃是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN> 在  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN>
+所在平面上的垂直投影。
+</DD>
+</DL>
+
+<P>
+且以符號 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="137" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.gif"
+ ALT="$&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt;$"></SPAN>
+表示上面所定義的量。
+
+<P>
+【定理 5.4】：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="267" HEIGHT="45" BORDER="0"
+ SRC="img202.gif"
+ ALT="\begin{displaymath}&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt;= \left\vert \...
+...\mathbf{a\cdot d} &amp;&amp; \mathbf{b\cdot d} \end{array} \right\vert \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<SPAN  CLASS="textit">証明</SPAN>：(i) 設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN>
+共在一個平面
+Π 之內。在 Π 上取定一組向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="269" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.gif"
+ ALT="$\{\mathbf{e}_1,\mathbf{e}_2\},\; \vert\mathbf{e}_1\vert=\vert\mathbf{e}_2\vert=1,\; \angle \mathbf{e}_1,\mathbf{e}_2)=\displaystyle \frac{\pi}{2}$"></SPAN>。令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="374" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.gif"
+ ALT="$\mathbf{a\cdot e}_i=a_i,\; \mathbf{b\cdot e}_i=b_i,\; \mathbf{c\cdot e}_i=c_i,\; \mathbf{d\cdot e}_i=d_i,\; i=1,2$"></SPAN>，則由上述定義和行列式乘法公式即有
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="369" HEIGHT="134" BORDER="0"
+ SRC="img205.gif"
+ ALT="\begin{eqnarray*}
+&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt; &amp;=&amp; \left\vert...
+... \mathbf{a\cdot d} &amp;&amp; \mathbf{b\cdot d} \end{array} \right\vert
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+(ii) 設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN> 不共面，而
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.gif"
+ ALT="$/\!/(\mathbf{c',d'})$"></SPAN> 則是  
+<SPAN CLASS="MATH"><IMG
+ WIDTH="55" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.gif"
+ ALT="$/\!/(\mathbf{c,d})$"></SPAN> 垂直投影到
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 的所在平面 Π 的影象，由定義和上述所已証者，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="293" HEIGHT="73" BORDER="0"
+ SRC="img206.gif"
+ ALT="\begin{eqnarray*}
+&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt; &amp;=&amp; &lt;\!\!/\!/(...
+...mathbf{a\cdot d'} &amp;&amp; \mathbf{b\cdot d'} \end{array} \right\vert
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+再者，<SPAN CLASS="MATH"><B>c-c'</B></SPAN> 和 <SPAN CLASS="MATH"><B>d-d'</B></SPAN> 乃是垂直于 Π 的向量，而 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 則是位于 Π 之內者，所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="265" HEIGHT="45" BORDER="0"
+ SRC="img207.gif"
+ ALT="\begin{displaymath}
+\begin{array}{lll}
+\mathbf{a\cdot (c-c')}=0, &amp;\quad&amp; \mathbf...
+...a\cdot (d-d')}=0, &amp;\quad&amp; \mathbf{b\cdot (d-d')}=0
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="413" HEIGHT="27" BORDER="0"
+ SRC="img208.gif"
+ ALT="\begin{displaymath}\mathbf{a\cdot c'=a\cdot c,\quad b\cdot c'=b\cdot c,\quad a\cdot d'=a\cdot d,\quad b\cdot d'=b\cdot d}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+即已証得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="267" HEIGHT="45" BORDER="0"
+ SRC="img202.gif"
+ ALT="\begin{displaymath}&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt;= \left\vert \...
+...\mathbf{a\cdot d} &amp;&amp; \mathbf{b\cdot d} \end{array} \right\vert \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+□
+
+<P>
+[定理 5.4]的公式充分顯示這種內積的 2-維推廣肯定就是我們所想要者，例如
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="339" HEIGHT="124" BORDER="0"
+ SRC="img209.gif"
+ ALT="\begin{eqnarray*}
+&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{a,b})\!\!&gt; &amp;=&amp; \left\vert...
+...nt \cH19}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH106}}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+再者，設 
+<SPAN CLASS="MATH"><B>e</B><SUB>1</SUB>,<B>e</B><SUB>2</SUB>,<B>e</B><SUB>3</SUB></SPAN> 分別是一個取定正交坐標系在 <SPAN CLASS="MATH"><I>x</I>,<I>y</I>,<I>z</I></SPAN> 軸上的單位向量。令
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="162" HEIGHT="98" BORDER="0"
+ SRC="img210.gif"
+ ALT="\begin{eqnarray*}
+\mathbf{a}&amp;=&amp;a_1\mathbf{e}_1+a_2\mathbf{e}_2+a_3\mathbf{e}_3 \...
+...\
+\mathbf{d}&amp;=&amp;d_1\mathbf{e}_1+d_2\mathbf{e}_2+d_3\mathbf{e}_3
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+不難用直接計算去驗証：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="408" HEIGHT="187" BORDER="0"
+ SRC="img211.gif"
+ ALT="\begin{eqnarray*}
+&amp; &amp;&lt;\!\!/\!/(\mathbf{a,b}),/\!/(\mathbf{c,d})\!\!&gt; \\
+&amp;=&amp;
+\le...
+...dot &lt;\!\!/\!/(\mathbf{c,d}),/\!/(\mathbf{e}_3,\mathbf{e}_1)\!\!&gt;
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">向量的 ×-積</SPAN>：
+
+<P>
+在一個已經定向的空間之中（通常約定以右手型為所選之正向），我們可以用一個唯一的向量 
+<SPAN CLASS="MATH">(<B>a x b</B>)</SPAN> 去充分表達空間中一個（定向）平行四邊形
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 的方向和面積，如 [圖 5-5] 所示。它是一個和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 皆為正交，長度等于 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.gif"
+ ALT="$/\!/(\mathbf{a,b})$"></SPAN> 的面積而
+
+<SPAN CLASS="MATH">(<B>a,b,a x b</B>)</SPAN> 是右手型者，稱之為 <SPAN CLASS="MATH"><IMG
+ WIDTH="13" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.gif"
+ ALT="${\bf a}$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="${\bf b}$"></SPAN> 的 ×-積。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="225" HEIGHT="180" BORDER="0"
+ SRC="img212.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0505.eps}}*\fr...
+...
+,(1,2.4)*+{{\bf b}}
+,(-0.7,4.6)*+{{\bf a}\times{\bf b}}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par4196" ALIGN="CENTER">
+[ 圖 5-5 ]</DIV>
+
+
+<P>
+由上述 ×-積的定義易見
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<B>a x b</B>=-(<B>b x a</B>)
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而且對于任給 <SPAN CLASS="MATH"><B>c</B></SPAN>，
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="155" HEIGHT="28" BORDER="0"
+ SRC="img213.gif"
+ ALT="\begin{displaymath}(\mathbf{a\times b})\cdot \mathbf{c}=V(\mathbf{a,b,c})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其實上式就是平行六面體的體積等于底面積乘高的向量表達式。
+
+<P>
+【定理 5.5】：向量的 ×-積滿足下列運算律：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>
+<SPAN CLASS="MATH"><B>a x b=-(b x a)</B></SPAN>
+</DD>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH">(<I>k</I><B>a</B>) x <B>b=a</B> x (<I>k</I><B>b</B>)=<I>k</I>(<B>a x b</B>)</SPAN>
+</DD>
+<DT>(iii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="254" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img214.gif"
+ ALT="$(\mathbf{a\times b})\cdot \mathbf{c}= \mathbf{a}\cdot (\mathbf{b}\times \mathbf{c})
+=V({\bf a},{\bf b},{\bf c})$"></SPAN>
+</DD>
+<DT>(iv)</DT>
+<DD>
+<SPAN CLASS="MATH"><B>a</B> x (<B>b</B><SUB>1</SUB>+<B>b</B><SUB>2</SUB>)=<B>a x b</B><SUB>1</SUB>+ <B>a x b</B><SUB>2</SUB></SPAN>
+</DD>
+<DT>(v)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="259" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.gif"
+ ALT="$\mathbf{(a\times b)\cdot (c\times d)}= \left\vert \begin{array}{lll} \mathbf{a\...
+...{b\cdot c} \\
+\mathbf{a\cdot d} &amp;&amp; \mathbf{b\cdot d} \end{array} \right\vert $"></SPAN>
+</DD>
+<DT>(vi)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="323" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.gif"
+ ALT="$\mathbf{(a\times b)\times c - a\times (b\times c) = (a\cdot b)c-(b\cdot c)a} $"></SPAN>
+</DD>
+</DL>
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：
+<DL COMPACT>
+<DT>(ii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="432" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.gif"
+ ALT="$[(k\mathbf{a})\times \mathbf{b}-k(\mathbf{a\times b})]\cdot \mathbf{c} = V(k\mathbf{a,b,c})-kV(\mathbf{a,b,c})=0, \quad \forall \mathbf{c}$"></SPAN>
+
+<P>
+<DIV CLASS="centerline" ID="par4224" ALIGN="CENTER">
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="181" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.gif"
+ ALT="$\Rightarrow k\mathbf{a\times b}-k(\mathbf{a\times b)=0}$"></SPAN></DIV>
+</DD>
+<DT>(iii)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="162" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img219.gif"
+ ALT="$(\mathbf{a\times b})\cdot \mathbf{c}=V(\mathbf{a,b,c})$"></SPAN>,
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="342" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.gif"
+ ALT="$\mathbf{a\cdot (b\times c)} = \mathbf{(b\times c)\cdot a}=V(\mathbf{b,c,a})= V(\mathbf{a,b,c})$"></SPAN>
+</DD>
+<DT>(iv)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="258" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.gif"
+ ALT="$[\mathbf{a}\times (\mathbf{b}_1+\mathbf{b}_2)-\mathbf{a}\times \mathbf{b}_1-\mathbf{a}\times \mathbf{b}_2]\cdot \mathbf{c} $"></SPAN>
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="403" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img222.gif"
+ ALT="$\quad = V(\mathbf{a},\mathbf{b}_1+\mathbf{b}_2,\mathbf{c}) -V(\mathbf{a},\mathb...
+...\mathbf{c}) -V(\mathbf{a},\mathbf{b}_2,\mathbf{c}) =0, \quad \forall \mathbf{c}$"></SPAN>
+
+<P>
+<DIV CLASS="centerline" ID="par4230" ALIGN="CENTER">
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="280" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.gif"
+ ALT="$\Rightarrow \mathbf{a}\times(\mathbf{b}_1+\mathbf{b}_2) -\mathbf{a}\times\mathbf{b}_1-\mathbf{a}\times\mathbf{b}_2=\mathbf{0}$"></SPAN></DIV>
+</DD>
+<DT>(v)</DT>
+<DD>乃是[定理 5.4]和<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.gif"
+ ALT="$\,\times$"></SPAN>-積定義的直接結合。
+</DD>
+<DT>(vi)</DT>
+<DD>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="352" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.gif"
+ ALT="$\mathbf{[(a\times b)\times c-a\times (b\times c)-(a\cdot b)c + (b\cdot c)a]\cdot d}$"></SPAN>
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="467" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.gif"
+ ALT="$=[\mathbf{(a\times b)\times c]\cdot d-[a\times(b\times c)]\cdot d- (a\cdot b)(c\cdot d)+(b\cdot c)(a\cdot d)}$"></SPAN>
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="474" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.gif"
+ ALT="$=\mathbf{(a\times b)\cdot (c\times d)-(d\times a)\cdot (b\times c)-(a\cdot b)(c\cdot d)+(b\cdot c)(a\cdot d)}$"></SPAN>
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="491" HEIGHT="54" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.gif"
+ ALT="$=\left\vert \begin{array}{lll} \mathbf{a\cdot c} &amp;&amp; \mathbf{b\cdot c} \\
+\mat...
+... \end{array} \right\vert
+- \mathbf{(a\cdot b)(c\cdot d)+(b\cdot c)(a\cdot d)}$"></SPAN>
+
+<P>
+<!-- MATH
+ $=0 \quad \forall \mathbf{d}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img229.gif"
+ ALT="$=0 \quad \forall \mathbf{d}$"></SPAN>
+
+<P>
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="372" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.gif"
+ ALT="$\Rightarrow \mathbf{(a\times b)\times c-a\times (b\times c)- (a\cdot b)c + (b\cdot c)a =0}$"></SPAN>
+
+<P>
+</DD>
+</DL>
+
+<P>
+<SPAN  CLASS="textit">四元數——時空的代數</SPAN>：
+
+<P>
+時間是一維的，空間是三維的，所以時空組合的總體是四維的，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="216" HEIGHT="28" BORDER="0"
+ SRC="img231.gif"
+ ALT="\begin{displaymath}\mathbb{R} \oplus \mathfrak{U} = \{(t,\mathbf{a});\; t\in \mathbb{R},\; \mathbf{a}\in \mathfrak{U}\}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Hamilton 的創見賦予時空一種既自然又美妙的代數結構，這也就是著名的四元數
+(quaternions)。其加、乘運算的定義如下：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="395" HEIGHT="52" BORDER="0"
+ SRC="img232.gif"
+ ALT="\begin{eqnarray*}
+(t_1,\mathbf{a}_1)+(t_2,\mathbf{a}_2) &amp;=&amp; (t_1+t_2,\;\mathbf{a...
+...1\mathbf{a}_2+t_2\mathbf{a}_1 + \mathbf{a}_1\times \mathbf{a}_2)
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+上述加、乘運算<SPAN  CLASS="textit">除了乘法的交換律</SPAN>之外，滿足所有其他各種慣用的運算律，例如加法的交換律和結合律，加、乘結合的分配律和乘法的結合律等等。其中驗起來比較繁複的是乘法結合律，茲証之如下：運用分配律，可以把所要驗証的要點歸結到
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="300" HEIGHT="28" BORDER="0"
+ SRC="img233.gif"
+ ALT="\begin{displaymath}[(0,\mathbf{a})\cdot (0,\mathbf{b})]\cdot (0,\mathbf{c}) \sta...
+...}{=}
+(0,\mathbf{a})\cdot [(0,\mathbf{b})\cdot (0,\mathbf{c})] \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這個最不平凡的情形。由前述四元數的定義，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="432" HEIGHT="110" BORDER="0"
+ SRC="img234.gif"
+ ALT="\begin{eqnarray*}[(0,\mathbf{a})\cdot (0,\mathbf{b})]\cdot (0,\mathbf{c}) &amp;=&amp; (-...
+...}),\; -\mathbf{(b\cdot c)a} + \mathbf{a\times (b\times c)} \big)
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+由此可見，用[定理 5.5]的公式 (vi) 即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="357" HEIGHT="28" BORDER="0"
+ SRC="img235.gif"
+ ALT="\begin{displaymath}[(0,\mathbf{a})\cdot (0,\mathbf{b})]\cdot (0,\mathbf{c}) -(0,...
+...cdot [(0,\mathbf{b})\cdot (0,\mathbf{c})]
+\equiv (0,\mathbf{0})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，我們也可以類同于複數 (complex number) 的情形定義共軛和絕對值，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="142" HEIGHT="57" BORDER="0"
+ SRC="img236.gif"
+ ALT="\begin{eqnarray*}
+\overline{(t,\mathbf{a})}&amp;=&amp; (t,-\mathbf{a}) \\
+\big\vert(t,\mathbf{a})\big\vert &amp;=&amp; \sqrt{t^2+\mathbf{a\cdot a}}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="211" HEIGHT="76" BORDER="0"
+ SRC="img237.gif"
+ ALT="\begin{eqnarray*}
+(t,\mathbf{a})\cdot \overline{(t,\mathbf{a})} &amp;=&amp; (t^2+\mathbf...
+...rac{1}{\big\vert(t,\mathbf{a})\big\vert^2}\cdot (t,-\mathbf{a})
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+總之，四元數乃是研討時空的精簡有效的數學工具，它也是研究學習電磁學、狹義相對論的基本工具。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>│<a href="page4.html">4</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_05" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=五、向量幾何和向量代數(ar_wy_geo_05)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_05/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:45:50 GMT -->
+</HTML>

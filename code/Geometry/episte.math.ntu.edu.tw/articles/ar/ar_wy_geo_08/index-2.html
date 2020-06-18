@@ -1,0 +1,359 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:48:10 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="圓錐截線;橢圓;雙曲線;拋物線;焦點;Pascal定理;Menelous定理;圓錐曲線;Pappus定理">
+<META name="keyword_out" content="Euclid;Archimedes;Apollonius;Pappus;Kepler;Kepler三定律;笛卡兒;費瑪;正交坐標系;Pascal;Menelous;Menelous定理;射影幾何;Brahe;牛頓">
+<TITLE>八、圓錐截線的故事</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<a href="page9.html">9</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    <BR>‧<a target="wNote" href="notes.html">註釋</a><BR>
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>八、圓錐截線的故事</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">圓柱截線和圓錐截線</a>
+<LI><a href="page2.html#02_SECTION0002">圓錐截線的光學性質</a>
+<LI><a href="page3.html#03_SECTION0003">圓錐截線和二次曲線</a>
+<LI><a href="page4.html#04_SECTION0004">坐標變換和不變量</a>
+<LI><a href="page5.html#05_SECTION0005">五點定一「二次曲線」和六點共在一「二次曲線」的條件</a>
+<LI><a href="page6.html#06_SECTION0006">Pascal 定理和 Pappus 定理</a>
+<LI><a href="page7.html#07_SECTION0007">Kepler 行星三定律</a>
+<LI><a href="page8.html#08_SECTION0008">由 Kepler 定律到牛頓萬有引力定律</a>
+<LI><a href="page9.html#09_SECTION0009">圓錐截線例題，極與極線</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{八、圓錐截線的故事}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\key_out{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{圓錐截線::橢圓::雙曲線::拋物線::焦點::Pascal定理::Menelous定理::圓錐曲線::Pappus定理}
+%\key_out{Euclid::Archimedes::Apollonius::Pappus::Kepler::Kepler三定律::笛卡兒::費瑪::正交坐標系::Pascal::Menelous::Menelous定理::射影幾何::Brahe::牛頓}
+-- episte: basic_info end -->
+
+<P>
+在現代的中學數學課程中，通常是在初等解析幾何中學到圓錐截線，亦即橢圓、雙曲線和拋物線。圓錐截線的發現和研究起始于古希臘。
+Euclid, Archimedes, Apollonius, Pappus
+等幾何學大師都熱衷于圓錐截線的研究，而且都有專著論述其幾何性質，其中以 Apollonius 所著的八冊《圓錐截線論》集其大成，可以說是古希臘幾何學一個登峰造極的精擘之作。當時對于這種既簡樸又完美的曲線的研究，乃是純粹從幾何學的觀點，研討和圓密切相關的這種曲線；它們的幾何乃是圓的幾何的自然推廣，在當年這是一種純理念的探索，並不寄望也無從預期它們會真的在大自然的基本結構中扮演著重要的角色。此事一直到十六、十七世紀之交，Kepler 行星運行三定律的發現才知道行星繞太陽運行的軌道，乃是一種以太陽為其一焦點的橢圓。Kepler 三定律乃是近代科學開天劈地的重大突破，它不但開創了天文學的新紀元，而且也是牛頓萬有引力定律的根源所在。由此可見，圓錐截線不單單是幾何學家所愛好的精簡事物，它們也是大自然的基本規律中所自然選用的精要之一。
+
+<P>
+在本章將以圓錐截線的來龍去脈為中心課題，簡明扼要地敘述這一段由古希臘幾何學到牛頓天體力學引人入勝、發人深思的篇章。
+
+<P>
+
+<!-- section head *** text_length=1209 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">圓柱截線和圓錐截線</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+常見的一段竹桿，大體上是一個圓柱。它的正切截線是一個圓，但是其斜切截線則不再是圓的，這也許就是「橢圓」的一種自然出處。圓的幾何特性乃是它有一個圓心，和其上各點等距；自然會問這種由斜截圓柱所得的「橢圓」是否也具有類似的幾何特性呢？古希臘幾何學家在上述問題的探討中獲得令人鼓舞的簡潔答案，亦即一個橢圓具有兩個焦點 <SPAN CLASS="MATH"><I>F</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>F</I><SUB>2</SUB></SPAN> 使得其上任給一點到兩者的距離之和為一定長（其實，這也就是通常在初等解析幾何中橢圓的定義），我們用 [圖 8-1] 來解說當年對于這種圓柱截線的基本特性的証法。設 Γ 是一個半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的圓柱面和一個斜截平面 Π 的交集，我們可以用兩個半徑為 <SPAN CLASS="MATH"><I>R</I></SPAN> 的球面 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\Sigma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\Sigma_2$"></SPAN>
+由上、下兩端，沿著柱面向截面 Π 滑動，一直到分別和 Π 相切于 <SPAN CLASS="MATH"><I>F</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>F</I><SUB>2</SUB></SPAN> 的位置（如 [圖 8-1] 所示）。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="354" HEIGHT="273" BORDER="0"
+ SRC="img3.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =7cm \epsfbox{fig0801.e...
+...mma_1}
+,(5.15,2.65)*+{\Gamma}
+,(5.18,0.28)*+{\Gamma_2}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3740" ALIGN="CENTER">
+[ 圖 8-1 ]</DIV>
+
+
+<P>
+令 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\Gamma_2$"></SPAN> 分別是上、下球面 <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\Sigma_1$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\Sigma_2$"></SPAN> 和柱面相切的圓。設 <SPAN CLASS="MATH"><I>P</I></SPAN> 是橢圓 Γ 上任給一點，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overline{Q_1Q_2}$"></SPAN> 是柱面上過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的那一條直線段，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$Q_1\in \Gamma_1$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$Q_2\in \Gamma_2$"></SPAN> 。則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="398" HEIGHT="52" BORDER="0"
+ SRC="img9.gif"
+ ALT="\begin{eqnarray*}
+\hspace*{1cm} &amp;&amp; \overline{PF_1}=\overline{PQ_1},\quad \overli...
+...t \cH236}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH197})}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+大體上，這也就是當年古希臘幾何學家運用圓柱和球面的簡樸特性所得出的「圓柱斜截線」的幾何特性及其証明。這的確是一個令人鼓舞的傑作！
+
+<P>
+後來又發現上述簡潔精擘的証明其實可以稍加推廣，亦即把圓柱面更換成圓錐面依然成立，如 [圖 8-2] 所示。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="248" HEIGHT="305" BORDER="0"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5.5cm \epsfbox{fig0802...
+...(2.9,1.25)*+{P}
+,(2.88,3.18)*+{Q_1}
+,(2.9,-0.1)*+{Q_2}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3752" ALIGN="CENTER">
+[ 圖 8-2 ]</DIV>
+
+
+<P>
+再者，如 [圖 8-3] 所示，平面和圓錐面的交截還可以產生另外兩種曲線，亦即現在叫做雙曲線和拋物線者也。如 [圖 8-4]、[圖 8-5] 所示，雙曲線也有兩個焦點，而拋物線則只有一個焦點，而且也可以用類似的幾何論証，証明雙曲線和拋物線的幾何特性分別如下，即：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="269" HEIGHT="56" BORDER="0"
+ SRC="img11.gif"
+ ALT="\begin{displaymath}
+\renewedcommand{arraystretch}{1.3}\begin{array}{ll}
+\mbox{{\...
+...}\selectfont \cH1}}
+\end{array}\renewedcommand{arraystretch}{1}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0803.eps}}*\frm{}
+,(0,2.5)*+{\mbox{ {\fontfamily{cwM3}\fontseries{m}\selectfont \cH194}\z{\fontfamily{cwM6}\fontseries{m}\selectfont \cH19}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH40}}}
+,(5.7,2)*+{\mbox{ {\fontfamily{cwM5}\fontseries{m}\selectfont \cH127}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH211}\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH40}}}
+\end{xy}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="300" HEIGHT="311" BORDER="0"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =5cm \epsfbox{fig0803.e...
+...\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH40}}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3755" ALIGN="CENTER">
+[ 圖 8-3 ]</DIV>
+
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="135" HEIGHT="237" BORDER="0"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfysize =5cm \epsfbox{fig0804.eps}}*\frm{}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3757" ALIGN="CENTER">
+[ 圖 8-4 ]</DIV>
+
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="224" HEIGHT="237" BORDER="0"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfysize =5cm \epsfbox{fig0805.e...
+...\z{\fontfamily{cwM2}\fontseries{m}\selectfont \cH40}}}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3759" ALIGN="CENTER">
+[ 圖 8-5 ]</DIV>
+
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Euclid">Euclid</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Archimedes">Archimedes</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Apollonius">Apollonius</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Pappus">Pappus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Kepler">Kepler</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Kepler%A4T%A9w%AB%DF">Kepler三定律</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B2%C3%A5d%A8%E0">笛卡兒</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B6O%BA%BF">費瑪</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%BF%A5%E6%A7%A4%BC%D0%A8t">正交坐標系</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Pascal">Pascal</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Menelous">Menelous</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Menelous%A9w%B2z">Menelous定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%AEg%BCv%B4X%A6%F3">射影幾何</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Brahe">Brahe</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%FB%B9y">牛頓</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>│<a href="page6.html">6</a>│<a href="page7.html">7</a>│<a href="page8.html">8</a>│<a href="page9.html">9</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_08" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=八、圓錐截線的故事(ar_wy_geo_08)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_08/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:48:10 GMT -->
+</HTML>

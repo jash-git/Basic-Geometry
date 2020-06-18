@@ -1,0 +1,453 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_02/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:39 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="第五公設;平行公理;平行四邊形;parallelogram;矩形;長方形;菱形;比值;ratio;可公度性;Commensurability;可公度;commensurable;勾股弦公式;勾股定理;勾股弦定理;畢氏定理;出入相補原理;Hippasus;歐氏算法;Euclidean Algorithm;不可公度的;non-commensurable;Eudoxus;逼近法;Method of Approximation;Archimedes;Menelous定理;Ceva定理;Steiner點;Miquel定理;平行;平行公設">
+<META name="keyword_out" content="歐幾里得;幾何原本;比值;可公度;Hippasus;歐氏算法;不可公度的;Eudoxus;逼近法;Menelous定理;Ceva定理;平行">
+<TITLE>二、平行性與定量平面幾何基礎理論</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=top>
+    <FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap rowspan=2>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+    
+  </FONT>
+</TR>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF" valign=middle><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc-2.html">《基礎幾何學》</a></p></FONT>
+
+    <DIV class="title"><FONT face="標楷體"><FONT size=6>二、平行性與定量平面幾何基礎理論</FONT></FONT></DIV>
+    
+
+    <P><FONT face="標楷體" size=5>項武義</FONT>
+    
+    <P><TABLE align=center border=0 width=400><TR><TD><UL type=square><FONT class="side" size=2><LI><a href="index-2.html#01_SECTION0001">平行性和三角形內角和</a>
+<LI><a href="page2.html#02_SECTION0002">平行性、平行四邊形和面積公式</a>
+<LI><a href="page3.html#04_SECTION0003">中國古代的定量幾何</a>
+<LI><a href="page4.html#06_SECTION0004">不可公度性的發現與克服——Hippasus 和 Eudoxus 對于人類理性文明的重大貢獻</a>
+<LI><a href="page5.html#09_SECTION0005">例題和習題</a>
+</FONT></UL></TD></TR></TABLE>
+  </TD>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<P>
+
+<!-- episte: basic_info
+%\series_index{《基礎幾何學》}
+%\series_index_url{/articles/ar/ar_wy_geo_toc.html}
+%\title{二、平行性與定量平面幾何基礎理論}
+%\sub_title{}
+%\field{geo}
+%\ori_title{}
+%\author{項武義}
+%\inst{香港科技大學數學系}
+%\ori_author{}
+%\translator{}
+%\source{}
+%\input{}
+%\proofread{}
+%\art{}
+%\key_in{第五公設::平行公理::平行四邊形::parallelogram::矩形::長方形::菱形::比值::ratio::可公度性::Commensurability::可公度::commensurable::勾股弦公式::勾股定理::勾股弦定理;畢氏定理::出入相補原理::Hippasus::歐氏算法::Euclidean Algorithm::不可公度的::non-commensurable::Eudoxus::逼近法::Method of Approximation::Archimedes::Menelous定理::Ceva定理::Steiner點::Miquel定理::平行::平行公設}
+%\key_out{歐幾里得::幾何原本::比值::可公度::Hippasus::歐氏算法::不可公度的::Eudoxus::逼近法::Menelous定理::Ceva定理::平行}
+-- episte: basic_info end -->
+
+<P>
+一般來說，我們對于事物的研究，大體上都先作定性的探討，然後再進而作定量的分析。這是一種由表及裡、逐步深入、精益求精的自然進展，平面幾何學的研究當然也遵循著這樣一種自然的順理成章的途徑。由上一章的討論中可以看到，在定性地探討幾何中的「等」與「不等」時，我們可以完全不用平行性；但是在定量的平面幾何中，我們要對于不等長的兩個線段，不同大小的兩個角區或不同大小的兩個區域，賦以兩者之間<SPAN  CLASS="textit">定量的比值</SPAN>去度量 (measure) 兩者之間的差別。在這個時候，平行性扮演著一個舉足輕重的「要角」，其作用是大大簡化了定量幾何的基礎理論和基本公式。換句話說，在定量幾何中，三角形內角和是恆等于平角還是恆小于平角這兩種幾何開始有了重大的差別。前者的基本公式要比後者的基本公式簡單得多！在前者有簡樸易用的基本定理如矩形面積公式、勾股定理和相似三角形定理；而在後者所相應者，不是根本沒有，就是要複雜得多。
+
+<P>
+在本章中，我們將會簡明扼要地討論平行性如何反映在平面幾何的基本定理之上。再者，我們還會比較分析一下古代中國和古希臘對于定量平面幾何的治學方法。
+
+<P>
+
+<!-- section head *** text_length=1214 *** -->
+<!-- section head lev 1 -->
+<A name="01_SECTION0001"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">平行性和三角形內角和</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在歐幾里德 (Euclid) 的原著《幾何原本》 (``Elements'')
+中，平面的平行性是用下述<SPAN  CLASS="textit">第五公設</SPAN>
+(fifth postulate)，也就是我們通常稱之為<SPAN  CLASS="textit">平行公理</SPAN>
+(parallel axiom) 者，來加以刻劃的：
+
+<P>
+【第五公設】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\ell$"></SPAN> 是平面上三條相異直線，若 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\ell$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN> 相交的同傍內角（如 [圖&nbsp;2-1] 所示之 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\angle 1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\angle 1'$"></SPAN>）之和<SPAN  CLASS="textit">小于平角</SPAN>，則
+<SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN> 必定在 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\angle 1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="27" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\angle 1'$"></SPAN> 的同側相交。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="449" HEIGHT="138" BORDER="0"
+ SRC="img6.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(12,5){\epsfxsize=10cm \epsfbox{fig0201.eps}}*\...
+...(5,4.1)*+{\ell_2}
+,(5,0.9)*+{\ell_1}
+,(0.2,-0.5)*+{\ell}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3431" ALIGN="CENTER">
+[ 圖&nbsp;2-1 ]</DIV>
+
+
+<P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="353" HEIGHT="27" BORDER="0"
+ SRC="img7.gif"
+ ALT="\begin{displaymath}\angle 1+\angle 1' &lt; \hbox{{\fontfamily{cwM1}\fontseries{m}\s...
+...nt \cH176}\z{\fontfamily{cwM3}\fontseries{m}\selectfont \cH86}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+另一方面，在上一章中我們只需用到 S.A.S.
+和「兩點定唯一直線」就可以証明下述 [定理&nbsp;1.5]：
+
+<P>
+【定理&nbsp;1.5】：若 <!-- MATH
+ $\angle 1=\angle 2$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="62" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="$\angle 1=\angle 2$"></SPAN>，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN> 不相交。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="338" HEIGHT="172" BORDER="0"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}
+\xy%
+\xyimport(5,5){\epsfxsize=7.5cm \epsfbox{fig0108a.eps}}...
+....15)*+{\ell_2}
+,(3.6,1.25)*+{\ell_1}
+,(2.1,0.25)*+{\ell}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3437" ALIGN="CENTER">
+[ 圖&nbsp;1-8<SPAN CLASS="MATH">'</SPAN> ]</DIV>
+
+
+<P>
+由此可見，上述的第五公設也就是以「公設」的方式宣稱
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\angle 1+\angle 1'=\pi$"></SPAN> 是 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN>
+不相交的<SPAN  CLASS="textit">唯一可能性</SPAN>。換句話說，在平面上過直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN>
+外的一個給定點 <SPAN CLASS="MATH"><I>P</I></SPAN>，而且和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN> 不相交的直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN>
+的存在性乃是已証的[定理&nbsp;1.5]，而其唯一性則就是上述第五公設，亦即是使得同傍內角之和 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="95" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\angle 1+\angle 1'=\pi$"></SPAN> 的那一條 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\ell_{2}$"></SPAN>
+乃是唯一和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\ell_{1}$"></SPAN> 不相交者。用這個唯一性之所設，就不難推導平直性：三角形內角和恆為一平角（其証明留作習題）。其實，反之亦可用平直性來証明上述第五公設，其証法如下：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="420" HEIGHT="198" BORDER="0"
+ SRC="img11.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=9cm \epsfbox{fig0202.eps}}*\fr...
+...*+{\ell_2}
+,(1,1)*+{P_0}
+,(2.3,1)*+{P_1}
+,(4.6,1)*+{P_2}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3450" ALIGN="CENTER">
+[ 圖&nbsp;2-2 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：
+如 [圖&nbsp;2-2] 所示，<SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\ell'$"></SPAN> 是使得同位角 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\angle 2'=\angle 1$"></SPAN>
+者，由所設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="199" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$\delta=\angle 2-\angle 2'=\angle 2-\angle 1&gt;0$"></SPAN>。令
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="142" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$\{P_0,P_1,\ldots,P_n,\ldots \}$"></SPAN> 是在 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\ell$"></SPAN> 上 <SPAN CLASS="MATH"><I>A</I></SPAN> 點右側之點列，滿足
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="352" HEIGHT="28" BORDER="0"
+ SRC="img16.gif"
+ ALT="\begin{displaymath}\overline{P_0P_1}=\overline{BP_0},\;\; \overline{P_1P_2}=\ove...
+...e{BP_1},\;\;
+\ldots\;,\;\;\overline{P_nP_{n+1}}=\overline{BP_n}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="309" HEIGHT="28" BORDER="0"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}\bigtriangleup BP_0P_1, \;\; \bigtriangleup BP_1P_2,\;\; \ldots\;,\;\;
+\bigtriangleup BP_nP_{n+1},\;\;\ldots\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+都是等腰三角形。由平直性和等腰三角形的底角相等，即有 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\ell'$"></SPAN> 和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="72" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$\ell_n^*=BP_n$"></SPAN> 之間的夾角逐次減半。所以在 <SPAN CLASS="MATH"><I>n</I></SPAN> 足夠大時，其值小于
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="118" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\delta=\angle 2-\angle 1&gt;0$"></SPAN>，亦即當
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="92" HEIGHT="39" BORDER="0"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}2^n&gt;\frac{\angle AP_0B}{\delta}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+時，<SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\ell_n^*$"></SPAN> 業已夾在 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\ell_2$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="15" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\ell'$"></SPAN> 之間。但是由所作 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\ell_n^*$"></SPAN>
+和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\ell_1$"></SPAN> 相交于 <SPAN CLASS="MATH"><I>P</I><SUB><I>n</I></SUB></SPAN>，所以 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$\ell_2$"></SPAN> 必然和 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$\ell_1$"></SPAN> 相交于線段
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\overline{AP_n}$"></SPAN> 之內。
+□
+
+<P>
+
+[注意，上述証明之中，三角形內角和恆等于一個平角扮演著必不可缺的角色！所以上述論証只是証明了第五公設和平直性的邏輯等價性。]
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   <font size="2" class="side"><BR>對外搜尋關鍵字：<BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%BC%DA%B4X%A8%BD%B1o">歐幾里得</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B4X%A6%F3%AD%EC%A5%BB">幾何原本</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%F1%AD%C8">比值</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5i%A4%BD%AB%D7">可公度</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Hippasus">Hippasus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%BC%DA%A4%F3%BA%E2%AAk">歐氏算法</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A4%A3%A5i%A4%BD%AB%D7%AA%BA">不可公度的</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Eudoxus">Eudoxus</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%B9G%AA%F1%AAk">逼近法</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Menelous%A9w%B2z">Menelous定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=Ceva%A9w%B2z">Ceva定理</a><BR>．<a href="http://episte.math.ntu.edu.tw/cgi/search.pl?search=%A5%AD%A6%E6">平行</a><BR></font>
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=600 bgcolor="#FFFFFF">
+   <BR><DIV align="center"><FONT class="side" size=2><img height="20" alt="已在第一頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" />　<b>1</b>│<a href="page2.html">2</a>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>　<a href="page2.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+ <TD width=120 bgcolor="#F0F8FF">
+   <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_02" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=二、平行性與定量平面幾何基礎理論(ar_wy_geo_02)">寫信</A> 給我們。）
+ </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size="2" color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_02/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:40:48 GMT -->
+</HTML>

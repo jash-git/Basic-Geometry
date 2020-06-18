@@ -1,0 +1,455 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_02/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:43:17 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="第五公設;平行公理;平行四邊形;parallelogram;矩形;長方形;菱形;比值;ratio;可公度性;Commensurability;可公度;commensurable;勾股弦公式;勾股定理;勾股弦定理;畢氏定理;出入相補原理;Hippasus;歐氏算法;Euclidean Algorithm;不可公度的;non-commensurable;Eudoxus;逼近法;Method of Approximation;Archimedes;Menelous定理;Ceva定理;Steiner點;Miquel定理;平行;平行公設">
+<META name="keyword_out" content="歐幾里得;幾何原本;比值;可公度;Hippasus;歐氏算法;不可公度的;Eudoxus;逼近法;Menelous定理;Ceva定理;平行">
+<TITLE>二、平行性與定量平面幾何基礎理論 (第 2 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>二、平行性與定量平面幾何基礎理論</FONT></FONT>
+    <FONT face="標楷體">（第 2 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=1178 *** -->
+<!-- section head lev 1 -->
+<A name="02_SECTION0002"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">平行性、平行四邊形和面積公式</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+在上一章對于對稱性的討論中，得知等腰三角形就是那些具有軸對稱性的三角形。而具有兩對對邊各別等長的四邊形則是那些具有心對稱的四邊形（參看上一章習題）。它的對稱中心就是其兩條互相平分的對角線的交點，而且它的兩對對角也各別相等。証明要點在于每一條對角線把該四邊形切為兩個全等的三角形 (S.S.S.)
+，而兩條對角線則把它切為兩對互相全等的三角形 (A.S.A.)。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="209" HEIGHT="126" BORDER="0"
+ SRC="img25.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =4cm \epsfbox{fig0203.e...
+....1)*+{B}
+,(4,0.1)*+{C}
+,(2.6,3.1)*+{O}
+,(5.2,5.3)*+{D}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3475" ALIGN="CENTER">
+[ 圖&nbsp;2-3 ]</DIV>
+
+
+<P>
+上述的論証只用到疊合條件，毋須平行性的幫助的。假如我們把平行性再用上去分析上述四邊形的幾何結構時，則由對角相等
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="143" HEIGHT="27" BORDER="0"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}\angle A=\angle C,\; \angle B=\angle D\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+和四內角和等于 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.gif"
+ ALT="$2\pi$"></SPAN> 合起來就得出
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="353" HEIGHT="25" BORDER="0"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}\angle A+\angle B=\angle A+\angle D=\angle C+\angle B=\angle C
++\angle D=\pi\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即其對邊互相平行：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="150" HEIGHT="28" BORDER="0"
+ SRC="img29.gif"
+ ALT="\begin{displaymath}AB /\!/ DC,\quad AD /\!/ BC \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以把這種四邊形叫做<SPAN  CLASS="textit">平行四邊形</SPAN> (parallelogram)
+。我們把平行四邊形的各種特徵性質總結如下，敘述為本章的 [定理&nbsp;2.1]。它是研討平行性在幾何學中各種各樣的反映的主要工具。[它在平行性的研討上所扮演的角色一如等腰三角形在對稱的研討上所扮演的角色——都是到處有用和好用的基本工具。]
+
+<P>
+【定理&nbsp;2.1】：下列各特性皆為平行四邊形的特徵性質。
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>兩對對邊互相平行（定義）。
+</DD>
+<DT>(ii)</DT>
+<DD>兩對對邊各別等長。
+</DD>
+<DT>(iii)</DT>
+<DD>兩對對角各別等角。
+</DD>
+<DT>(iv)</DT>
+<DD>兩條對角線互相平分。
+</DD>
+<DT>(v)</DT>
+<DD>有一對對邊平行而且等長。
+</DD>
+</DL>
+
+<P>
+[上述五點的邏輯等價性大部分已經証過，而且証明的要點也在上面說明了，所以其逐一驗証則留作習題。]
+
+<P>
+【定義】：四個內角皆相等（亦即都是直角）的四邊形叫做矩形
+(rectangle)，亦稱為長方形。
+
+<P>
+【定義】：四個邊長皆相等的四邊形叫做菱形。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=3629 *** -->
+<!-- section head lev 3 -->
+<BR><A name="03_SECTION000201"></A><DIV align=left>
+<FONT face="標楷體" size="+1" color="#000080"><U>矩形的面積公式：</U></FONT>
+</DIV>
+
+
+<!-- section text -->
+<P>
+
+<P>
+「矩形的面積等于長乘寬」，這是一個自古以來就在中外古今所熟知和慣用的公式。在中國的古算中，把它當做「顯然成立者」，並用來作為推導其他定量幾何的公式的起點和基點（詳見下一節）。但是古希臘的幾何學則進一步去追究這個看來相當明顯的面積公式的真正涵意何在，並設法論証之。長話短說，讓我們在此簡明扼要地回顧一下古希臘當年在定量幾何基礎論上的探索歷程：
+
+<P>
+幾何學是古希臘文明最輝煌的成就，它是以古埃及和古巴比倫文明的幾何知識為基礎，集希臘的精英，歷經好幾世紀世代相承、精益求精的研究創造而成者，乃是人類文明中第一個趨于成熟的科學。古希臘的學者把幾何學的研討作為理解宇宙的基礎學科，所以治學十分嚴謹，高度注重其基本概念的明確性和推理論証上的嚴格性。它不但是其他自然科學的基礎所在，而且也是整個自然科學在思想上、方法論上治學的典範。古希臘幾何學的進程是先研究定性平面幾何，其研討主題是全等形和平行性，然後再進而研討定量平面幾何，而且一開始他們就認識到直線段<SPAN  CLASS="textit">長度的度量</SPAN> (measurement of length)
+乃是定量幾何研討的起點和基礎所在。通常的做法是先取定（或約定）一個單位長
+(unit of length)，它可以是公尺、市尺、英尺，或光在真空走一秒的長度「光秒」，也可以是「光年」，然後把一個給定直線段的長度定義為它和單位長之間的「比值」
+(ratio)。由此可見，長度度量這個基本概念的關鍵在于上述「比值」的明確定義。
+
+<P>
+設給定線段 <SPAN CLASS="MATH"><I>a</I></SPAN> 恰好可以等分成 <SPAN CLASS="MATH"><I>m</I></SPAN> 段和單位長 <SPAN CLASS="MATH"><I>u</I></SPAN> 等長者首尾相接而成，則
+<SPAN CLASS="MATH"><I>a</I></SPAN> 和 <SPAN CLASS="MATH"><I>u</I></SPAN> 之間的比值當然就是 <SPAN CLASS="MATH"><I>m</I></SPAN>，而稱這樣的直線段 <SPAN CLASS="MATH"><I>a</I></SPAN> 的長度是
+<SPAN CLASS="MATH"><I>m</I></SPAN> 單位。反之，若單位長 <SPAN CLASS="MATH"><I>u</I></SPAN> 恰好可以等分成 <SPAN CLASS="MATH"><I>n</I></SPAN> 段和 <SPAN CLASS="MATH"><I>a</I></SPAN>
+等長者首尾相接而成，則 <SPAN CLASS="MATH"><I>a</I></SPAN> 和 <SPAN CLASS="MATH"><I>u</I></SPAN> 之間的比值應該等于 <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$\frac{1}{n}$"></SPAN> 。再者，若
+<SPAN CLASS="MATH"><I>a</I></SPAN> 恰好可以等分成 <SPAN CLASS="MATH"><I>m</I></SPAN> 段和 <SPAN CLASS="MATH"><IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\frac{1}{n}u$"></SPAN> 等長者連接而成，則 <SPAN CLASS="MATH"><I>a</I></SPAN> 和 <SPAN CLASS="MATH"><I>u</I></SPAN>
+之間的比值應該定義為分數 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\frac{m}{n}$"></SPAN>，稱 <SPAN CLASS="MATH"><I>a</I></SPAN> 的長度是 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\frac{m}{n}$"></SPAN>
+單位，以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="58" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$a=\frac{m}{n}u$"></SPAN> 表達之。
+
+<P>
+大約在紀元之前五世紀前後，古希臘的幾何學學界（例如畢氏及其門人）關于長度度量提出下述概念及論斷：
+
+<P>
+【可公度性】(Commensurability)：對于兩個直線段 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>
+若<SPAN  CLASS="textit">存在</SPAN>一個公尺度 (common yardstick) <SPAN CLASS="MATH"><I>c</I></SPAN> 恰能同時整量 <SPAN CLASS="MATH"><I>a</I></SPAN>,
+<SPAN CLASS="MATH"><I>b</I></SPAN>，亦即 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN> 都是 <SPAN CLASS="MATH"><I>c</I></SPAN> 的整數倍時：<SPAN CLASS="MATH"><IMG
+ WIDTH="66" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.gif"
+ ALT="$a=m\cdot c$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="60" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.gif"
+ ALT="$b=n\cdot c$"></SPAN>，則稱
+<SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN> 為<SPAN  CLASS="textit">可公度</SPAN> (commensurable)，而 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>
+的長度比值就定義為分數 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\frac{m}{n}$"></SPAN>
+。另外一個等價的說法就是：若存在適當的整數 <SPAN CLASS="MATH"><I>m</I></SPAN>, <SPAN CLASS="MATH"><I>n</I></SPAN> 使得 <SPAN CLASS="MATH"><IMG
+ WIDTH="34" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.gif"
+ ALT="$n\cdot a$"></SPAN> 和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="36" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img37.gif"
+ ALT="$m\cdot b$"></SPAN> 恰好等長，則稱 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN> 為可公度，而這樣的 <SPAN CLASS="MATH"><I>a</I></SPAN>, <SPAN CLASS="MATH"><I>b</I></SPAN>
+長度的比值就定義為 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.gif"
+ ALT="$\frac{m}{n}$"></SPAN> 。
+
+<P>
+然後他們主觀地論斷：<SPAN  CLASS="textit">任何兩個直線段總是可公度的</SPAN>，亦即可公度性是普遍成立的 (universal validity of commensurability)
+。並且以此作為他們當年所致力構築的定量幾何基礎論的「頭號公理」(Principle Axiom)，亦即以「可公度性的普遍成立」為依據、為基石
+(foundation)，給定量幾何中的基本定理如矩形面積公式、畢氏定理、相似三角定理給出其証明。大致上，下面所述就是他們當年對于矩形面積公式的証明。
+
+<P>
+設矩形的長和寬分別是 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\ell$"></SPAN> 和 <SPAN CLASS="MATH"><I>w</I></SPAN>，而 <SPAN CLASS="MATH"><I>u</I></SPAN>
+則是取定的單位長度。由可公度性普遍成立的「公設」即分別有 <SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.gif"
+ ALT="$\{\ell, u\}$"></SPAN> 和 <SPAN CLASS="MATH">{w,<I>u</I>}</SPAN> 的公尺度 <SPAN CLASS="MATH"><I>c</I></SPAN>, <SPAN CLASS="MATH"><I>c</I>'</SPAN>，使得它們分別是 <SPAN CLASS="MATH"><I>c</I></SPAN>, <SPAN CLASS="MATH"><I>c</I>'</SPAN> 的整數倍，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="165" HEIGHT="45" BORDER="0"
+ SRC="img39.gif"
+ ALT="\begin{displaymath}
+\begin{array}{lcl}
+\ell=m\cdot c, &amp;\;&amp; u=n\cdot c \\
+w=p\cdot c', &amp;&amp; u=q\cdot c'
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+如 [圖&nbsp;2-4] 所示，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\square (\ell, w)$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\square (u,u)$"></SPAN>
+分別可以用平行線分割成 <SPAN CLASS="MATH"><IMG
+ WIDTH="38" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$m\cdot p$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$n\cdot q$"></SPAN> 個 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="42" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.gif"
+ ALT="$\square (c,c')$"></SPAN> 。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="387" HEIGHT="178" BORDER="0"
+ SRC="img45.gif"
+ ALT="\begin{displaymath}
+\begin{xy}
+\xyimport(5,5){\epsfxsize =8cm \epsfbox{fig0204.e...
+...*+{c'}
+,(2.3,5.2)*+{c}
+,(5.1,2)*+{u}
+,(4.15,-0.2)*+{u}
+\end{xy}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par3554" ALIGN="CENTER">
+[ 圖&nbsp;2-4 ]</DIV>
+
+
+<P>
+由此可見
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="139" HEIGHT="52" BORDER="0"
+ SRC="img46.gif"
+ ALT="\begin{eqnarray*}
+\square (\ell,w) &amp;=&amp; (m\cdot p)\square (c,c')\\
+\square (u,u) &amp;=&amp; (n\cdot q) \square (c,c')
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+所以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="206" HEIGHT="60" BORDER="0"
+ SRC="img47.gif"
+ ALT="\begin{eqnarray*}
+\square (\ell,w) : \square (u,u) &amp;=&amp; \frac{mp}{nq}=
+\frac{m}{n}\cdot \frac{p}{q} \\
+&amp;=&amp; (\ell:u)\cdot (w:u)
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+這也就是矩形的面積等于長乘寬的真正涵意。
+□
+
+<P>
+總之，他們當年基于「可公度性普遍成立」這個「公設」，對于定量平面幾何的重要公式如畢氏定理、相似三角形邊長比例式等等，都給以嚴格的証明，建立起洋洋大觀的定量平面幾何基礎論。其中畢氏學派的貢獻良多，引以自豪。
+
+<P>
+【歷史的註記】：假如任何兩個直線段真的總是可公度的，則上述証明已經完整無缺地証明了矩形面積公式。但是在畢氏本人百年之後不久，其門徒 Hippasus 卻有一個石破天驚的發現，那就是一個正五邊形的對角線長和其邊長乃是<SPAN  CLASS="textit">不可公度的</SPAN>！因此當年用來建立定量幾何基礎論的「頭號公設」根本是錯誤的！亦即可公度性<SPAN  CLASS="textit">並非</SPAN>普遍成立（隨後他也証明了正方形的對角線長和邊長也是不可公度的）。由此可見，上述証明只是証明了矩形兩個邊長
+<SPAN CLASS="MATH"><I>a</I>,<I>b</I></SPAN> 都是和單位長 <SPAN CLASS="MATH"><I>u</I></SPAN> 可公度時這種特殊情形的矩形面積公式，在一般不可公度的情形還得加以補証！
+
+<P>
+另一點值得在此一提的是上述証明中很關鍵地用了平行分割，所以矩形面積公式和平行性是必然相關的。當然在三角形內角和恆小于平角的幾何中，任何四邊形的四個內角和恆小于 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.gif"
+ ALT="$2\pi$"></SPAN> ，所以根本沒有四個內角均為直角的四邊形。但是「矩形」在那種幾何中其實還是有自然的「推廣」者，那就是兩對對邊各別等長而且其兩條對角線也等長的那種四邊形，它的面積是其兩個邊長的函數，可是其公式要比 <SPAN CLASS="MATH"><IMG
+ WIDTH="31" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.gif"
+ ALT="$a\cdot b$"></SPAN> 複雜得多！
+
+<P>
+在討論古希臘的幾何學家如何克服上述不可公度性的問題之前，我們先來看看定量平面幾何學在中國古代是如何建立和處理的。
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>│<a href="page4.html">4</a>│<a href="page5.html">5</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_02" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=二、平行性與定量平面幾何基礎理論(ar_wy_geo_02)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_02/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:43:22 GMT -->
+</HTML>

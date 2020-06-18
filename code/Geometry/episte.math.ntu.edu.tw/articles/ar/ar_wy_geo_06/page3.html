@@ -1,0 +1,955 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/page3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:46:16 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="解析幾何;正交坐標系;分量;components;共軸圓系;co-axial family of circles;座標;坐標">
+<META name="keyword_out" content="Euclid;Apollonius;Diophantus;Copernicus;Brahe;Kepler;Galileo;Vieta;Descartes;Fermat;Newton;Leibniz;解析幾何;微積分;向量代數;平移">
+<TITLE>六、座標解析幾何簡介 (第 3 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="page2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<b>3</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>六、座標解析幾何簡介</FONT></FONT>
+    <FONT face="標楷體">（第 3 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=5503 *** -->
+<!-- section head lev 1 -->
+<A name="03_SECTION0003"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">圓的反射對稱；共軸圓系和共軛等軸圓系</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+所有歐氏平面的保長變換當然都是保圓保角的，但是除了它們之外是否還有不保長的保圓保角變換呢？再者，在歐氏平面的保長變換之中，對于一條給定直線的反射對稱則是其中的至精至簡者；所有其他保長變換都可以由它們組合而得，在保圓保角變換的範疇中是否也有同樣的精簡事物呢？上述對于直線的反射對稱在保圓保角變換的範疇中是否可以適當地推廣成對于一個圓的反射對稱呢？為此，讓我們先來做一些溫故知新的工作，改用圓與角的觀點再來分析一下對于一條直線的反射對稱的幾何特徵。再者，在以後的討論中，我們將把直線看做是圓的特例，亦即半徑是無窮大的圓。這樣做可以使得往後的討論和敘述變得更加整齊劃一、更具統一性，例如原先的「<SPAN  CLASS="textit">不共線</SPAN>三點定一圓」在新觀點之下就變成一律的「三點定一圓」。
+
+<P>
+【分析】：
+
+<P>
+(i) 如 [圖 6-8] 所示，<SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 是對于直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 成反射對稱的任給一對點偶，亦即 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 是線段 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img103.gif"
+ ALT="$\overline{PP'}$"></SPAN> 的垂直平分線。由此可見，任何過 <SPAN CLASS="MATH"><I>P</I></SPAN>,
+<SPAN CLASS="MATH"><I>P</I>'</SPAN> 點的圓，如 [圖 6-8] 所示的 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 等，其圓心總是位于
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>
+之上，因此都是和 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 互相正交的。反之，若過相異兩點 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 的任何一個圓總是和 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 正交，則 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 必定和 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 成反射對稱。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="224" HEIGHT="169" BORDER="0"
+ SRC="img104.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0608.eps}}*\fr...
+...'}
+,(2.75,4.5)*+{P}
+,(3.7,2.1)*+{O_2}
+,(0.5,2.2)*+{\ell}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2512" ALIGN="CENTER">
+[ 圖 6-8 ]</DIV>
+
+
+<P>
+由此可問：對于一個定圓 Γ 和不在圓上的一點 <SPAN CLASS="MATH"><I>P</I></SPAN> 是否會存在一個點 <SPAN CLASS="MATH"><I>P</I>'</SPAN>
+使得任何過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點的圓總是和圓 Γ 互相正交呢？
+
+<P>
+(ii) 假設果真存在有這樣的一個點 <SPAN CLASS="MATH"><I>P</I>'</SPAN>，則直線 <SPAN CLASS="MATH"><I>PP</I>'</SPAN> 乃是過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 的圓的一個特例，所以應該是和 Γ 互相垂直的，因此這個假設中的 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 應該在 <SPAN CLASS="MATH"><I>O</I></SPAN>, <SPAN CLASS="MATH"><I>P</I></SPAN>
+連線之上（我們且先把 <SPAN CLASS="MATH"><I>P</I></SPAN> 點和 Γ 的圓心 <SPAN CLASS="MATH"><I>O</I></SPAN> 點相重的情形除外）
+。再者，設 <SPAN CLASS="MATH"><I>A</I></SPAN> 點是 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img103.gif"
+ ALT="$\overline{PP'}$"></SPAN> 的中點，<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN> 是以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="33" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img103.gif"
+ ALT="$\overline{PP'}$"></SPAN> 為直徑的圓，亦即以 <SPAN CLASS="MATH"><I>A</I></SPAN> 點為圓心，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.gif"
+ ALT="$\frac{1}{2}\vert\overline{PP'}\vert$"></SPAN> 為半徑者也。由所設它和 Γ 正交于兩點 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN>（如 [圖 6-9] 所示）。由此可見，<SPAN CLASS="MATH"><I>AQ</I><SUB><I>i</I></SUB></SPAN> 是圓 Γ 的切線，而 <SPAN CLASS="MATH"><I>OQ</I><SUB><I>i</I></SUB></SPAN> 則是 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN> 的切線。再由圓冪定理即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="101" HEIGHT="24" BORDER="0"
+ SRC="img106.gif"
+ ALT="\begin{displaymath}\overline{OP}\cdot \overline{OP'}=r^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="264" HEIGHT="177" BORDER="0"
+ SRC="img107.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5.5cm \epsfbox{fig0609.eps}}*\...
+...8,0.7)*+{\Gamma}
+,(0.45,0.7)*+{\Gamma_1}
+,(2.7,3.5)*+{r}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2539" ALIGN="CENTER">
+[ 圖 6-9 ]</DIV>
+
+
+<P>
+上述分析說明了：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img108.gif"
+ ALT="$P\neq O$"></SPAN> 而且不在圓 Γ 之上，假設存在有它的
+「對稱點」<SPAN CLASS="MATH"><I>P</I>'</SPAN> ，則它必須就是那個在射線 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{OP}$"></SPAN> 之上而且
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.gif"
+ ALT="$\overline{OP}\cdot \overline{OP'}=r^2$"></SPAN> 的點。下述引理則証明這樣的 <SPAN CLASS="MATH"><I>P</I>'</SPAN>
+點，的確是具有所要求的性質者。
+
+<P>
+【引理】：設 Γ 是一個以 <SPAN CLASS="MATH"><I>O</I></SPAN> 點為圓心，<SPAN CLASS="MATH"><I>r</I></SPAN> 為半徑的圓，<SPAN CLASS="MATH"><I>O</I></SPAN>, <SPAN CLASS="MATH"><I>P</I></SPAN>,
+<SPAN CLASS="MATH"><I>P</I>'</SPAN> 三點共線而且 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.gif"
+ ALT="$\overrightarrow{OP}\cdot \overrightarrow{OP'}=r^2$"></SPAN>，則任何過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 的圓都是和 Γ 互相正交的。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN> 是任給一個過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 的圓，交 Γ
+于 <SPAN CLASS="MATH"><I>Q</I><SUB><I>i</I></SUB></SPAN>, <SPAN CLASS="MATH"><I>i</I>=1,2</SPAN> 。由所設，即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="160" HEIGHT="27" BORDER="0"
+ SRC="img112.gif"
+ ALT="\begin{displaymath}\overrightarrow{OP}\cdot \overrightarrow{OP'}=r^2= \overline{OQ_i}^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="247" HEIGHT="178" BORDER="0"
+ SRC="img113.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5.5cm \epsfbox{fig0610.eps}}*\...
+...
+,(0.2,3.9)*+{\Gamma'}
+,(0.45,0.7)*+{P'}
+,(2.7,3.5)*+{r}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2560" ALIGN="CENTER">
+[ 圖 6-10 ]</DIV>
+
+
+<P>
+再者，由圓冪定理，
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="305" HEIGHT="27" BORDER="0"
+ SRC="img114.gif"
+ ALT="\begin{displaymath}\overline{OQ_i}^2=\overrightarrow{OP}\cdot \overrightarrow{OP...
+...nt \cH19}\z{\fontfamily{cwM1}\fontseries{m}\selectfont \cH106}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即 <!-- MATH
+ $\overline{OQ_i}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.gif"
+ ALT="$\overline{OQ_i}$"></SPAN> 和切線等長，所以 <SPAN CLASS="MATH"><I>Q</I><SUB><I>i</I></SUB></SPAN> 就是直線 <SPAN CLASS="MATH"><I>OQ</I><SUB><I>i</I></SUB></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN>
+的唯一交點，即 <SPAN CLASS="MATH"><I>OQ</I><SUB><I>i</I></SUB></SPAN> 本身就是一條由 <SPAN CLASS="MATH"><I>O</I></SPAN> 到 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN> 的切線，所以
+Γ 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN> 正交于 <SPAN CLASS="MATH"><I>Q</I><SUB><I>i</I></SUB></SPAN> 。
+□
+
+<P>
+【定義】：對于給定圓 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.gif"
+ ALT="$\Gamma=\odot(O,r)$"></SPAN> 和任意點 <SPAN CLASS="MATH"><IMG
+ WIDTH="50" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img108.gif"
+ ALT="$P\neq O$"></SPAN>，那個在射線
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$\overrightarrow{OP}$"></SPAN> 之上而且滿足
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="106" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.gif"
+ ALT="$\overrightarrow{OP}\cdot \overrightarrow{OP'}=r^2$"></SPAN>
+的唯一的 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點叫做 <SPAN CLASS="MATH"><I>P</I></SPAN> 點對于 Γ 的反射對稱點。
+
+<P>
+[註]：(i) 當 <SPAN CLASS="MATH"><I>P</I></SPAN> 點位于圓 Γ 之上時，其對稱點就是其本身，亦即 <SPAN CLASS="MATH"><I>P</I>=<I>P</I>'</SPAN>；反之亦然，即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="121" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.gif"
+ ALT="$P=P'\Leftrightarrow P\in \Gamma$"></SPAN> 。
+
+<P>
+(ii) 在平面 Π 上，圓心 <SPAN CLASS="MATH"><I>O</I></SPAN> 點對于 Γ 的對稱點暫無定義。若我們把平面
+Π 添加一個無窮遠點 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.gif"
+ ALT="$\infty$"></SPAN>，而且把它定義為和圓心互相對稱之點，則一條直線可以當作是過 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.gif"
+ ALT="$\infty$"></SPAN> 點的圓。在這種看法之下，我們可以証明上述對于
+Γ 的反射對稱在這個加點平面上是既保圓又保角的。
+
+<P>
+【例 1】：<SPAN  CLASS="textit">對稱點的作圖法</SPAN>
+
+<P>
+設 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 是一對對于 Γ 成反射對稱之點。則 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN> 和 Γ
+之間有如
+[圖 6-11] 所示的幾何結構，即有 <SPAN CLASS="MATH"><IMG
+ WIDTH="53" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img119.gif"
+ ALT="$Q_1\in \Gamma$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="90" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.gif"
+ ALT="$OQ_1\perp PQ_1$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img121.gif"
+ ALT="$Q_1P'\perp OP$"></SPAN> 。由此可見求作對稱點的下述作圖法：
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>若 <SPAN CLASS="MATH"><I>P</I></SPAN> 點在圓外：連結 <SPAN CLASS="MATH"><I>OP</I></SPAN>，以 <SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\overline{OP}$"></SPAN> 為直徑作圓
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>，交 Γ 于 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN> 點，連結 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="44" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.gif"
+ ALT="$\overline{Q_1Q_2}$"></SPAN> 交
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img122.gif"
+ ALT="$\overline{OP}$"></SPAN> 于 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點，<SPAN CLASS="MATH"><I>P</I>'</SPAN> 點即為所求作的 <SPAN CLASS="MATH"><I>P</I></SPAN> 點對于 Γ 的對稱點。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="232" HEIGHT="184" BORDER="0"
+ SRC="img124.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0611.eps}}*\fr...
+...amma}
+,(0,2.17)*+{P}
+,(2.65,3.5)*+{\ell}
+\endxy\hspace*{1.5cm}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2604" ALIGN="CENTER">
+[ 圖 6-11 ]</DIV>
+
+
+<P>
+</DD>
+<DT>(ii)</DT>
+<DD>若 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點在圓內：連結 <SPAN CLASS="MATH"><I>OP</I>'</SPAN>，過 <SPAN CLASS="MATH"><I>P</I>'</SPAN> 點作
+<SPAN CLASS="MATH"><I>OP</I>'</SPAN> 垂線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>，交 Γ 于 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN> 點，過 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>
+點作 <SPAN CLASS="MATH"><I>OQ</I><SUB>1</SUB></SPAN> 的垂線，交 <SPAN CLASS="MATH"><I>OP</I>'</SPAN> 于 <SPAN CLASS="MATH"><I>P</I></SPAN> 點，它即為所求作的對稱點。
+</DD>
+</DL>
+
+<P>
+【例 2】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 是兩個給定的圓，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$P\notin \Gamma_1\cup \Gamma_2$"></SPAN>，試作一圓 Γ 它過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點而且和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 都正交。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="197" HEIGHT="205" BORDER="0"
+ SRC="img126.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=4cm \epsfbox{fig0612.eps}}*\fr...
+...4.8)*+{\Gamma_1}
+,(5.25,0.7)*+{\Gamma_2}
+,(0.5,0.7)*+{P}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2625" ALIGN="CENTER">
+[ 圖 6-12 ]</DIV>
+
+
+<P>
+解：令 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>'</SPAN> 和 <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>'</SPAN> 分別是 <SPAN CLASS="MATH"><I>P</I></SPAN> 點對于 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN>
+的反射對稱點。則由 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>'</SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>'</SPAN> 所定的圓 Γ 即為所求者。
+[試証上述 Γ 是過 <SPAN CLASS="MATH"><I>P</I></SPAN> 點且和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 正交的唯一的圓。]
+
+<P>
+【例 3】：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 是兩個相離或相含的圓，亦即
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="87" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.gif"
+ ALT="$\Gamma_1\cap \Gamma_2=\phi$"></SPAN>，試問在所有和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN>
+都正交的圓系中是否有一個唯一的最小者，亦即其半徑為極小者？若有，則試討論其作圖法。
+
+<P>
+<SPAN  CLASS="textit">解</SPAN>：先討論相離的情形：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="315" HEIGHT="225" BORDER="0"
+ SRC="img128.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=7cm \epsfbox{fig0613.eps}}*\fr...
+...Gamma_2}
+,(0.25,1.9)*+{\Gamma_1}
+,(2.3,0.55)*+{\Gamma_0}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2643" ALIGN="CENTER">
+[ 圖 6-13 ]</DIV>
+
+
+<P>
+如 [圖 6-13] 所示，設 Γ 是任給一個正交于 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN>
+的圓，連結 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.gif"
+ ALT="$\overline{O_1O_2}$"></SPAN>，它和 Γ 相交于 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 點，則
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 對于 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 都是互相對稱的。即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="263" HEIGHT="28" BORDER="0"
+ SRC="img130.gif"
+ ALT="\begin{displaymath}\overline{O_1P_1}\cdot \overline{O_1P_2}=r_1^2,\quad
+\overline{O_2P_1}\cdot \overline{O_2P_2}=r_2^2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+令 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img131.gif"
+ ALT="$\overline{O_1O_2}=\ell$"></SPAN>, 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="71" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.gif"
+ ALT="$\overline{O_1P_1}=x$"></SPAN>,
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.gif"
+ ALT="$\overline{O_1P_2}=y$"></SPAN>，則上述條件就可以改用下述代數聯立方程式加以表達，亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="379" HEIGHT="64" BORDER="0"
+ SRC="img134.gif"
+ ALT="\begin{displaymath}\left\{\begin{array}{l} xy=r_1^2 \\ (\ell-x)(\ell-y)=r_2^2 \e...
+...ystyle x+y=\frac{\ell^2+r_1^2-r_2^2}{\ell}
+\end{array}\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由此可見，上述交點 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 是唯一確定的（和 Γ 的選取無關）而且可以用軌尺作圖求得者。再者，和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 正交的圓系也就是過
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 點的圓系，其中半徑最小者顯然就是那個以 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="39" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\overline{P_1P_2}$"></SPAN>
+為直徑者。
+
+<P>
+相含情形基本上和上述相離的的情形相似，所不同者只是 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 和 <SPAN CLASS="MATH"><I>O</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>O</I><SUB>2</SUB></SPAN>
+之間的相對位置改為 [圖 6-14] 所示的情況，其討論則留作習題。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="237" HEIGHT="170" BORDER="0"
+ SRC="img135.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0614.eps}}*\fr...
+...\Gamma_1}
+,(0.25,1.1)*+{\Gamma_0}
+,(3.8,0.9)*+{\Gamma_2}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2670" ALIGN="CENTER">
+[ 圖 6-14 ]</DIV>
+
+
+<P>
+<SPAN  CLASS="textit">共軸圓系</SPAN>：
+
+<P>
+設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 是給定兩個相異的圓，其方程式分別為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="328" HEIGHT="27" BORDER="0"
+ SRC="img78.gif"
+ ALT="\begin{displaymath}\Gamma_i :\; x^2+y^2+2D_ix+2E_iy+F_i=0, \quad i=1,2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+則以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<I>k</I><SUB>1</SUB>(<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+2<I>D</I><SUB>1</SUB><I>x</I>+2<I>E</I><SUB>1</SUB><I>y</I>+<I>F</I><SUB>1</SUB>)+<I>k</I><SUB>2</SUB>(<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+2<I>D</I><SUB>2</SUB><I>x</I>+2<I>E</I><SUB>2</SUB><I>y</I>+<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+為其方程式之圓乃是隨著比值 <SPAN CLASS="MATH"><I>k</I><SUB>1</SUB>:<I>k</I><SUB>2</SUB></SPAN> 之不同而相異。它們組成一個圓系
+(family of circles)，稱之為由 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN>
+所產生的<SPAN  CLASS="textit">共軸圓系</SPAN>
+(co-axial family of circles)，易見它包含一條直線，亦即 <SPAN CLASS="MATH"><I>k</I><SUB>1</SUB>:<I>k</I><SUB>2</SUB>=-1</SPAN>
+者，其方程式就是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+2(<I>D</I><SUB>1</SUB>-<I>D</I><SUB>2</SUB>)<I>x</I>+2(<I>E</I><SUB>1</SUB>-<I>E</I><SUB>2</SUB>)<I>y</I>+(<I>F</I><SUB>1</SUB>-<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>試驗証上述共軸圓系中任何相異的兩個圓的等冪軸就是直線
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+2(<I>D</I><SUB>1</SUB>-<I>D</I><SUB>2</SUB>)<I>x</I>+2(<I>E</I><SUB>1</SUB>-<I>E</I><SUB>2</SUB>)<I>y</I>+(<I>F</I><SUB>1</SUB>-<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+[這也就是「共軸」這個名稱的來由。]
+</DD>
+<DT>(2)</DT>
+<DD>設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 相交于 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN>
+兩點，試証上述共軸圓系也就是所有過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I></SPAN> 點的圓所組成者（包括直線
+<SPAN CLASS="MATH"><I>PQ</I></SPAN>，它其實是就是它們所共有之等冪軸）。
+</DD>
+<DT>(3)</DT>
+<DD>設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 相切于 <SPAN CLASS="MATH"><I>A</I></SPAN>
+點，試証上述共軸圓系也就是共切于 <SPAN CLASS="MATH"><I>A</I></SPAN>
+點的圓所組成者，而它們的公切線也就是其所共有之等冪軸。
+</DD>
+</DL>
+
+<P>
+由此可見，共軸圓系是可以分成三類的。第一類是共交于兩相異點者，其中不含有點圓；第二類是共切于一點者，其中僅含有一個點圓，即其共切之點；
+而第三類是各不相交者，其中含有兩個點圓。上一節的[定理 6.4]証明了若 Γ
+和共軸圓系中兩個圓正交，則 Γ
+和它們所產生的共軸圓系中每一個圓皆為正交。其實，我們還可以將結果再作推廣如下：
+
+<P>
+【定理 6.5】：所有和兩個定圓 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 都正交的圓構成一個共軸圓系。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="88" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.gif"
+ ALT="$P\notin \Gamma_1\cup \Gamma_2$"></SPAN>，令 <SPAN CLASS="MATH"><I>P</I>'</SPAN>, <SPAN CLASS="MATH"><I>P</I>''</SPAN>
+分別是它對于 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 的反射對稱點，則過 <SPAN CLASS="MATH"><I>P</I></SPAN>, <SPAN CLASS="MATH"><I>P</I>'</SPAN>, <SPAN CLASS="MATH"><I>P</I>''</SPAN>
+的圓就是和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 都是正交的。由此可見，和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 都正交的圓顯然有無窮多個。設 Γ, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN> 是其中兩個相異的成員，由[定理 6.4]得知，由 Γ, <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img111.gif"
+ ALT="$\Gamma'$"></SPAN> 所生成的共軸圓系中的每一成員都是和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 正交的，最後，我們還要說明<SPAN  CLASS="textit">不可能</SPAN>有上述共軸圓系之外的圓和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN>
+都正交。假若可能，設 <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img136.gif"
+ ALT="$\Gamma''$"></SPAN> 是一個系外者，則所有其方程能表成下述形式者也都和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 正交，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="181" HEIGHT="27" BORDER="0"
+ SRC="img137.gif"
+ ALT="\begin{displaymath}\Gamma+\lambda\Gamma'+\mu \Gamma'',\quad \lambda,\mu\in {\mathbb R}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+這是和三元一次聯立方程式
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="233" HEIGHT="45" BORDER="0"
+ SRC="img138.gif"
+ ALT="\begin{displaymath}\left\{\begin{array}{l}
+2(DD_1+EE_1)-(F+F_1)=0 \\
+2(DD_2+EE_2)-(F+F_2)=0 \end{array}\right.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+中解組 <SPAN CLASS="MATH">(<I>D</I>,<I>E</I>,<I>F</I>)</SPAN> 中只含有一個任意參數相矛盾。由此可見，對于一個共軸圓系，唯一存在另一個共軸圓系，每一個前者的成員和每一個後者的成員都是互相正交的。這樣一對互相正交的共軸圓系稱為是互相<SPAN  CLASS="textit">共軛的</SPAN> (conjugate) 。
+□
+
+<P>
+在例題 (4) 的圓冪定理的向量証法中，我們不但証明了
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="204" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.gif"
+ ALT="$\overline{PQ_1}\cdot \overline{PQ_2}=\big\vert\overline{OP}\big\vert^2-R^2
+=\mb...
+...H126}\z{\ScLu\cH40}\z{\ScLu\cH197}\z{\SbLu\cH237}\z{\SbLu\cH19}\z{\SbLu\cH106}}$"></SPAN>，而且也証明了使得 <SPAN CLASS="MATH">(<I>PP</I>';<I>Q</I><SUB>1</SUB><I>Q</I><SUB>2</SUB>)</SPAN> 成調和點列的
+<SPAN CLASS="MATH"><I>P</I>'</SPAN> 恆位于 <SPAN CLASS="MATH"><I>OP</I></SPAN> 的一條垂線之上，它和圓心 <SPAN CLASS="MATH"><I>O</I></SPAN> 點的距離等于 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.gif"
+ ALT="$R^2/\overline{OP}$"></SPAN>
+。現在讓我們改用坐標幾何的觀點，由圓 Γ 的方程式和 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的坐標
+<SPAN CLASS="MATH">(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN> 去求得上述直線（稱之為圓 Γ 對于 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的極線）的方程式。
+
+<P>
+【定理 6.6】：設圓 Γ 的方程式為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+2<I>Dx</I>+2<I>Ey</I>+<I>F</I>=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+而 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的坐標為 <SPAN CLASS="MATH">(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN>，則圓 Γ 對于 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的極線方程式為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<I>x</I><SUB>0</SUB><I>x</I>+<I>y</I><SUB>0</SUB><I>y</I>+<I>D</I>(<I>x</I><SUB>0</SUB>+<I>x</I>)+<I>E</I>(<I>y</I><SUB>0</SUB>+<I>y</I>)+<I>F</I>=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<SPAN  CLASS="textit">証明</SPAN>：
+設 <SPAN CLASS="MATH"><I>X</I>(<I>x</I>,<I>y</I>)</SPAN> 為上述直線 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 上的任給一點，則由圓心
+<SPAN CLASS="MATH"><I>O</I>(-<I>D</I>,-<I>E</I>)</SPAN> 到 <SPAN CLASS="MATH"><I>X</I></SPAN> 的向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="154" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.gif"
+ ALT="$\overrightarrow{OX}=(x+D,y+E)$"></SPAN>，而
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="166" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.gif"
+ ALT="$\overrightarrow{OP}=(x_0+D,y_0+E)$"></SPAN> 。再者，<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN> 和 <SPAN CLASS="MATH"><I>O</I></SPAN>, <SPAN CLASS="MATH"><I>P</I></SPAN> 的幾何關係可以用
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="108" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img143.gif"
+ ALT="$\overrightarrow{OP}\cdot \overrightarrow{OX}=R^2$"></SPAN> 表達之，即得其代數條件式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="445" HEIGHT="28" BORDER="0"
+ SRC="img144.gif"
+ ALT="\begin{displaymath}\overrightarrow{OP}\cdot \overrightarrow{OX}=(x_0+D)(x+D)+
+(y_0+E)(y+E)=D^2+E^2-F\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<I>x</I><SUB>0</SUB><I>x</I>+<I>y</I><SUB>0</SUB><I>y</I>+<I>D</I>(<I>x</I><SUB>0</SUB>+<I>x</I>)+<I>E</I>(<I>y</I><SUB>0</SUB>+<I>y</I>)+<I>F</I>=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+同理亦有球冪定理和球對于 <SPAN CLASS="MATH"><I>P</I></SPAN> 點的極面，其有關的討論則留作習題。
+
+<P>
+
+<!-- episte: document end -->
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="page2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<a href="page2.html">2</a>│<b>3</b>　<img height="20" alt="已在最後一頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_06" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=六、座標解析幾何簡介(ar_wy_geo_06)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/page3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:46:25 GMT -->
+</HTML>

@@ -1,0 +1,910 @@
+<HTML>
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:46:03 GMT -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=big5">
+<META name="description" content="article">
+<META name="keyword_in" content="解析幾何;正交坐標系;分量;components;共軸圓系;co-axial family of circles;座標;坐標">
+<META name="keyword_out" content="Euclid;Apollonius;Diophantus;Copernicus;Brahe;Kepler;Galileo;Vieta;Descartes;Fermat;Newton;Leibniz;解析幾何;微積分;向量代數;平移">
+<TITLE>六、座標解析幾何簡介 (第 2 頁)</TITLE>
+<LINK REL="STYLESHEET" TYPE="text/css" href="../../../css/episte.css">
+
+<STYLE TYPE="text/css">
+<!--
+P		{ line-height: 18pt; }
+DT		{ line-height:18pt; }
+DD		{ line-height:18pt; }
+.caption	{ font-size: 9pt; }
+.side		{ line-height: 12pt; font-size: 9pt; }
+.title		{ font-family: 標楷體; }
+.seclev1	{ font-size: 18pt; }
+.seclev2	{ font-size: 16pt; }
+.textit     { font-family:標楷體; }
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!-- Begin script
+function open_kout() {
+  window.name = 'main';
+  whd = window.open("key_out.html","kout",
+    "toolbar=0,status=0,scrollbars=1,location=0,resize=1,menubar=0,width=300,height=250");
+  if (window.focus) {whd.focus()}
+}
+// End script -->
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<!-- ********* table for Article Title ********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR valign=top>
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=580 align="center" bgcolor="#FFFFFF">
+    <DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV>
+
+    <DIV align="left"><FONT class="series_index" size="4"><p align="left"><a href="../ar_wy_geo_toc.html">《基礎幾何學》</a></p></FONT>
+
+    <FONT face="標楷體" class="title"><FONT size=5>六、座標解析幾何簡介</FONT></FONT>
+    <FONT face="標楷體">（第 2 頁）</FONT>
+
+    <P><FONT face="標楷體" size=4>項武義</FONT>
+    
+    <BR></DIV>
+  </TD>
+
+  <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="top" nowrap>
+  <DIV align=center>
+    <A href="http://episte.math.ntu.edu.tw/cgi/mathfield.pl?fld=geo"><IMG src="../../../images/t_geo.gif" width=120 height=25 border=0></A><BR><FONT class="side" size=2>
+    <A href="http://episte.math.ntu.edu.tw/">首頁</A> | <A href="http://episte.math.ntu.edu.tw/articles/search.htm">搜尋</A></FONT></DIV>
+  <FONT class="side" size=2><BR>
+    
+    ．作者任教於香港科技大學數學系<BR>
+    
+   ‧<A href="javascript:open_kout();">對外搜尋關鍵字</A>
+  </FONT>
+</TR>
+</TABLE>
+
+
+
+<!-- ********* table for Each Section *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=580  bgcolor="#FFFFFF">
+
+<!-- section head *** text_length=3793 *** -->
+<!-- section head lev 1 -->
+<A name="02_SECTION0002"></A><BR>
+<TABLE border=0 cellpadding=5 cellspacing=0 width=480>
+ <TR><TD width=480 bgcolor="#CEDBFF" height=40>
+ <FONT face="標楷體" size=5 class="seclev1">直線和圓，平面和球</FONT></TD></TR>
+</TABLE>
+
+
+<!-- section text -->
+<P>
+
+<P>
+直線與圓是平面上最為精簡的一維子集，而平面與球則是空間中最為精簡的二維子集。在解析幾何中它們都可以用一個簡單的方程式去刻劃之。
+
+<P>
+【定理 6.1】：在平面上（或空間內）一條直線（或一個平面）的點的坐標滿足一個
+<SPAN CLASS="MATH">{x,<I>y</I>}</SPAN>（或 <SPAN CLASS="MATH">{x,<I>y</I>,<I>z</I>}</SPAN>）的一次方程式。反之，任給一個二元（或三元）一次方程式的所有「解點」構成的子集乃是 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>)</SPAN>-平面上
+（或 <SPAN CLASS="MATH">(<I>x</I>,<I>y</I>,<I>z</I>)</SPAN>-空間內）的一條直線（或一個平面）。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：設 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN>（或 
+<SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>,<I>z</I><SUB>0</SUB>)</SPAN>）是直線
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>（或平面 Π）的取定一點，而 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN>（或 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>,<I>z</I>)</SPAN>）則是
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>（或 Π）上的任意點。再者，如 [圖 6-3] 所示，令
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.gif"
+ ALT="${\bf a}=(a,b)$"></SPAN>（或 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="${\bf a}=(a,b,c)$"></SPAN>）是平面上（或空間內）和
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>（或 Π）垂直的向量：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="218" HEIGHT="121" BORDER="0"
+ SRC="img49.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=2cm \epsfbox{fig0603a.eps}}*\f...
+...{\ell}
+,(4.2,2.2)*+{P(x,y)}
+,(1.65,5.4)*+{{\bf a}=(a,b)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="221" HEIGHT="148" BORDER="0"
+ SRC="img50.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=2.5cm \epsfbox{fig0603b.eps}}*...
+...Pi}
+,(3.6,2.5)*+{P(x,y,z)}
+,(2.5,5.5)*+{{\bf a}=(a,b,c)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2315" ALIGN="CENTER">
+[ 圖 6-3 ]</DIV>
+
+
+<P>
+則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="360" HEIGHT="54" BORDER="0"
+ SRC="img51.gif"
+ ALT="\begin{eqnarray*}
+0&amp;=&amp;{\bf a}\cdot \overrightarrow{P_0P}=a(x-x_0)+b(y-y_0) \\
+\...
+...\cdot \overrightarrow{P_0P}=a(x-x_0)
++b(y-y_0)+c(z-z_0)\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+亦即 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="80" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.gif"
+ ALT="$P(x,y)\in \ell$"></SPAN>（或 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="100" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.gif"
+ ALT="$P(x,y,z)\in \Pi$"></SPAN>）乃是上述二元（或三元）一次方程的「解點子集」。
+
+<P>
+反之，設 <SPAN CLASS="MATH"><I>S</I></SPAN>（或 <SPAN CLASS="MATH"><I>S</I><SUP>*</SUP></SPAN>）分別是下述二元（或三元）一次方程的解點子集，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="167" HEIGHT="52" BORDER="0"
+ SRC="img54.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; ax+by+c=0 \\
+\mbox{({\fontfamily{cwM1}\fontseries{m}\selectfont \cH67}} &amp;&amp;ax+by+cz+d=0\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+令 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN>（或 
+<SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>,<I>z</I><SUB>0</SUB>)</SPAN>）是 <SPAN CLASS="MATH"><I>S</I></SPAN>（或 <SPAN CLASS="MATH"><I>S</I><SUP>*</SUP></SPAN>）中取定一點而
+<SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>)</SPAN>（或 <SPAN CLASS="MATH"><I>P</I>(<I>x</I>,<I>y</I>,<I>z</I>)</SPAN>）則是 <SPAN CLASS="MATH"><I>S</I></SPAN>（或 <SPAN CLASS="MATH"><I>S</I><SUP>*</SUP></SPAN>）中任意一點，則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="362" HEIGHT="52" BORDER="0"
+ SRC="img55.gif"
+ ALT="\begin{eqnarray*}
+ax+by+c=0 &amp;\;\mbox{{\fontfamily{cwM0}\fontseries{m}\selectfont...
+...\fontseries{m}\selectfont \cH184}}\;&amp; ax_0+by_0+cz_0+d=0\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+兩者相減，即得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="413" HEIGHT="54" BORDER="0"
+ SRC="img56.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;a(x-x_0)+b(y-y_0)=0 \;\Leftrightarrow \; (a,b)\perp \overrig...
+...\; \Leftrightarrow \;
+(a,b,c)\perp\overrightarrow{P_0P}\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+由此可見 <SPAN CLASS="MATH"><I>S</I></SPAN>（或 <SPAN CLASS="MATH"><I>S</I><SUP>*</SUP></SPAN>）乃是平面上（或空間中）過 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB></SPAN> 點而且和向量
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.gif"
+ ALT="${\bf a}=(a,b)$"></SPAN>（或 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="83" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.gif"
+ ALT="${\bf a}=(a,b,c)$"></SPAN>）垂直的那條直線（或那個平面）是也。
+□
+
+<P>
+[註]：上述論証中所建立的直線（或平面）和二元（或三元）一次方程式之間的相互對應，顯示了方程式中變元的系數組（亦即 <SPAN CLASS="MATH">(<I>a</I>,<I>b</I>)</SPAN> 或 <SPAN CLASS="MATH">(<I>a</I>,<I>b</I>,<I>c</I>)</SPAN>）乃是直線（或平面）的一個法向量的分量。一條直線（或一個平面）在平面上（或空間中）的所有非零法向量之間只差一個 <SPAN CLASS="MATH"><I>k</I></SPAN>-倍。由此可見，一條直線（或一個平面）所對應的二元（或三元）一次方程式之間，也只差一個 <SPAN CLASS="MATH"><I>k</I></SPAN>-倍。
+
+<P>
+【定理 6.2】（點、線或點、面的距離公式）：設
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN>（或 
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>,<I>z</I><SUB>1</SUB>)</SPAN>）是平面上（或空間內）給定一點，而
+<SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>（或 Π）則是以
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="167" HEIGHT="52" BORDER="0"
+ SRC="img54.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp; ax+by+c=0 \\
+\mbox{({\fontfamily{cwM1}\fontseries{m}\selectfont \cH67}} &amp;&amp;ax+by+cz+d=0\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+為其方程的直線（或平面），則有下述距離公式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="224" HEIGHT="89" BORDER="0"
+ SRC="img57.gif"
+ ALT="\begin{eqnarray*}
+d(P_1,\ell) &amp;=&amp; \left\vert\frac{ax_1+by_1+c}{\sqrt{a^2+b^2}}\r...
+...\left\vert\frac{ax_1+by_1+cz_1+d}{\sqrt{a^2+b^2+c^2}}\right\vert
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：如 [圖 6-4] 所示
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="330" HEIGHT="42" BORDER="0"
+ SRC="img58.gif"
+ ALT="\begin{displaymath}\pm\frac{1}{\sqrt{a^2+b^2}}(a,b)\quad \mbox{({\fontfamily{cwM...
+...nt \cH67}}\;\;
+\pm\frac{1}{\sqrt{a^2+b^2+c^2}}(a,b,c)\mbox{)} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+乃是 <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\ell$"></SPAN>（或 Π）的兩個單位長法向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="14" HEIGHT="13" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.gif"
+ ALT="${\bf n}$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.gif"
+ ALT="${\bf n}'$"></SPAN>，而 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB></SPAN>
+則是其上任取一點
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="251" HEIGHT="195" BORDER="0"
+ SRC="img61.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=3cm \epsfbox{fig0604a.eps}}*\f...
+...\bf n}}
+,(2.65,-0.25)*+{{\bf n}'}
+,(2.5,-1)*+{\mbox{\ }}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="255" HEIGHT="227" BORDER="0"
+ SRC="img62.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfysize=4cm \epsfbox{fig0604b.eps}}*\f...
+...(3.55,0.7)*+{d}
+,(2.7,5.2)*+{{\bf n}}
+,(2,1)*+{{\bf n}'}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2353" ALIGN="CENTER">
+[ 圖 6-4 ]</DIV>
+
+
+<P>
+則有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="312" HEIGHT="43" BORDER="0"
+ SRC="img63.gif"
+ ALT="\begin{displaymath}
+d(P_1,\ell)\;\mbox{ {\fontfamily{cwM1}\fontseries{m}\selectf...
+...nt \cH67} }\;{\bf n}'\cdot \overrightarrow{P_0P_1}
+\eqno \Box
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>試寫下過平面上（相異）兩點 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>(<I>x</I><SUB>2</SUB>,<I>y</I><SUB>2</SUB>)</SPAN>
+的直線的方程式。
+</DD>
+<DT>(2)</DT>
+<DD>試寫下過空間中（不共線）三點 
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>,<I>z</I><SUB>1</SUB>)</SPAN>, 
+<SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>(<I>x</I><SUB>2</SUB>,<I>y</I><SUB>2</SUB>,<I>z</I><SUB>2</SUB>)</SPAN>,
+
+<SPAN CLASS="MATH"><I>P</I><SUB>3</SUB>(<I>x</I><SUB>3</SUB>,<I>y</I><SUB>3</SUB>,<I>z</I><SUB>3</SUB>)</SPAN> 的平面的方程式。
+</DD>
+<DT>(3)</DT>
+<DD>試寫下過平面上一點 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN> 並垂直于向量 <SPAN CLASS="MATH"><IMG
+ WIDTH="70" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.gif"
+ ALT="${\bf n}=(a,b)$"></SPAN>
+的直線的方程式。
+</DD>
+<DT>(4)</DT>
+<DD>試寫下過空間中一點 
+<SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>,<I>z</I><SUB>0</SUB>)</SPAN> 並垂直于向量 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="84" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.gif"
+ ALT="${\bf n}=(a,b,c)$"></SPAN>
+的平面的方程式。
+</DD>
+<DT>(5)</DT>
+<DD>試寫下兩條直線的兩條交角平分線的方程式。
+</DD>
+<DT>(6)</DT>
+<DD>試寫下兩個平面的兩個兩面角平分面的方程式。
+</DD>
+<DT>(7)</DT>
+<DD>問在平面上兩線（或空間中兩面）平行的條件為何？
+</DD>
+</DL>
+
+<P>
+【定理 6.3】：平面上（或空間中）以 <SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)</SPAN>（或
+
+<SPAN CLASS="MATH"><I>P</I><SUB>0</SUB>(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>,<I>z</I><SUB>0</SUB>)</SPAN>）為圓心（或球心）以 <SPAN CLASS="MATH"><I>R</I></SPAN> 為半徑的圓（或球）的方程式如下，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="291" HEIGHT="52" BORDER="0"
+ SRC="img66.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;(x-x_0)^2+(y-y_0)^2=R^2 \\
+\mbox{({\fontfamily{cwM1}\fontse...
+...\selectfont \cH67}}&amp;&amp; (x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2 \mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：是距離公式和圓與球的定義的直接推論。
+□
+
+<P>
+【推論】：平面上（或空間中）一個圓（或球）所相應的方程式皆可寫成下述形式，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="334" HEIGHT="52" BORDER="0"
+ SRC="img67.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;k[x^2+y^2+2Dx+2Ey+F]=0 \\
+\mbox{({\fontfamily{cwM1}\fontseries{m}\selectfont \cH67}}&amp;&amp;k[x^2+y^2+z^2+2Dx+2Ey+2Fz+G]=0\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+其中 <SPAN CLASS="MATH"><I>D</I><SUP>2</SUP>+<I>E</I><SUP>2</SUP>-<I>F</I></SPAN>（或 <SPAN CLASS="MATH"><I>D</I><SUP>2</SUP>+<I>E</I><SUP>2</SUP>+<I>F</I><SUP>2</SUP>-<I>G</I></SPAN>）乃是其半徑之平方，所以必須非負。反之，任給滿足 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="125" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.gif"
+ ALT="$D^2+E^2-F\geq 0$"></SPAN>（或 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="164" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.gif"
+ ALT="$D^2+E^2+F^2-G\geq 0$"></SPAN>）的上述二元（或三元）二次方程式的解點子集乃是一個圓（或球）。
+
+<P>
+<SPAN  CLASS="textit">証明</SPAN>：令 
+<SPAN CLASS="MATH">(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>)=(-<I>D</I>,-<I>E</I>)</SPAN>（或 
+<SPAN CLASS="MATH">(<I>x</I><SUB>0</SUB>,<I>y</I><SUB>0</SUB>,<I>z</I><SUB>0</SUB>)=(-<I>D</I>,-<I>E</I>,-<I>F</I>)</SPAN>），則易見上述二元（或三元）二次方程式可以改寫成：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="466" HEIGHT="52" BORDER="0"
+ SRC="img70.gif"
+ ALT="\begin{eqnarray*}
+&amp;&amp;k[(x-x_0)^2+(y-y_0)^2-(D^2+E^2-F)]=0 \\
+\mbox{({\fontfamily...
+...7}}&amp;&amp;k[((x-x_0)^2+(y-y_0)^2+(z-z_0)^2-(D^2+E^2+F^2-G)]=0\mbox{)}
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+□
+
+<P>
+【引理】：設 
+<SPAN CLASS="MATH"><IMG
+ WIDTH="256" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img71.gif"
+ ALT="$\Gamma_i:x^2+y^2+2D_ix+2E_iy+F_i=0$"></SPAN>, <SPAN CLASS="MATH"><I>i</I>=1,2</SPAN>，則 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>,
+<SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 互相正交的充要條件是其系數滿足下列條件：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+2(<I>D</I><SUB>1</SUB><I>D</I><SUB>2</SUB>+<I>E</I><SUB>1</SUB><I>E</I><SUB>2</SUB>)-(<I>F</I><SUB>1</SUB>+<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<SPAN  CLASS="textit">証明</SPAN>：由上面[推論]易見 <SPAN CLASS="MATH"><IMG
+ WIDTH="19" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.gif"
+ ALT="$\Gamma_i$"></SPAN>, <SPAN CLASS="MATH"><I>i</I>=1,2</SPAN>, 的圓心 <SPAN CLASS="MATH"><I>O</I><SUB><I>i</I></SUB></SPAN>
+的坐標為 <SPAN CLASS="MATH">(-<I>D</I><SUB><I>i</I></SUB>,-<I>E</I><SUB><I>i</I></SUB>)</SPAN>；而其半徑平方則為 
+<SPAN CLASS="MATH"><I>r</I><SUB><I>i</I></SUB><SUP>2</SUP>=<I>D</I><SUB><I>i</I></SUB><SUP>2</SUP>+<I>E</I><SUB><I>i</I></SUB><SUP>2</SUP>-<I>F</I><SUB><I>i</I></SUB></SPAN>。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="225" HEIGHT="162" BORDER="0"
+ SRC="img75.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0605.eps}}*\fr...
+....5)*+{r_2}
+,(0.5,0.5)*+{\Gamma_1}
+,(4.8,0.5)*+{\Gamma_2}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2401" ALIGN="CENTER">
+[ 圖 6-5 ]</DIV>
+
+
+<P>
+再者，由 [圖 6-5] 中可見兩圓正交的充要條件就是
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="120" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.gif"
+ ALT="$\overline{O_1O_2}^2=r_1^2+r_2^2$"></SPAN>，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+(<I>D</I><SUB>2</SUB>-<I>D</I><SUB>1</SUB>)<SUP>2</SUP>+(<I>E</I><SUB>2</SUB>-<I>E</I><SUB>1</SUB>)<SUP>2</SUP>-(<I>D</I><SUB>1</SUB><SUP>2</SUP>+<I>E</I><SUB>1</SUB><SUP>2</SUP>-<I>F</I><SUB>1</SUB>)-(<I>D</I><SUB>2</SUB><SUP>2</SUP>+<I>E</I><SUB>2</SUB><SUP>2</SUP>-<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+亦即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="244" HEIGHT="43" BORDER="0"
+ SRC="img77.gif"
+ ALT="\begin{displaymath}
+-2(D_1D_2+E_1E_2)+(F_1+F_2)=0 \eqno \Box
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+【定理 6.4】：設 Γ 和兩個圓
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="328" HEIGHT="27" BORDER="0"
+ SRC="img78.gif"
+ ALT="\begin{displaymath}\Gamma_i :\; x^2+y^2+2D_ix+2E_iy+F_i=0, \quad i=1,2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+都互相正交，則 Γ 和由 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 所生成的圓系，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<SPAN CLASS="MATH">
+<I>k</I><SUB>1</SUB>(<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+2<I>D</I><SUB>1</SUB><I>x</I>+2<I>E</I><SUB>1</SUB><I>y</I>+<I>F</I><SUB>1</SUB>)+<I>k</I><SUB>2</SUB>(<I>x</I><SUP>2</SUP>+<I>y</I><SUP>2</SUP>+2<I>D</I><SUB>2</SUB><I>x</I>+2<I>E</I><SUB>2</SUB><I>y</I>+<I>F</I><SUB>2</SUB>)=0
+</SPAN>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其中每一個圓都是正交的。
+
+<P>
+証明：設 Γ 的方程式為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="239" HEIGHT="27" BORDER="0"
+ SRC="img79.gif"
+ ALT="\begin{displaymath}\Gamma :\; x^2+y^2+2Dx+2Dy+F=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+則由所設的正交性即有
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="384" HEIGHT="45" BORDER="0"
+ SRC="img80.gif"
+ ALT="\begin{displaymath}\left\{\begin{array}{lp{3cm}}
+2(DD_1+EE_1)-(F+F_1)=0 &amp;\dotfill(1)\\
+2(DD_2+EE_2)-(F+F_2)=0 &amp;\dotfill(2)
+\end{array}\right. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+再者，由 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 所生成的圓系中的任給一圓的方程式可以改寫成標準式為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="483" HEIGHT="42" BORDER="0"
+ SRC="img81.gif"
+ ALT="\begin{displaymath}x^2+y^2+2(\frac{k_1D_1+k_2D_2}{k_1+k_2})x +
+2(\frac{k_1E_1+k_2 E_2}{k_1+k_2})y +(\frac{k_1F_1+k_2 F_2}{k_1+k_2})=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+由 <SPAN CLASS="MATH">(1)</SPAN>, <SPAN CLASS="MATH">(2)</SPAN> 易得
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="455" HEIGHT="42" BORDER="0"
+ SRC="img82.gif"
+ ALT="\begin{displaymath}2(D\cdot \frac{k_1D_1+k_2D_2}{k_1+k_2}+E\cdot
+\frac{k_1E_1+k_2 E_2}{k_1+k_2})-(F+\frac{k_1F_1+k_2 F_2}{k_1+k_2})=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+所以它也是和 Γ 正交的。
+□
+
+<P>
+【習題】：
+<DL COMPACT>
+<DT>(1)</DT>
+<DD>試寫下過平面上（不共線）三點 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>(<I>x</I><SUB>2</SUB>,<I>y</I><SUB>2</SUB>)</SPAN>,
+<SPAN CLASS="MATH"><I>P</I><SUB>3</SUB>(<I>x</I><SUB>3</SUB>,<I>y</I><SUB>3</SUB>)</SPAN> 的圓的方程式。
+</DD>
+<DT>(2)</DT>
+<DD>試寫下過空間中（不共面）四點 
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>,<I>z</I><SUB>1</SUB>)</SPAN>, 
+<SPAN CLASS="MATH"><I>P</I><SUB>2</SUB>(<I>x</I><SUB>2</SUB>,<I>y</I><SUB>2</SUB>,<I>z</I><SUB>2</SUB>)</SPAN>,
+
+<SPAN CLASS="MATH"><I>P</I><SUB>3</SUB>(<I>x</I><SUB>3</SUB>,<I>y</I><SUB>3</SUB>,<I>z</I><SUB>3</SUB>)</SPAN>, 
+<SPAN CLASS="MATH"><I>P</I><SUB>4</SUB>(<I>x</I><SUB>4</SUB>,<I>y</I><SUB>4</SUB>,<I>z</I><SUB>4</SUB>)</SPAN> 的球的方程式。
+</DD>
+<DT>(3)</DT>
+<DD>試求分別以下述方程式表達的直線與圓相交于兩點，相切和不相交<SPAN CLASS="MATH"></SPAN>的系數條件式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="385" HEIGHT="52" BORDER="0"
+ SRC="img83.gif"
+ ALT="\begin{eqnarray*}
+\ell:&amp;&amp; ax+by+c=0 \\
+\Gamma: &amp;&amp; x^2+y^2+2Dx+2Ey+F =0,\quad (D^2+E^2-F&gt;0)
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+</DD>
+<DT>(4)</DT>
+<DD>試求分別以下述方程式表達的平面與球相交于一圓，相切于一點和不相交<SPAN CLASS="MATH"></SPAN>的系數條件式：
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="509" HEIGHT="52" BORDER="0"
+ SRC="img84.gif"
+ ALT="\begin{eqnarray*}
+\Pi:&amp;&amp; ax+by+cz=0=0 \\
+\Sigma: &amp;&amp; x^2+y^2+z^2+2Dx+2Ey+2Fz+G =0,\quad (D^2+E^2+F^2-G&gt;0)
+\end{eqnarray*}">
+</DIV><P></P>
+<BR CLEAR="ALL">
+</DD>
+<DT>(5)</DT>
+<DD>設 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB>(<I>x</I><SUB>1</SUB>,<I>y</I><SUB>1</SUB>)</SPAN> 是位于圓 Γ 外的一點，而 Γ
+的方程式是
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="237" HEIGHT="27" BORDER="0"
+ SRC="img85.gif"
+ ALT="\begin{displaymath}\Gamma:\;x^2+y^2+2Dx+2Ey+F=0\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+試求如 [圖 6-6] 所示由 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 到 Γ 的切線長平方的公式（其值叫做
+<SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN> 點對于 Γ 的冪）。
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="341" HEIGHT="158" BORDER="0"
+ SRC="img86.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=5cm \epsfbox{fig0606.eps}}*\fr...
+....7,2.5)*+{\Gamma:}
+,(1.6,2.1)*+{\scriptstyle P_0(-D,-E)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2443" ALIGN="CENTER">
+[ 圖 6-6 ]</DIV>
+
+
+<P>
+</DD>
+<DT>(6)</DT>
+<DD>等冪軸：設 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 是相異兩圓，其方程分別為
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="328" HEIGHT="27" BORDER="0"
+ SRC="img78.gif"
+ ALT="\begin{displaymath}\Gamma_i :\; x^2+y^2+2D_ix+2E_iy+F_i=0, \quad i=1,2\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+和 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.gif"
+ ALT="$\Gamma_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.gif"
+ ALT="$\Gamma_2$"></SPAN> 的切線長相等的點集叫做它們的等冪軸，試求其方程式。
+</DD>
+<DT>(7)</DT>
+<DD>如 [圖 6-7] 所示，
+<SPAN CLASS="MATH"><IMG
+ WIDTH="136" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.gif"
+ ALT="$\Gamma: x^2+y^2-y=0$"></SPAN> 乃是一個以
+<SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img88.gif"
+ ALT="$\overline{OC}$"></SPAN> 為直徑的圓。令 <SPAN CLASS="MATH"><IMG
+ WIDTH="54" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.gif"
+ ALT="$A(\alpha,0)$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="54" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.gif"
+ ALT="$B(\beta,0)$"></SPAN>
+為 <SPAN CLASS="MATH"><I>x</I></SPAN>-軸上給定兩點，連結 <SPAN CLASS="MATH"><IMG
+ WIDTH="63" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.gif"
+ ALT="$\ell_1=AC$"></SPAN> 和 <SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.gif"
+ ALT="$\ell_2=BC$"></SPAN> 使得兩線分別相交
+Γ 于 <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN> 兩點。
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="327" HEIGHT="281" BORDER="0"
+ SRC="img93.gif"
+ ALT="\begin{displaymath}
+\xy
+\xyimport(5,5){\epsfxsize=7cm \epsfbox{fig0607.eps}}*\fr...
+...eta,0)}
+,(2.1,-0.2)*+{P_1(c_1,0)}
+,(4.2,4)*+{P_2(c_2,1)}
+\endxy\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<DIV CLASS="centerline" ID="par2459" ALIGN="CENTER">
+[ 圖 6-7 ]</DIV>
+
+
+<P>
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>寫下 <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.gif"
+ ALT="$\ell_1$"></SPAN>, <SPAN CLASS="MATH"><IMG
+ WIDTH="18" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.gif"
+ ALT="$\ell_2$"></SPAN> 的方程。令 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.gif"
+ ALT="$g_\lambda$"></SPAN>
+為下述組合所得的二次曲線
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="78" HEIGHT="27" BORDER="0"
+ SRC="img97.gif"
+ ALT="\begin{displaymath}\ell_1\cdot \ell_2-\lambda \Gamma\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+注意 <SPAN CLASS="MATH"><I>C</I></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>Q</I><SUB>2</SUB></SPAN> 都在 <SPAN CLASS="MATH"><IMG
+ WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.gif"
+ ALT="$g_\lambda$"></SPAN> 之上。試求一個適當的值
+
+<SPAN CLASS="MATH"><IMG
+ WIDTH="51" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.gif"
+ ALT="$\lambda=\lambda_0$"></SPAN> 使得 <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.gif"
+ ALT="$g_{\lambda_0}$"></SPAN> 可以被 <SPAN CLASS="MATH">(<I>y</I>-1)</SPAN> 所整除。
+</DD>
+<DT>(ii)</DT>
+<DD>上述特殊的 <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.gif"
+ ALT="$\lambda_0$"></SPAN> 令 <SPAN CLASS="MATH"><IMG
+ WIDTH="26" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.gif"
+ ALT="$g_{\lambda_0}$"></SPAN>
+分解成兩個一次方程式的乘積，即
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+
+
+<IMG
+ WIDTH="110" HEIGHT="28" BORDER="0"
+ SRC="img101.gif"
+ ALT="\begin{displaymath}g_{\lambda_0}=(y-1)\cdot \ell\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+其中 <SPAN CLASS="MATH"><IMG
+ WIDTH="67" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.gif"
+ ALT="$\ell=P_1P_2$"></SPAN> 。求 <SPAN CLASS="MATH"><I>P</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>P</I><SUB>2</SUB></SPAN> 的坐標（亦即 <SPAN CLASS="MATH"><I>c</I><SUB>1</SUB></SPAN>, <SPAN CLASS="MATH"><I>c</I><SUB>2</SUB></SPAN> 的值）。
+</DD>
+<DT>(iii)</DT>
+<DD>試用上面所得者來描述一個幾何作圖方法來求解二次方程 <SPAN CLASS="MATH"><I>x</I><SUP>2</SUP>-<I>px</I>+<I>q</I>=0</SPAN> 。
+</DD>
+</DL>
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<!-- end section text -->
+
+ </TD>
+ <TD width=10 bgcolor="#FFFFFF">&nbsp;</TD>
+ <TD width=120 bgcolor="#F0F8FF" valign=top nowrap>
+   &nbsp;
+ </TD>
+</TR>
+</TABLE>
+
+
+
+<!-- ********** table for Arcicle End *********** -->
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR>
+  <TD width=600 bgcolor="#FFFFFF">
+    <BR><DIV align="center"><FONT class="side" size=2><a href="index-2.html"><img height="20" alt="上頁" border="0" src="../../../images/arrowl.gif" width="21" align="absmiddle" /></a>　<a href="index-2.html">1</a>│<b>2</b>│<a href="page3.html">3</a>　<a href="page3.html"><img height="20" alt="次頁" border="0" src="../../../images/arrowr.gif" width="21" align="absmiddle" /></a><BR><BR></FONT></DIV></TD>
+  <TD width=120 bgcolor="#F0F8FF" valign="middle">
+    <A href="#top"><IMG src="../../../images/b_top.gif" width=58 height=16 border=0 alt="回頁首"></A></TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD width=720 height=2 bgcolor="#008F93" colspan=2></TD></TR>
+<TR valign="top">
+  <TD width=15 bgcolor="#FFFFFF">&nbsp;</TD>
+  <TD align="left" width=705 bgcolor="#FFFFFF">
+    <BR>（若有指正、疑問……，可以在此 <A href="http://episte.math.ntu.edu.tw/cgi/post.pl?project=feedback&amp;job=view&amp;pg=ar_wy_geo_06" target="wExt">留言</A> 或 <A href="mailto:episte@math.ntu.edu.tw?subject=六、座標解析幾何簡介(ar_wy_geo_06)">寫信</A> 給我們。）
+  </TD>
+</TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=5 cellspacing=5 width=720>
+<TR><TD align="right" width=180 valign="center">
+<A href="http://episte.math.ntu.edu.tw/"><img src="../../../images/lo_89_25c.gif" border=0 width=89 height=25 alt="EpisteMath"></a></TD>
+<TD width=540><FONT class="side" size=2 color="#444444"><BR><BR>
+EpisteMath (c) 2000 中央研究院數學所、台大數學系<BR>
+各網頁文章內容之著作權為原著作人所有
+<BR><BR><BR></FONT>
+</TD></TR>
+</TABLE>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=720>
+<TR><TD bgcolor="#FFFFFF" width=450 align="left"><FONT size=2 class="side"></FONT></TD>
+<TD bgcolor="#FFFFFF" width=270 align="right"><FONT size=2 class="side">最後修改日期：6/19/2004</FONT></TD></TR>
+</TR>
+</TABLE>
+
+</BODY>
+
+<!-- Mirrored from episte.math.ntu.edu.tw/articles/ar/ar_wy_geo_06/page2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2020 05:46:16 GMT -->
+</HTML>
